@@ -1,0 +1,42 @@
+/****************************************************************
+                COLORS
+****************************************************************/
+/****************************************************************
+                SIZE
+****************************************************************/
+#sf-navbar {
+  background-color: lightgrey;
+  display: flex;
+}
+#sf-navbar * {
+  display: inline-block;
+}
+#sf-navbar nav {
+  flex: 0 0 30%;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+.reseaux {
+  flex: 0 0 20%;
+}
+.reseaux div {
+  background-image: url("../img/sprites.jpg");
+  width: 50px;
+  height: 50px;
+  background-position-x: 333px;
+}
+.reseaux :nth-child(1) {
+  background-position-y: 136px;
+}
+.reseaux :nth-child(2) {
+  background-position-y: 214px;
+}
+.reseaux :nth-child(3) {
+  background-position-y: 250px;
+}
+
+/*# sourceMappingURL=style.css.map */
