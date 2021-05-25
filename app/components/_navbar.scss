@@ -5,30 +5,48 @@
         display: inline-block;
     }
     nav{
-        flex: 0 0 30%;
+        flex: 0 0 70%;
+        font-family: $font-nav;
+        ul{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            li{
+                margin-right: $nav-space;
+            }
+        }
+        #burger{
+            display: none;
+        }
     }
 }
 
-#logo{
-    width: 50px;
-    height:50px;   
+#logo{  
+    flex: 0 0 10%;
 }
 
 .reseaux{
     flex: 0 0 20%;
+    text-align: right;
     div{
-        background-image: url("../img/sprites.jpg"); 
+        background-image: url("../img/sprites/Reseaux-sociaux.png");
         width: $size-rs;
         height: $size-rs;
-        background-position-x: 333px;
+        background-position-y: 450px;
+        transition: background-position-y 500ms;
+        &:hover{
+            background-position-y: 500px;
+        }
+ 
     }
-    :nth-child(1){
-        background-position-y: 136px;
+    div:nth-child(1){
+        background-position-x: 2px;
     }
-    :nth-child(2){
-        background-position-y: 214px;
+    div:nth-child(2){
+        background-position-x: 346px;
     }
-    :nth-child(3){
-        background-position-y: 250px;
+    div:nth-child(3){
+        background-position-x: 292px;
     }
 }
