@@ -2,8 +2,6 @@
     background-image: url("../img/desert-repetable-sm.jpg");
     background-repeat: repeat-x;
     min-height: 500px;
-    width: 200%;
-    overflow: hidden;
     animation: horizontal-scroll 60s infinite linear;
     position: relative;
     div{
@@ -18,13 +16,18 @@
         // background-position: 66px 146px;
         // animation: deplace 20s infinite linear;
     }
-    :nth-child(1){
-        animation: surplace1 500ms infinite linear;
+    img{
+        position: absolute;
+        position: top left;
+        animation: deco-scroll 60s infinite linear;
     }
     :nth-child(2){
-        animation: surplace2 500ms infinite linear;
+        animation: surplace1 500ms infinite linear;
     }
     :nth-child(3){
+        animation: surplace2 500ms infinite linear;
+    }
+    :nth-child(4){
         background-position-x: 600px;
         left: 200px;
         top: 10px;
@@ -62,12 +65,23 @@
     }
 }
 
+
+/*Animation du background*/
 @keyframes horizontal-scroll{
     0%{
         background-position: top left;
     }
     0%{
         background-position: top right;
+    }
+}
+
+@keyframes deco-scroll{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -3000px;
     }
 }
 
