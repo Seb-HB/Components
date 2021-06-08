@@ -1,112 +1,300 @@
-@keyframes cube {
+
+$color-asterix1:hsl(0, 3%, 32%);
+$color-asterix2:hsl(96, 46%, 57%);
+$bg-fond-animation:hsl(220, 97%, 40%);
+
+
+.bg-animated {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background: $bg-fond-animation;
+    overflow: hidden;
+    color:white;
+}
+.bg-animated div{
+    text-transform: uppercase;
+    font-size: 5rem;
+    position: absolute;
+    left: 12vw;
+    top:10vh;
+    p:nth-child(1){
+        animation: rollHimself 7s linear forwards;
+    }
+    p:nth-child(8){
+        // position: absolute;
+        text-transform: capitalize;
+        transform: translateX(-850px);
+        font-size: 3rem;
+        animation: runFast 7s linear forwards;
+    }
+    span{
+        opacity: 0;
+        animation: appear 1s linear forwards;
+    }
+    span:nth-child(2){
+        animation-delay: 1s;
+    }
+    span:nth-child(3){
+        animation-delay: 2s;
+    }
+    span:nth-child(4){
+        animation-delay: 3s;
+    }
+    span:nth-child(5){
+        animation-delay: 4s;
+    }
+    span:nth-child(6){
+        animation-delay: 5s;
+    }
+    span:nth-child(7){
+        animation-delay: 6s;
+    }
+}
+
+.bg-animated li {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    
+    // color: transparent;
+    &.cube1{
+        transform-origin: top left;
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        animation: animCube1 15s ease-in forwards infinite;
+        border: solid 1px #023396;
+    }
+    &.cube2{
+        transform-origin: top left;
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        animation: animCube2 17s ease-in forwards infinite;
+        border: solid 1px #0f56e2;
+        border-radius: 1px;
+    }
+    &.blob{
+        transform: scale(0) rotate(0deg);
+        color: $color-asterix1;
+        animation: animAsterix 30s linear forwards reverse infinite;
+    }
+
+
+    &:nth-child(2) {
+        animation-delay: 0s;
+        left: 98vw;
+        top: 47vh;
+    }
+
+    &:nth-child(3) {
+        animation-delay: 1s;
+        left: 95vw;
+        top: 53vh;
+    }
+    &:nth-child(4) {
+        animation-delay: 2s;
+        left: 35vw;
+        top: 15vh;
+    }
+    &:nth-child(5) {
+        animation-delay: 3s;
+        left: 38vw;
+        top: 20vh;
+    }
+    &:nth-child(6) {
+        animation-delay: 4s;
+        left: 9vw;
+        top: 52vh;
+    }
+    &:nth-child(7) {
+        animation-delay: 5s;
+        left: 7vw;
+        top: 60vh;
+    }
+    &:nth-child(8) {
+        animation-delay: 6s;
+        left: 65vw;
+        top: 5vh;
+    }
+    &:nth-child(9) {
+        animation-delay: 7s;
+        left: 63vw;
+        top: 10vh;
+    }
+    &:nth-child(10) {
+        animation-delay: 8s;
+        left: 4vw;
+        top: 8vh;
+    }
+    &:nth-child(11) {
+        animation-delay: 9s;
+        left: 8vw;
+        top: 12vh;
+    }
+    &:nth-child(12) {
+        animation-delay: 10s;
+        left: 50vw;
+        top: 60vh;
+    }
+    &:nth-child(13) {
+        animation-delay: 11s;
+        left: 54vw;
+        top: 56vh;
+    }
+    /***début blobs***/
+    &:nth-child(14) {
+        animation-delay: 15s;
+        left: 83vw;
+        top: 15vh;
+        border: none;
+        transform-origin: center; 
+    }
+    &:nth-child(15) {
+        text-align: center;
+        padding: auto;
+        animation-delay: 11s;
+        left: 10vw;
+        top: 55vh;
+        border: none;
+        transform-origin: center;
+    }
+    &:nth-child(16) {
+        animation-delay: 7s;
+        left: 55vw;
+        top: 5vh;
+        border: none;
+    }
+    &:nth-child(17) {
+        animation-delay: 3s;
+        left: 50vw;
+        top: 80vh;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******Animation des cubes*******/
+@keyframes animCube1 {
     from {
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
         opacity: 1;
     }
     to {
-        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        transform: scale(10) rotate(780deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+@keyframes animCube2 {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(12) rotate(960deg) translate(-50%, -50%);
         opacity: 0;
     }
 }
 
-.background {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    background: #0040C1;
-    overflow: hidden;
-}
-.background li {
-    position: absolute;
-    top: 80vh;
-    left: 45vw;
-    width: 10px;
-    height: 10px;
-    border: solid 1px #0039ad;
-    color: transparent;
-    transform-origin: top left;
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    animation: cube 17s ease-in forwards infinite;
-}
-undefined
-.background li:nth-child(0) {
-    animation-delay: 0s;
-    left: 95vw;
-    top: 93vh;
+/*******Animation des Astérisques*******/
+@keyframes animAsterix {
+    from {
+        transform: scale(0) rotate(0deg)translateY(0);
+        opacity: 1;
+        color: $color-asterix1;
+    }
+    to {
+        transform: scale(10) rotate(720deg) translateY(20vh);
+        opacity: 0;
+        color: $color-asterix2;
+    }
 }
 
-.background li:nth-child(1) {
-    animation-delay: 2s;
-    left: 79vw;
-    top: 50vh;
-    border-color: #0046d4;
-}
+/********Animation des lettres*********/
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
 
-.background li:nth-child(2) {
-    animation-delay: 4s;
-    left: 60vw;
-    top: 85vh;
+    }
 }
-
-.background li:nth-child(3) {
-    animation-delay: 6s;
-    left: 1vw;
-    top: 61vh;
+@keyframes rollHimself{
+    0%{
+        opacity: 0;
+        transform: rotateX(0deg);
+    }
+    70%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(2160deg);
+    }
 }
-
-.background li:nth-child(4) {
-    animation-delay: 8s;
-    left: 28vw;
-    top: 27vh;
-    border-color: #0046d4;
-}
-
-.background li:nth-child(5) {
-    animation-delay: 10s;
-    left: 53vw;
-    top: 69vh;
-    border-color: #0046d4;
-}
-
-.background li:nth-child(6) {
-    animation-delay: 12s;
-    left: 42vw;
-    top: 23vh;
-    border-color: #0046d4;
-}
-
-.background li:nth-child(7) {
-    animation-delay: 14s;
-    left: 20vw;
-    top: 14vh;
-}
-
-.background li:nth-child(8) {
-    animation-delay: 16s;
-    left: 70vw;
-    top: 78vh;
-    border-color: #0046d4;
-}
-
-.background li:nth-child(9) {
-    animation-delay: 18s;
-    left: 39vw;
-    top: 36vh;
-}
-
-.background li:nth-child(10) {
-    animation-delay: 20s;
-    left: 11vw;
-    top: 6vh;
-    border-color: #0046d4;
-}
-
-.background li:nth-child(11) {
-    animation-delay: 22s;
-    left: 83vw;
-    top: 45vh;
+@keyframes runFast{
+    0%{
+        transform: translateX(-900px)skewX(-15deg);
+        letter-spacing: normal;
+    }
+    49.9%{
+        transform: translateX(0)skewX(-15deg);
+        letter-spacing: normal;
+    }
+    /**impact***/
+    50%{
+        transform: translateX(0)skewX(-8deg);
+    }
+    /****ecrasement: on fait avancer le texte en diminuant l'espace entre les lettres pour garder le bord droit du texte fixe**/
+    55%{
+        transform: translateX(35px)skewX(-8deg);
+        letter-spacing: -1px;
+    }
+    65%{
+        transform: translateX(-120px)skewX(-8deg);
+        letter-spacing: 2px;
+    }
+    70%{
+        transform: translateX(-60px)skewX(-8deg);
+        letter-spacing: normal;
+    }
+    /***secon impact***/
+    75%{
+        transform: translateX(0)skewX(-3deg);
+    }
+    /**second ecrasement***/
+    80%{
+        transform: translateX(15px)skewX(-3deg);
+        letter-spacing: -0.5px;
+    }
+    90%{
+        transform: translateX(-80px)skewX(0);
+        letter-spacing: normal;
+    }
+    100%{
+        transform: translateX(0)skewX(0);
+    }
 }
