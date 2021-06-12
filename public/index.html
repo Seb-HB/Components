@@ -19,10 +19,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="">menu 1</a></li>
-                    <li><a href="">menu 2</a></li>
-                    <li><a href="">menu 3</a></li>
-                    <li><a href="">menu 4</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Maquettes</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
                 <div id="burger">
@@ -38,24 +38,29 @@
     </header>
     <main>
         <section id="shiny">
-            <h1 class="shiny">Présentation</h1>
-            <p>Ce site a pour but de rassembler des éléments réutilisables dans de futurs sites.</p>
+            <h1 class="sf-shiny">Présentation</h1>
+            <p>Ce site a pour but de rassembler diverses éléments réutilisables.</p>
+            <p>C'est aussi une vitrine pour montrer mes idées et mes réalisations.</p>
             <p>J'utilise le SASS afin d'avoir un fichier pour chaque composant.</p>
             <p>Il y a bien-sûr du HTML/CSS, mais aussi du JS et du PHP</p>
 
         </section>
         <section id="parallax">
-            <p>Les gorges de la Loire</p>
-            <div>
+            
+            <div class="bg-parallax">
+                <span>Les gorges de la Loire</span>
                 <h2>Effet parallax</h2>
                 <p>L'image de fond ne défile pas en même temps que le bloc.</p>
                 <p>Pour Cela la position du background-image est en 'fixed'</p>
                 <p>L'effet diagonale du bloc est obtenu grace à une transformation de type SkewY.</p>
                 <p>Mais firefox ne semble pas gérer le background-image fixed et le SkewY ensembles.</p>
+                <p>Si vous voulez profiter pleinement de l'effet, je vous conseille d'utiliser Chrome.</p>
             </div>
-            <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS"></a>
+            <div class="tag-links">
+                <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS"></a>
+            </div>
         </section>
-        <section >
+        <section id='sprites-anim'>
             <h2>Utilisation des sprites</h2>
             <p>Le personnage est sous forme de sprites pour simuler son déplacement.</p>
             <p>Tous les décors sont sous forme d'animations CSS.</p>
@@ -72,7 +77,11 @@
                 <div></div> -->
             </div>
         </section>
-        <section>
+        <section id="bg-animation">
+            <h2>Arrière plan animé</h2>
+            <p>Cette section utilise les animations CSS.</p>
+            <p>Pour le texte j'utilise des transformations telles que <code>rotate</code> ou <code>translate</code> et je joue aussi avec les opacités</p>
+            <p>le fond quand à lui est composé de bloc avec des <code>border</code> qui sont soumis simultanément à un <code>skew</code>, un <code>rotate</code> et <code>translate</code></p>
             <ul class="bg-animated">
                     <div>
                         <p>Sébastien</p>
@@ -107,10 +116,13 @@
                     <li class="blob">*</li>
                     <li class="blob">*</li>
             </ul>
+            <div class="tag-links">
+                <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS" class="tagcss" onmouseover="this.src='img/objects/tag-CSS-hover.png'"></a>
+            </div>
         </section>
         TODO grille d'images avec rotation
         TODO  Gallerie style tetris
-        TODO adapter fond bleu carrés .background
+        TODO image qui s'eparpille au hover
 
 
         

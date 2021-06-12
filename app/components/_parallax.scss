@@ -1,14 +1,16 @@
 #parallax{
-    margin: 100px 0;
-    color: white;
-    div{
-        transform: skewY(-3deg);
+    margin: 200px 0;
+    .bg-parallax{
+        color: white;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 27%, rgba(255,255,255,0.1) 100%), url("../img/parallax-gorges-3deg.jpg") center no-repeat fixed;
+        background-size: cover;
+        transform: skewY(3deg);
         min-height: 700px;
-        padding: 0 20px;
+        padding-left: 2rem;
+        h2, p{
+            transform: skewY(-3deg);
+            text-align: left;
+        }
     }
-
-    width: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 27%, rgba(255,255,255,0.1) 100%), url("../img/parallax-gorges-3deg.jpg") center no-repeat fixed;
-    background-size: cover;
-    transform: skewY(3deg);
 }

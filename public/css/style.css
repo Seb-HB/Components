@@ -29,6 +29,7 @@ li {
 ****************************************************************/
 body {
   font-family: "Dosis", sans-serif;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,15 +56,14 @@ section {
   margin-top: 6rem;
 }
 
-.shiny {
-  padding-right: 150px;
+.sf-shiny {
   color: transparent;
   background: linear-gradient(60deg, #383737 0%, #383737 49%, #857f7f 51%, #857f7f 53%, #383737 55%, #383737 100%);
   background-clip: text;
   -webkit-background-clip: text;
   background-size: 250%;
   background-repeat: no-repeat;
-  animation: shine 10s infinite linear;
+  animation: shine 10s infinite linear forwards;
 }
 
 @keyframes shine {
@@ -80,9 +80,6 @@ section {
 #sf-navbar {
   background-color: lightgrey;
   display: flex;
-}
-#sf-navbar * {
-  display: inline-block;
 }
 #sf-navbar nav {
   flex: 0 0 70%;
@@ -107,40 +104,47 @@ section {
 
 .reseaux {
   flex: 0 0 20%;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
 }
 .reseaux div {
-  background-image: url("../img/sprites/Reseaux-sociaux.png");
-  width: 50px;
-  height: 50px;
-  background-position-y: 450px;
+  background-image: url("../img/sprites/ReseauxSociaux-32px.png");
+  width: 32px;
+  height: 32px;
+  background-position-y: 468px;
   transition: background-position-y 500ms;
+  display: inline-block;
 }
 .reseaux div:hover {
   background-position-y: 500px;
 }
 .reseaux div:nth-child(1) {
-  background-position-x: 2px;
+  background-position-x: 238px;
 }
 .reseaux div:nth-child(2) {
-  background-position-x: 346px;
+  background-position-x: 0px;
 }
 .reseaux div:nth-child(3) {
-  background-position-x: 292px;
+  background-position-x: 206px;
 }
 
 #parallax {
-  margin: 100px 0;
+  margin: 200px 0;
+}
+#parallax .bg-parallax {
   color: white;
   width: 100%;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 27%, rgba(255, 255, 255, 0.1) 100%), url("../img/parallax-gorges-3deg.jpg") center no-repeat fixed;
   background-size: cover;
   transform: skewY(3deg);
-}
-#parallax div {
-  transform: skewY(-3deg);
   min-height: 700px;
-  padding: 0 20px;
+  padding-left: 2rem;
+}
+#parallax .bg-parallax h2, #parallax .bg-parallax p {
+  transform: skewY(-3deg);
+  text-align: left;
 }
 
 #spritesuse {
@@ -275,6 +279,7 @@ section {
   background: #0345c9;
   overflow: hidden;
   color: white;
+  text-align: left;
 }
 
 .bg-animated div {
@@ -521,12 +526,15 @@ section {
     letter-spacing: -0.5px;
   }
   90% {
-    transform: translateX(-80px) skewX(0);
+    transform: translateX(-60px) skewX(0);
     letter-spacing: normal;
   }
   100% {
     transform: translateX(0) skewX(0);
   }
+}
+.tag-links .tagcss:hover {
+  content: url("img/objects/tag-CSS-hover.png");
 }
 
 /*# sourceMappingURL=style.css.map */

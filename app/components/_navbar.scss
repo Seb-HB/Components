@@ -1,9 +1,6 @@
 #sf-navbar{
     background-color: $bg-navbar;
     display: flex;
-    *{
-        display: inline-block;
-    }
     nav{
         flex: 0 0 70%;
         font-family: $font-nav;
@@ -28,25 +25,29 @@
 
 .reseaux{
     flex: 0 0 20%;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
     div{
-        background-image: url("../img/sprites/Reseaux-sociaux.png");
+        background-image: url("../img/sprites/ReseauxSociaux-32px.png");
         width: $size-rs;
         height: $size-rs;
-        background-position-y: 450px;
+        background-position-y: 468px;
         transition: background-position-y 500ms;
+        display: inline-block;
         &:hover{
             background-position-y: 500px;
         }
  
     }
     div:nth-child(1){
-        background-position-x: 2px;
+        background-position-x: 238px;
     }
     div:nth-child(2){
-        background-position-x: 346px;
+        background-position-x: 0px;
     }
     div:nth-child(3){
-        background-position-x: 292px;
+        background-position-x: 206px;
     }
 }

@@ -1,12 +1,12 @@
-.shiny{
-    padding-right: 150px;
+.sf-shiny{
+    // padding-right: 150px;
     color: transparent;
     background: linear-gradient(60deg, rgb(56, 55, 55) 0%, rgb(56, 55, 55) 49%,rgb(133, 127, 127) 51%,rgb(133,127,127) 53%, rgb(56, 55, 55) 55%, rgb(56, 55, 55) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 250%;
     background-repeat: no-repeat;
-    animation: shine 10s infinite linear;
+    animation: shine 10s infinite linear forwards;
 }
 
 @keyframes shine {
