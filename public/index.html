@@ -45,45 +45,29 @@
             <p>Il y a bien-sûr du HTML/CSS, mais aussi du JS et du PHP</p>
 
         </section>
-        <section id="parallax">
-            
-            <div class="bg-parallax">
-                <span>Les gorges de la Loire</span>
-                <h2>Effet parallax</h2>
-                <p>L'image de fond ne défile pas en même temps que le bloc.</p>
-                <p>Pour Cela la position du background-image est en 'fixed'</p>
-                <p>L'effet diagonale du bloc est obtenu grace à une transformation de type SkewY.</p>
-                <p>Mais firefox ne semble pas gérer le background-image fixed et le SkewY ensembles.</p>
-                <p>Si vous voulez profiter pleinement de l'effet, je vous conseille d'utiliser Chrome.</p>
-            </div>
-            <div class="tag-links">
-                <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS"></a>
-            </div>
-        </section>
-        <section id='sprites-anim'>
-            <h2>Utilisation des sprites</h2>
-            <p>Le personnage est sous forme de sprites pour simuler son déplacement.</p>
-            <p>Tous les décors sont sous forme d'animations CSS.</p>
-            <div id="spritesuse">
-                <img src="img/bg-anim.png" alt="">
-                <div></div>
-                <div></div>
-                <!-- <div></div> -->
-                <!-- <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div> -->
-            </div>
-        </section>
         <section id="sf_bg-animation">
             <h2>Arrière plan animé</h2>
             <p>Cette section utilise les animations CSS.</p>
             <p>Pour le texte j'utilise des transformations telles que <code>rotate</code> ou <code>translate</code> et je joue aussi avec les opacités</p>
             <p>le fond quand à lui est composé de bloc avec des <code>border</code> qui sont soumis simultanément à un <code>skew</code>, un <code>rotate</code> et <code>translate</code></p>
             <div class="sf_bg-animated">
-                
+                <div class="sf_bg-anim-blob">
+                    <div class="sf_blobs"></div>
+                    <div class="sf_blobs"></div>
+                    <div class="sf_blobs"></div>
+                    <div class="sf_blobs"></div>
+                    <div class="sf_blobs"></div>
+                    <div class="sf_blobs"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="Alpha">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                            <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
                 <div class="sf_bg-anim-text">
                     <p>Sébastien</p>
                     <span>F</span>
@@ -119,8 +103,41 @@
                 <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS" class="tagcss" onmouseover="this.src='img/objects/tag-CSS-hover.png'"></a>
             </div>
         </section>
-        <section id="img-grid">
+        <section id="parallax">
             
+            <div class="bg-parallax">
+                <span>Les gorges de la Loire</span>
+                <h2>Effet parallax</h2>
+                <p>L'image de fond ne défile pas en même temps que le bloc.</p>
+                <p>Pour Cela la position du background-image est en 'fixed'</p>
+                <p>L'effet diagonale du bloc est obtenu grace à une transformation de type SkewY.</p>
+                <p>Mais firefox ne semble pas gérer le background-image fixed et le SkewY ensembles.</p>
+                <p>Si vous voulez profiter pleinement de l'effet, je vous conseille d'utiliser Chrome.</p>
+            </div>
+            <div class="tag-links">
+                <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS"></a>
+            </div>
+        </section>
+        <section id='sprites-anim'>
+            <h2>Utilisation des sprites</h2>
+            <p>Le personnage est sous forme de sprites pour simuler son déplacement.</p>
+            <p>Tous les décors sont sous forme d'animations CSS.</p>
+            <div id="spritesuse">
+                <img src="img/bg-anim.png" alt="">
+                <div></div>
+                <div></div>
+                <!-- <div></div> -->
+                <!-- <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div> -->
+            </div>
+        </section>
+
+        <section id="img-grid">
+            <div id="sf_img-mangas"></div>
         </section>
 
         TODO grille d'images avec rotation
