@@ -2,192 +2,229 @@
 $color-asterix1:hsl(0, 3%, 32%);
 $color-asterix2:hsl(96, 46%, 57%);
 $bg-fond-animation:hsl(220, 97%, 40%);
+$blob-color: hsl(200,97%,40%);
 
-
-.bg-animated {
+#sf_bg-animation{
+    color: white;
+}
+.sf_bg-animated{
     position: relative;
     width: 100vw;
     height: 500px;
     margin: 0;
     padding: 0;
-    background: $bg-fond-animation;
     overflow: hidden;
-    color:white;
     text-align: left;
-}
-.bg-animated div{
-    text-transform: uppercase;
-    font-size: 5rem;
-    position: absolute;
-    left: 12vw;
-    top:10vh;
-    p:nth-child(1){
-        animation: rollHimself 7s linear forwards;
+    .sf_bg-anim-text{
+        text-transform: uppercase;
+        font-size: 5rem;
+        position: absolute;
+        left: 12vw;
+        top:10vh;
+        p:nth-child(1){
+            animation: rollHimself 7s linear forwards;
+        }
+        p:nth-child(8){
+            text-transform: capitalize;
+            transform: translateX(-850px);
+            font-size: 3rem;
+            animation: runFast 7s linear forwards;
+        }
+        span{
+            opacity: 0;
+            animation: appear 1s linear forwards;
+        }
+        span:nth-child(2){
+            animation-delay: 1s;
+        }
+        span:nth-child(3){
+            animation-delay: 2s;
+        }
+        span:nth-child(4){
+            animation-delay: 3s;
+        }
+        span:nth-child(5){
+            animation-delay: 4s;
+        }
+        span:nth-child(6){
+            animation-delay: 5s;
+        }
+        span:nth-child(7){
+            animation-delay: 6s;
+        }
     }
-    p:nth-child(8){
-        // position: absolute;
-        text-transform: capitalize;
-        transform: translateX(-850px);
-        font-size: 3rem;
-        animation: runFast 7s linear forwards;
+    .sf_bg-anim-form{
+        background: $bg-fond-animation;
+        height: 100%;
+        width: 100%;
+        li{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            &.cube1{
+                transform-origin: top left;
+                transform: scale(0) rotate(0deg) translate(-50%, -50%);
+                animation: animCube1 15s ease-in forwards infinite;
+                border: solid 1px #023396;
+            }
+            &.cube2{
+                transform-origin: top left;
+                transform: scale(0) rotate(0deg) translate(-50%, -50%);
+                animation: animCube2 17s ease-in forwards infinite;
+                border: solid 1px #0f56e2;
+                border-radius: 1px;
+            }
+            &.sf_stars{
+                transform-origin: top right;
+                transform: scale(0) rotate(0deg);
+                color: $color-asterix1;
+                animation: animAsterix 30s linear forwards reverse infinite;
+            }
+            &:nth-child(2) {
+                animation-delay: 0s;
+                left: 98vw;
+                top: 47vh;
+            }
+            &:nth-child(3) {
+                animation-delay: 1s;
+                left: 95vw;
+                top: 53vh;
+            }
+            &:nth-child(4) {
+                animation-delay: 2s;
+                left: 35vw;
+                top: 15vh;
+            }
+            &:nth-child(5) {
+                animation-delay: 3s;
+                left: 38vw;
+                top: 20vh;
+            }
+            &:nth-child(6) {
+                animation-delay: 4s;
+                left: 9vw;
+                top: 52vh;
+            }
+            &:nth-child(7) {
+                animation-delay: 5s;
+                left: 7vw;
+                top: 60vh;
+            }
+            &:nth-child(8) {
+                animation-delay: 6s;
+                left: 65vw;
+                top: 5vh;
+            }
+            &:nth-child(9) {
+                animation-delay: 7s;
+                left: 63vw;
+                top: 10vh;
+            }
+            &:nth-child(10) {
+                animation-delay: 8s;
+                left: 4vw;
+                top: 8vh;
+            }
+            &:nth-child(11) {
+                animation-delay: 9s;
+                left: 8vw;
+                top: 12vh;
+            }
+            &:nth-child(12) {
+                animation-delay: 10s;
+                left: 50vw;
+                top: 60vh;
+            }
+            &:nth-child(13) {
+                animation-delay: 11s;
+                left: 54vw;
+                top: 56vh;
+            }
+            /***début étoiles***/
+            &:nth-child(14) {
+                animation-delay: 15s;
+                left: 83vw;
+                top: 15vh;
+                border: none;
+                transform-origin: center; 
+            }
+            &:nth-child(15) {
+                text-align: center;
+                padding: auto;
+                animation-delay: 11s;
+                left: 10vw;
+                top: 55vh;
+                border: none;
+                transform-origin: center;
+            }
+            &:nth-child(16) {
+                animation-delay: 7s;
+                left: 55vw;
+                top: 5vh;
+                border: none;
+            }
+            &:nth-child(17) {
+                animation-delay: 3s;
+                left: 50vw;
+                top: 80vh;
+                border: none;
+            }
+        }
     }
-    span{
-        opacity: 0;
-        animation: appear 1s linear forwards;
-    }
-    span:nth-child(2){
-        animation-delay: 1s;
-    }
-    span:nth-child(3){
-        animation-delay: 2s;
-    }
-    span:nth-child(4){
-        animation-delay: 3s;
-    }
-    span:nth-child(5){
-        animation-delay: 4s;
-    }
-    span:nth-child(6){
-        animation-delay: 5s;
-    }
-    span:nth-child(7){
-        animation-delay: 6s;
-    }
-}
+    .sf_bg-anim-blob{
+        position: absolute;
+        filter: contrast(200) brightness(1.4) url(#Alpha);
+        height: 100%;
+        width: 100%; 
+        .sf_blobs{
+            position: absolute;
+            filter: blur(15px) ;
+            border-radius: 5px;
+            background-color:$blob-color;
+            width: 50px;
+            height: 50px;
+            padding: 20px;
 
-.bg-animated li {
-    position: absolute;
-    width: 10px;
-    height: 10px;
+            &:nth-child(1) {
+                top: 50%;
+                left: 45%;
+                animation: blobGluantCLT 30s alternate infinite;
+                animation-delay: 2s;
+            }
+            &:nth-child(2) {
+                top: 50%;
+                right: 45%;
+                animation: blobGluantCRT 30s alternate infinite;
+                animation-delay: 2s;
+            }
+            &:nth-child(3) {
+                top: 50%;
+                left: 45%;
+                animation: blobGluantCLB 30s alternate infinite;
+                animation-delay:2s;
+            }
+            &:nth-child(4) {
+                top: 50%;
+                right: 45%;
+                animation: blobGluantCRB 30s alternate infinite;
+                animation-delay: 2s;
+            }
+            &:nth-child(5) {
+                top: 50%;
+                right: 45%;
+                animation: blobGluantCR 30s linear alternate infinite;
+                animation-delay: 4s;
+            }
+            &:nth-child(6) {
+                top: 50%;
+                left: 45%;
+                animation: blobGluantCL 30s linear alternate infinite;
+                animation-delay: 4s;
+            }
+        }
     
-    // color: transparent;
-    &.cube1{
-        transform-origin: top left;
-        transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        animation: animCube1 15s ease-in forwards infinite;
-        border: solid 1px #023396;
-    }
-    &.cube2{
-        transform-origin: top left;
-        transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        animation: animCube2 17s ease-in forwards infinite;
-        border: solid 1px #0f56e2;
-        border-radius: 1px;
-    }
-    &.blob{
-        transform: scale(0) rotate(0deg);
-        color: $color-asterix1;
-        animation: animAsterix 30s linear forwards reverse infinite;
-    }
-
-
-    &:nth-child(2) {
-        animation-delay: 0s;
-        left: 98vw;
-        top: 47vh;
-    }
-
-    &:nth-child(3) {
-        animation-delay: 1s;
-        left: 95vw;
-        top: 53vh;
-    }
-    &:nth-child(4) {
-        animation-delay: 2s;
-        left: 35vw;
-        top: 15vh;
-    }
-    &:nth-child(5) {
-        animation-delay: 3s;
-        left: 38vw;
-        top: 20vh;
-    }
-    &:nth-child(6) {
-        animation-delay: 4s;
-        left: 9vw;
-        top: 52vh;
-    }
-    &:nth-child(7) {
-        animation-delay: 5s;
-        left: 7vw;
-        top: 60vh;
-    }
-    &:nth-child(8) {
-        animation-delay: 6s;
-        left: 65vw;
-        top: 5vh;
-    }
-    &:nth-child(9) {
-        animation-delay: 7s;
-        left: 63vw;
-        top: 10vh;
-    }
-    &:nth-child(10) {
-        animation-delay: 8s;
-        left: 4vw;
-        top: 8vh;
-    }
-    &:nth-child(11) {
-        animation-delay: 9s;
-        left: 8vw;
-        top: 12vh;
-    }
-    &:nth-child(12) {
-        animation-delay: 10s;
-        left: 50vw;
-        top: 60vh;
-    }
-    &:nth-child(13) {
-        animation-delay: 11s;
-        left: 54vw;
-        top: 56vh;
-    }
-    /***début blobs***/
-    &:nth-child(14) {
-        animation-delay: 15s;
-        left: 83vw;
-        top: 15vh;
-        border: none;
-        transform-origin: center; 
-    }
-    &:nth-child(15) {
-        text-align: center;
-        padding: auto;
-        animation-delay: 11s;
-        left: 10vw;
-        top: 55vh;
-        border: none;
-        transform-origin: center;
-    }
-    &:nth-child(16) {
-        animation-delay: 7s;
-        left: 55vw;
-        top: 5vh;
-        border: none;
-    }
-    &:nth-child(17) {
-        animation-delay: 3s;
-        left: 50vw;
-        top: 80vh;
-        border: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -232,6 +269,71 @@ $bg-fond-animation:hsl(220, 97%, 40%);
         color: $color-asterix2;
     }
 }
+/*******Animation des blobs*******/
+@keyframes blobGluantCLT {
+    0% {
+        top: 50%;
+        left: 45%;
+    }
+    100% {
+        top: 10%;
+        left: 95%;
+    }
+}
+@keyframes blobGluantCRT {
+    0% {
+        top: 50%;
+        right: 45%;
+    }
+    100% {
+        top: 10%;
+        right: 95%;
+    }
+}
+@keyframes blobGluantCLB {
+    0% {
+        top: 50%;
+        left: 45%;
+    }
+    100% {
+        top: 90%;
+        left: 95%;
+    }
+}
+@keyframes blobGluantCRB {
+    0% {
+        top: 50%;
+        right: 45%;
+    }
+    100% {
+        top: 90%;
+        right: 95%;
+    }
+}
+@keyframes blobGluantCR {
+    0% {
+        top: 50%;
+        right: 45%;
+    }
+    100% {
+        top: 50%;
+        right: 95%;
+    }
+}
+@keyframes blobGluantCL {
+    0% {
+        top: 50%;
+        left: 45%;
+    }
+    100% {
+        top: 50%;
+        left: 95%;
+    }
+}
+
+
+
+
 
 /********Animation des lettres*********/
 @keyframes appear{
