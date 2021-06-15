@@ -4,9 +4,9 @@ $color-asterix2:hsl(96, 46%, 57%);
 $bg-fond-animation:hsl(220, 97%, 40%);
 $blob-color: hsl(200,97%,40%);
 
-#sf_bg-animation{
-    color: white;
-}
+// #sf_bg-animation{
+//     color: white;
+// }
 .sf_bg-animated{
     position: relative;
     width: 100vw;
@@ -16,6 +16,7 @@ $blob-color: hsl(200,97%,40%);
     overflow: hidden;
     text-align: left;
     .sf_bg-anim-text{
+        color: $font-white;
         text-transform: uppercase;
         font-size: 5rem;
         position: absolute;
@@ -330,8 +331,6 @@ $blob-color: hsl(200,97%,40%);
         left: 95%;
     }
 }
-
-
 
 
 
