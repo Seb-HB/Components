@@ -668,33 +668,34 @@ section {
   overflow: hidden;
 }
 
-#perspectives {
+#perspectives div {
   perspective: 1000px;
   perspective-origin: 50% -15%;
   height: 500px;
+  margin: 4rem 0;
 }
-#perspectives img {
+#perspectives div img {
   max-width: 500px;
   perspective: 1600px;
   height: auto;
   position: absolute;
 }
-#perspectives img.perspRight {
+#perspectives div img.perspRight {
   transform: rotateY(60deg);
 }
-#perspectives img.perspLeft {
+#perspectives div img.perspLeft {
   transform: rotateY(-60deg);
 }
-#perspectives img:nth-child(1) {
+#perspectives div img:nth-child(1) {
   left: 83px;
 }
-#perspectives img:nth-child(2) {
+#perspectives div img:nth-child(2) {
   left: 333px;
 }
-#perspectives img:nth-child(3) {
+#perspectives div img:nth-child(3) {
   left: 582px;
 }
-#perspectives img:nth-child(4) {
+#perspectives div img:nth-child(4) {
   left: 832px;
 }
 
