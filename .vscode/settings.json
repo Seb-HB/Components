@@ -1,0 +1,11 @@
+{
+    "eslint.alwaysShowStatus": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "html-css-class-completion.includeGlobPattern": "**/*.{css,html,scss}",
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "database-client.enableDelimiter": true,
+    "database-client.showQuery": true,
+    "database-client.showTrigger": true,
+    "database-client.showUser": true,
+    "todo-tree.tree.showBadges": false
+}
