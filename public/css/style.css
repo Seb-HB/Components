@@ -654,7 +654,6 @@ section {
 
 #img-grid {
   display: grid;
-  transform: rotate(45deg);
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(8, 1fr);
   width: 100%;
@@ -671,6 +670,7 @@ section {
 #perspectives div {
   perspective: 1000px;
   perspective-origin: 50% -15%;
+  transform-style: preserve-3d;
   height: 500px;
   margin: 4rem 0;
 }
@@ -687,16 +687,34 @@ section {
   transform: rotateY(-60deg);
 }
 #perspectives div img:nth-child(1) {
-  left: 83px;
+  left: -250px;
 }
 #perspectives div img:nth-child(2) {
-  left: 333px;
+  left: 0;
 }
 #perspectives div img:nth-child(3) {
-  left: 582px;
+  left: 250px;
 }
 #perspectives div img:nth-child(4) {
-  left: 832px;
+  left: 500px;
+}
+#perspectives div img:nth-child(5) {
+  left: 750px;
+}
+#perspectives div img:nth-child(6) {
+  left: 1000px;
+}
+#perspectives div img:nth-child(7) {
+  left: 1250px;
+}
+#perspectives div img:nth-child(8) {
+  left: 1500px;
+}
+#perspectives div img:nth-child(9) {
+  left: 1750px;
+}
+#perspectives div img:nth-child(10) {
+  left: 2000px;
 }
 
 /*# sourceMappingURL=style.css.map */

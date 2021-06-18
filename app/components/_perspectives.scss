@@ -2,7 +2,7 @@
     div{
         perspective:1000px;
         perspective-origin: 50% -15%;
-        // transform-style: preserve-3d; ==> permet un effet 3D lorsqu'un element traverse un autre
+        transform-style: preserve-3d; //==> permet un effet 3D lorsqu'un element traverse un autre
         height:500px;
         margin: 4rem 0;
         img{
@@ -17,16 +17,34 @@
                 transform: rotateY(-60deg);
             }
             &:nth-child(1){
-                left: 83px;
+                left: -250px;
             }
             &:nth-child(2){
-                left: 333px;
+                left: 0;
             }
             &:nth-child(3){
-                left: 582px;
+                left: 250px;
             }
             &:nth-child(4){
-                left:832px;
+                left: 500px;
+            }
+            &:nth-child(5){
+                left:750px;
+            }
+            &:nth-child(6){
+                left:1000px;
+            }
+            &:nth-child(7){
+                left:1250px;
+            }
+            &:nth-child(8){
+                left: 1500px;;
+            }
+            &:nth-child(9){
+                left: 1750px;;
+            }
+            &:nth-child(10){
+                left: 2000px;;
             }
         }
     }
