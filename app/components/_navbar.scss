@@ -43,6 +43,7 @@ header{
 
 #logo{  
     flex: 0 0 10%;
+    padding: 5px;
 }
 
 .reseaux{
@@ -58,6 +59,7 @@ header{
         background-position-y: 468px;
         transition: background-position-y 500ms;
         display: inline-block;
+        margin-right: .2rem;
         &:hover{
             background-position-y: 500px;
         }
