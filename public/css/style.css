@@ -50,6 +50,7 @@ h2 {
   padding: 5px 15px;
   box-shadow: 2px 2px 10px;
   transition: 200ms;
+  font-size: 1.5rem;
 }
 .sf_btn:hover {
   box-shadow: -1px -1px 5px inset;
@@ -65,6 +66,11 @@ p {
 
 section {
   margin-top: 4rem;
+}
+
+.sf_img-responsive {
+  width: 100%;
+  height: auto;
 }
 
 .sf-shiny {
@@ -88,6 +94,12 @@ section {
     background-position: top left;
   }
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
 #sf-navbar {
   background-color: lightgrey;
   display: flex;
@@ -350,7 +362,7 @@ section {
   animation-delay: 6s;
 }
 .sf_bg-animated .sf_bg-anim-form {
-  background: #0345c9;
+  background: #093eaa;
   height: 100%;
   width: 100%;
 }
@@ -363,122 +375,117 @@ section {
 .sf_bg-animated .sf_bg-anim-form li.cube1 {
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  animation: animCube1 15s ease-in forwards infinite;
+  animation: animCube1 15s ease-in forwards reverse infinite;
   border: solid 1px #023396;
 }
 .sf_bg-animated .sf_bg-anim-form li.cube2 {
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  animation: animCube2 17s ease-in forwards infinite;
+  animation: animCube2 17s ease-in forwards reverse infinite;
   border: solid 1px #0f56e2;
   border-radius: 1px;
 }
 .sf_bg-animated .sf_bg-anim-form li.sf_stars {
   transform-origin: top right;
-  transform: scale(0) rotate(0deg);
+  transform: scale(0) rotate(0deg) center;
   color: #544f4f;
 }
-.sf_bg-animated .sf_bg-anim-form li.sf-rotate-right {
+.sf_bg-animated .sf_bg-anim-form li.sf_rotate-right {
   animation: asterixRotateRight 30s linear forwards reverse infinite;
 }
-.sf_bg-animated .sf_bg-anim-form lisf_rotate-left {
-  animation: asterixRotateLeft 30s linear forwards backwards infinite infinitereverse infinite;
+.sf_bg-animated .sf_bg-anim-form li.sf_rotate-left {
+  animation: asterixRotateLeft 30s linear forwards reverse infinite;
 }
-.sf_bg-animated .sf_bg-anim-form li:nth-child(2) {
-  animation-delay: 0s;
+.sf_bg-animated .sf_bg-anim-form li:nth-child(1) {
   left: 98vw;
   top: 47vh;
 }
-.sf_bg-animated .sf_bg-anim-form li:nth-child(3) {
+.sf_bg-animated .sf_bg-anim-form li:nth-child(2) {
   animation-delay: 1s;
   left: 95vw;
   top: 53vh;
 }
-.sf_bg-animated .sf_bg-anim-form li:nth-child(4) {
+.sf_bg-animated .sf_bg-anim-form li:nth-child(3) {
   animation-delay: 2s;
+  left: 38vw;
+  top: 20vh;
+}
+.sf_bg-animated .sf_bg-anim-form li:nth-child(4) {
+  animation-delay: 3s;
   left: 35vw;
   top: 15vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(5) {
-  animation-delay: 3s;
-  left: 38vw;
-  top: 20vh;
+  animation-delay: 4s;
+  left: 7vw;
+  top: 60vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(6) {
-  animation-delay: 4s;
+  animation-delay: 5s;
   left: 9vw;
   top: 52vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(7) {
-  animation-delay: 5s;
-  left: 7vw;
-  top: 60vh;
+  animation-delay: 6s;
+  left: 63vw;
+  top: 10vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(8) {
-  animation-delay: 6s;
+  animation-delay: 7s;
   left: 65vw;
   top: 5vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(9) {
-  animation-delay: 7s;
-  left: 63vw;
-  top: 10vh;
+  animation-delay: 8s;
+  left: 8vw;
+  top: 12vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(10) {
-  animation-delay: 8s;
+  animation-delay: 9s;
   left: 4vw;
   top: 8vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(11) {
-  animation-delay: 9s;
-  left: 8vw;
-  top: 12vh;
+  animation-delay: 10s;
+  left: 71vw;
+  top: 88vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(12) {
-  animation-delay: 10s;
-  left: 50vw;
-  top: 60vh;
+  animation-delay: 11s;
+  left: 75vw;
+  top: 92vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(13) {
-  animation-delay: 11s;
-  left: 54vw;
-  top: 56vh;
-}
-.sf_bg-animated .sf_bg-anim-form li:nth-child(14) {
   animation-delay: 1s;
   left: 83vw;
   top: 15vh;
   border: none;
-  transform-origin: center;
 }
-.sf_bg-animated .sf_bg-anim-form li:nth-child(15) {
-  text-align: center;
-  padding: auto;
+.sf_bg-animated .sf_bg-anim-form li:nth-child(14) {
   animation-delay: 1s;
   left: 10vw;
   top: 55vh;
   border: none;
-  transform-origin: center;
 }
-.sf_bg-animated .sf_bg-anim-form li:nth-child(16) {
+.sf_bg-animated .sf_bg-anim-form li:nth-child(15) {
   animation-delay: 2s;
   left: 55vw;
   top: 5vh;
   border: none;
 }
-.sf_bg-animated .sf_bg-anim-form li:nth-child(17) {
+.sf_bg-animated .sf_bg-anim-form li:nth-child(16) {
   animation-delay: 2s;
   left: 50vw;
   top: 80vh;
   border: none;
 }
-.sf_bg-animated .sf_bg-anim-form li:nth-child(18) {
+.sf_bg-animated .sf_bg-anim-form li:nth-child(17) {
   animation-delay: 3s;
   left: 50vw;
   top: 80vh;
   border: none;
 }
-.sf_bg-animated .sf_bg-anim-form li:nth-child(19) {
+.sf_bg-animated .sf_bg-anim-form li:nth-child(18) {
   animation-delay: 3s;
   left: 50vw;
   top: 80vh;
@@ -494,7 +501,7 @@ section {
   position: absolute;
   filter: blur(15px);
   border-radius: 5px;
-  background-color: #0387c9;
+  background-color: #0088cc;
   width: 50px;
   height: 50px;
   padding: 20px;
@@ -538,10 +545,39 @@ section {
 .sf_bg-animated .sf_bg-anim-title {
   position: absolute;
   left: 50vw;
-  top: 55vh;
+  top: 48vh;
   transform: translate(-50%, 50%);
   color: white;
   text-align: center;
+}
+.sf_bg-animated .sf_bg-anim-title .sf_chevrons {
+  display: block;
+  margin-top: 0.5rem;
+}
+.sf_bg-animated .sf_bg-anim-title .sf_chevrons img {
+  max-width: 2.5vw;
+}
+.sf_bg-animated .sf_bg-anim-infos {
+  position: absolute;
+  left: 96vw;
+  top: 96vh;
+  max-width: 20px;
+}
+.sf_bg-animated .sf_bg-anim-infos .sf_modal {
+  display: none;
+  position: absolute;
+  background-color: rgba(116, 114, 114, 0.979);
+  z-index: 3;
+  color: white;
+  transition: 200ms;
+  top: -250px;
+  left: -350px;
+  width: 400px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.sf_bg-animated .sf_bg-anim-infos:hover .sf_modal {
+  display: block;
 }
 
 /*******Animation des cubes*******/
@@ -651,7 +687,7 @@ section {
     left: 95%;
   }
 }
-/********Animation des lettres*********/
+/********Animation du nom/prénom/titre*********/
 @keyframes appear {
   0% {
     opacity: 0;
