@@ -12,6 +12,76 @@
     <title>Document</title>
 </head>
 <body>
+    <section id="sf_bg-animation">
+        <div class="sf_bg-animated">
+            <div class="sf_bg-anim-blob">
+                <div class="sf_blobs"></div>
+                <div class="sf_blobs"></div>
+                <div class="sf_blobs"></div>
+                <div class="sf_blobs"></div>
+                <div class="sf_blobs"></div>
+                <div class="sf_blobs"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="Alpha">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <div class="sf_bg-anim-text">
+                <p>Sébastien</p>
+                <span>F</span>
+                <span>o</span>
+                <span>u</span>
+                <span>v</span>
+                <span>e</span>
+                <span>t</span>
+                <p>Développeur Web FullStack Junior</p>
+            </div>
+            <ul class="sf_bg-anim-form">
+                <li class="cube1"></li>
+                <li class="cube2"></li>
+                <li class="cube1"></li>
+                <li class="cube2"></li>
+                <li class="cube1"></li>
+                <li class="cube2"></li>
+                <li class="cube1"></li>
+                <li class="cube2"></li>
+                <li class="cube1"></li>
+                <li class="cube2"></li>
+                <li class="cube1"></li>
+                <li class="cube2"></li>
+                <!-- child(14) début étoiles-->
+                <li class="sf_stars sf_rotate-right">*</li>
+                <li class="sf_stars sf_rotate-left">*</li>
+                <li class="sf_stars sf_rotate-right">*</li>
+                <li class="sf_stars sf_rotate-left">*</li>
+                <li class="sf_stars sf_rotate-right">*</li>
+                <li class="sf_stars sf_rotate-left">*</li>
+            </ul>
+            <div class="sf_bg-anim-title">
+                <h1></h1>
+                <p>Bienvenue sur mon site</p>
+                <p>Ce site est un ensemble de composants indépendants qui utilisent diverses technologies</p>
+                <p>C'est un portfolio de mes expériences, dont cet écran de présentation en pur CSS</p>
+                <p>Vous y trouverez aussi des infos sur moi ainsi q'un formulaire de contact</p>
+                <a href="#sf-navbar" class="sf_btn">Explorer</a>
+                <a href="#sf-navbar" class="sf_chevrons"><img src="img/icons/chevrondoubledown.png" alt="Explorer mes expériences"></a>
+            </div>
+            <div class="sf_bg-anim-infos">
+                <div class="sf_modal">
+                    <h2>Arrière plan animé</h2>
+                    <p>Cette section utilise les animations CSS.</p>
+                    <p>Pour le texte j'utilise des transformations telles que <code>rotate</code> ou <code>translate</code> et je joue aussi avec les opacités</p>
+                    <p>le fond quand à lui est composé de bloc avec des <code>border</code> qui sont soumis simultanément à un <code>skew</code>, un <code>rotate</code> et <code>translate</code></p>
+                </div>
+                <img src="img/icons/infos-help.png" alt="Plus d'informations sur ce composant" class="sf_img-responsive">
+            </div>
+        </div>
+    </section>
     <header>
         <div id="sf-navbar">
             <div id="logo">
@@ -38,71 +108,14 @@
     </header>
     <main>
         <section id="shiny">
-            <h1 class="sf-shiny">Présentation</h1>
+            <h1 class="sf-shiny">Developpeur Web</h1>
             <p>Ce site a pour but de rassembler diverses éléments réutilisables.</p>
             <p>C'est aussi une vitrine pour montrer mes idées et mes réalisations.</p>
             <p>J'utilise le SASS afin d'avoir un fichier pour chaque composant.</p>
             <p>Il y a bien-sûr du HTML/CSS, mais aussi du JS et du PHP</p>
 
         </section>
-        <section id="sf_bg-animation">
-            <h2>Arrière plan animé</h2>
-            <p>Cette section utilise les animations CSS.</p>
-            <p>Pour le texte j'utilise des transformations telles que <code>rotate</code> ou <code>translate</code> et je joue aussi avec les opacités</p>
-            <p>le fond quand à lui est composé de bloc avec des <code>border</code> qui sont soumis simultanément à un <code>skew</code>, un <code>rotate</code> et <code>translate</code></p>
-            <div class="sf_bg-animated">
-                <div class="sf_bg-anim-blob">
-                    <div class="sf_blobs"></div>
-                    <div class="sf_blobs"></div>
-                    <div class="sf_blobs"></div>
-                    <div class="sf_blobs"></div>
-                    <div class="sf_blobs"></div>
-                    <div class="sf_blobs"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                        <defs>
-                            <filter id="Alpha">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                            <feBlend in="SourceGraphic" in2="goo" />
-                            </filter>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="sf_bg-anim-text">
-                    <p>Sébastien</p>
-                    <span>F</span>
-                    <span>o</span>
-                    <span>u</span>
-                    <span>v</span>
-                    <span>e</span>
-                    <span>t</span>
-                    <p>Développeur Web FullStack Junior</p>
-                </div>
-                <ul class="sf_bg-anim-form">
-                    <li class="cube1"></li>
-                    <li class="cube2"></li>
-                    <li class="cube1"></li>
-                    <li class="cube2"></li>
-                    <li class="cube1"></li>
-                    <li class="cube2"></li>
-                    <li class="cube1"></li>
-                    <li class="cube2"></li>
-                    <li class="cube1"></li>
-                    <li class="cube2"></li>
-                    <li class="cube1"></li>
-                    <li class="cube2"></li>
-                    <!-- child(14) début étoiles-->
-                    <li class="sf_stars">*</li>
-                    <li class="sf_stars">*</li>
-                    <li class="sf_stars">*</li>
-                    <li class="sf_stars">*</li>
-                </ul>
 
-            </div>
-            <div class="tag-links">
-                <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS" class="tagcss" onmouseover="this.src='img/objects/tag-CSS-hover.png'"></a>
-            </div>
-        </section>
         <section id="parallax">
             
             <div class="bg-parallax">
@@ -158,6 +171,9 @@
                 <img src="img/saint-etienne_quartier_fauriel.jpg" alt="Saint-Etienne Fauriel" class="perspRight">
 
             </div>
+        </section>
+        <section id="imgEclatement">
+            <img src="img/testatina.jpg" alt="">
         </section>
 
         TODO grille d'images avec rotation
