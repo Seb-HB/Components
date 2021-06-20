@@ -159,6 +159,11 @@ header {
 .reseaux div:hover {
   background-position-y: 500px;
 }
+.reseaux div a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 .reseaux div:nth-child(1) {
   background-position-x: 238px;
 }
