@@ -1,16 +1,17 @@
 
 $color-asterix1:hsl(0, 3%, 32%);
 $color-asterix2:hsl(96, 46%, 57%);
-$bg-fond-animation:hsl(220, 97%, 40%);
-$blob-color: hsl(200,97%,40%);
+$bg-fond-animation:hsl(220, 90%, 35%);
+// $blob-color: hsl(200,100%,40%);
+$blob-color: hsl(200,100%,40%);
 
-// #sf_bg-animation{
-//     color: white;
-// }
+#sf_bg-animation{
+    margin: 0;
+}
 .sf_bg-animated{
     position: relative;
     width: 100vw;
-    height: 500px;
+    height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -21,7 +22,7 @@ $blob-color: hsl(200,97%,40%);
         font-size: 5rem;
         position: absolute;
         left: 12vw;
-        top:10vh;
+        top:9vh;
         p:nth-child(1){
             animation: rollHimself 7s linear forwards;
         }
@@ -65,106 +66,118 @@ $blob-color: hsl(200,97%,40%);
             &.cube1{
                 transform-origin: top left;
                 transform: scale(0) rotate(0deg) translate(-50%, -50%);
-                animation: animCube1 15s ease-in forwards infinite;
+                animation: animCube1 15s ease-in forwards reverse infinite;
                 border: solid 1px #023396;
             }
             &.cube2{
                 transform-origin: top left;
                 transform: scale(0) rotate(0deg) translate(-50%, -50%);
-                animation: animCube2 17s ease-in forwards infinite;
+                animation: animCube2 17s ease-in forwards reverse infinite;
                 border: solid 1px #0f56e2;
                 border-radius: 1px;
             }
             &.sf_stars{
                 transform-origin: top right;
-                transform: scale(0) rotate(0deg);
+                transform: scale(0) rotate(0deg) center;
                 color: $color-asterix1;
-                animation: animAsterix 30s linear forwards reverse infinite;
             }
-            &:nth-child(2) {
-                animation-delay: 0s;
+            &.sf_rotate-right{
+                animation: asterixRotateRight 30s linear forwards reverse infinite;
+            }
+            &.sf_rotate-left{
+                animation: asterixRotateLeft 30s linear forwards reverse infinite;
+            }
+            &:nth-child(1) {
                 left: 98vw;
                 top: 47vh;
             }
-            &:nth-child(3) {
+            &:nth-child(2) {
                 animation-delay: 1s;
                 left: 95vw;
                 top: 53vh;
             }
-            &:nth-child(4) {
+            &:nth-child(3) {
                 animation-delay: 2s;
+                left: 38vw;
+                top: 20vh;
+            }
+            &:nth-child(4) {
+                animation-delay: 3s;
                 left: 35vw;
                 top: 15vh;
             }
             &:nth-child(5) {
-                animation-delay: 3s;
-                left: 38vw;
-                top: 20vh;
+                animation-delay: 4s;
+                left: 7vw;
+                top: 60vh;
             }
             &:nth-child(6) {
-                animation-delay: 4s;
+                animation-delay: 5s;
                 left: 9vw;
                 top: 52vh;
             }
             &:nth-child(7) {
-                animation-delay: 5s;
-                left: 7vw;
-                top: 60vh;
+                animation-delay: 6s;
+                left: 63vw;
+                top: 10vh;
             }
             &:nth-child(8) {
-                animation-delay: 6s;
+                animation-delay: 7s;
                 left: 65vw;
                 top: 5vh;
             }
             &:nth-child(9) {
-                animation-delay: 7s;
-                left: 63vw;
-                top: 10vh;
+                animation-delay: 8s;
+                left: 8vw;
+                top: 12vh;
             }
             &:nth-child(10) {
-                animation-delay: 8s;
+                animation-delay: 9s;
                 left: 4vw;
                 top: 8vh;
             }
             &:nth-child(11) {
-                animation-delay: 9s;
-                left: 8vw;
-                top: 12vh;
+                animation-delay: 10s;
+                left: 71vw;
+                top: 88vh;
             }
             &:nth-child(12) {
-                animation-delay: 10s;
-                left: 50vw;
-                top: 60vh;
-            }
-            &:nth-child(13) {
                 animation-delay: 11s;
-                left: 54vw;
-                top: 56vh;
+                left: 75vw;
+                top: 92vh;
             }
             /***début étoiles***/
-            &:nth-child(14) {
-                animation-delay: 15s;
+            &:nth-child(13) {
+                animation-delay: 1s;
                 left: 83vw;
                 top: 15vh;
                 border: none;
-                transform-origin: center; 
             }
-            &:nth-child(15) {
-                text-align: center;
-                padding: auto;
-                animation-delay: 11s;
+            &:nth-child(14) {
+                animation-delay: 1s;
                 left: 10vw;
                 top: 55vh;
                 border: none;
-                transform-origin: center;
             }
-            &:nth-child(16) {
-                animation-delay: 7s;
+            &:nth-child(15) {
+                animation-delay: 2s;
                 left: 55vw;
                 top: 5vh;
                 border: none;
             }
+            &:nth-child(16) {
+                animation-delay: 2s;
+                left: 50vw;
+                top: 80vh;
+                border: none;
+            }
             &:nth-child(17) {
+                animation-delay: 3s;
+                left: 50vw;
+                top: 80vh;
+                border: none;
+            }
+            &:nth-child(18) {
                 animation-delay: 3s;
                 left: 50vw;
                 top: 80vh;
@@ -225,6 +238,43 @@ $blob-color: hsl(200,97%,40%);
         }
     
     }
+    .sf_bg-anim-title{
+        position: absolute;
+        left: 50vw;
+        top: 48vh;
+        transform: translate(-50%, 50%);
+        color: white;
+        text-align: center;
+        .sf_chevrons{
+            display:block;
+            margin-top: $mt-small;
+            img{
+                max-width: 2.5vw;
+            }
+        }
+    }
+    .sf_bg-anim-infos{
+        position: absolute;
+        left: 96vw;
+        top: 96vh;
+        max-width: 20px;
+        .sf_modal{
+            display: none;
+            position: absolute;
+            background-color: $modal-overlay-grey;
+            z-index: 3;
+            color: $font-white;
+            transition: 200ms;
+            top: -250px;
+            left: -350px;
+            width: 400px;
+            padding: $padding-small;
+            font-size: 1rem;
+        }
+        &:hover .sf_modal{
+            display: block;
+        }
+    }
 }
 
 
@@ -254,7 +304,7 @@ $blob-color: hsl(200,97%,40%);
 }
 
 /*******Animation des Astérisques*******/
-@keyframes animAsterix {
+@keyframes asterixRotateRight {
     from {
         transform: scale(0) rotate(0deg)translateY(0);
         opacity: 1;
@@ -266,6 +316,20 @@ $blob-color: hsl(200,97%,40%);
         color: $color-asterix2;
     }
 }
+@keyframes asterixRotateLeft {
+    from {
+        transform: scale(0) rotate(0deg)translateY(0);
+        opacity: 1;
+        color: $color-asterix1;
+    }
+    to {
+        transform: scale(10) rotate(-720deg) translateY(-20vh);
+        opacity: 0;
+        color: $color-asterix2;
+    }
+}
+
+
 /*******Animation des blobs*******/
 @keyframes blobGluantCLT {
     0% {
@@ -330,7 +394,7 @@ $blob-color: hsl(200,97%,40%);
 
 
 
-/********Animation des lettres*********/
+/********Animation du nom/prénom/titre*********/
 @keyframes appear{
     0%{
         opacity: 0;
