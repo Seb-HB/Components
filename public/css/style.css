@@ -44,8 +44,19 @@ h2 {
   font-size: 2rem;
 }
 
+.sf_btn {
+  display: inline-block;
+  border: 1px solid;
+  padding: 5px 15px;
+  box-shadow: 2px 2px 10px;
+  transition: 200ms;
+}
+.sf_btn:hover {
+  box-shadow: -1px -1px 5px inset;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -93,6 +104,22 @@ section {
 }
 #sf-navbar nav ul li {
   margin-right: 20px;
+  position: relative;
+}
+#sf-navbar nav ul li:after {
+  transition: 200ms;
+  position: absolute;
+  background-position: right;
+  bottom: 0;
+  left: 0%;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: transparent;
+}
+#sf-navbar nav ul li:hover:after {
+  left: 0;
+  background-color: black;
 }
 #sf-navbar nav #burger {
   display: none;
@@ -270,10 +297,14 @@ section {
     left: 51px;
   }
 }
+#sf_bg-animation {
+  margin: 0;
+}
+
 .sf_bg-animated {
   position: relative;
   width: 100vw;
-  height: 500px;
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -285,7 +316,7 @@ section {
   font-size: 5rem;
   position: absolute;
   left: 12vw;
-  top: 10vh;
+  top: 9vh;
 }
 .sf_bg-animated .sf_bg-anim-text p:nth-child(1) {
   animation: rollHimself 7s linear forwards;
@@ -346,7 +377,12 @@ section {
   transform-origin: top right;
   transform: scale(0) rotate(0deg);
   color: #544f4f;
-  animation: animAsterix 30s linear forwards reverse infinite;
+}
+.sf_bg-animated .sf_bg-anim-form li.sf-rotate-right {
+  animation: asterixRotateRight 30s linear forwards reverse infinite;
+}
+.sf_bg-animated .sf_bg-anim-form lisf_rotate-left {
+  animation: asterixRotateLeft 30s linear forwards backwards infinite infinitereverse infinite;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(2) {
   animation-delay: 0s;
@@ -409,7 +445,7 @@ section {
   top: 56vh;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(14) {
-  animation-delay: 15s;
+  animation-delay: 1s;
   left: 83vw;
   top: 15vh;
   border: none;
@@ -418,19 +454,31 @@ section {
 .sf_bg-animated .sf_bg-anim-form li:nth-child(15) {
   text-align: center;
   padding: auto;
-  animation-delay: 11s;
+  animation-delay: 1s;
   left: 10vw;
   top: 55vh;
   border: none;
   transform-origin: center;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(16) {
-  animation-delay: 7s;
+  animation-delay: 2s;
   left: 55vw;
   top: 5vh;
   border: none;
 }
 .sf_bg-animated .sf_bg-anim-form li:nth-child(17) {
+  animation-delay: 2s;
+  left: 50vw;
+  top: 80vh;
+  border: none;
+}
+.sf_bg-animated .sf_bg-anim-form li:nth-child(18) {
+  animation-delay: 3s;
+  left: 50vw;
+  top: 80vh;
+  border: none;
+}
+.sf_bg-animated .sf_bg-anim-form li:nth-child(19) {
   animation-delay: 3s;
   left: 50vw;
   top: 80vh;
@@ -487,6 +535,14 @@ section {
   animation: blobGluantCL 30s linear alternate infinite;
   animation-delay: 4s;
 }
+.sf_bg-animated .sf_bg-anim-title {
+  position: absolute;
+  left: 50vw;
+  top: 55vh;
+  transform: translate(-50%, 50%);
+  color: white;
+  text-align: center;
+}
 
 /*******Animation des cubes*******/
 @keyframes animCube1 {
@@ -510,7 +566,7 @@ section {
   }
 }
 /*******Animation des Astérisques*******/
-@keyframes animAsterix {
+@keyframes asterixRotateRight {
   from {
     transform: scale(0) rotate(0deg) translateY(0);
     opacity: 1;
@@ -518,6 +574,18 @@ section {
   }
   to {
     transform: scale(10) rotate(720deg) translateY(20vh);
+    opacity: 0;
+    color: #87c45f;
+  }
+}
+@keyframes asterixRotateLeft {
+  from {
+    transform: scale(0) rotate(0deg) translateY(0);
+    opacity: 1;
+    color: #544f4f;
+  }
+  to {
+    transform: scale(10) rotate(-720deg) translateY(-20vh);
     opacity: 0;
     color: #87c45f;
   }
@@ -715,6 +783,21 @@ section {
 }
 #perspectives div img:nth-child(10) {
   left: 2000px;
+}
+
+#imgEclatement {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100%;
+  height: 800px;
+}
+#imgEclatement #sf_img-mangas {
+  background-image: url("../img/mangas.jpg");
+  border: 3px solid gray;
+  grid-column: 1/16;
+  grid-row: 1/5;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

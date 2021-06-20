@@ -11,6 +11,23 @@
             text-transform: uppercase;
             li{
                 margin-right: $nav-space;
+                position: relative;
+                
+                &:after{
+                    transition: 200ms;
+                    position: absolute;
+                    background-position: right;
+                    bottom:0;
+                    left: 0%;
+                    content: '';
+                    height:2px;
+                    width: 100%;
+                    background-color:transparent;
+                }
+                &:hover:after{
+                    left: 0;
+                    background-color:black;
+                }
             }
         }
         #burger{
