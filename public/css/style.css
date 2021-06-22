@@ -847,4 +847,27 @@ header {
   overflow: hidden;
 }
 
+#yourMeteo {
+  display: flex;
+  justify-content: space-between;
+  min-height: 500px;
+}
+#yourMeteo #meteoPlan {
+  flex: 0 0 20%;
+}
+#yourMeteo #meteoPlan #meteomap {
+  min-height: 400px;
+  margin: 0.5rem;
+}
+#yourMeteo #meteoRender {
+  flex: 0 0 75%;
+  display: flex;
+  justify-content: space-around;
+}
+#yourMeteo #meteoRender .meteoJ {
+  flex: 0 0 19%;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=style.css.map */

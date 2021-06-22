@@ -24,9 +24,9 @@
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                     <defs>
                         <filter id="Alpha">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                        <feBlend in="SourceGraphic" in2="goo" />
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                            <feBlend in="SourceGraphic" in2="goo" />
                         </filter>
                     </defs>
                 </svg>
@@ -172,6 +172,26 @@
 
             </div>
         </section>
+        <section id="meteocity">
+            <div>
+                <h2>Météo à 5 jours</h2>
+            </div>
+            <div id="yourMeteo">
+                <div id="meteoPlan">
+                    <p>selectionnez votre ville en cliquant sur la map</p>
+                    <div id="meteomap"></div>
+                </div>
+                <div id="meteoRender">
+    
+                    <div class="meteoJ j1"></div>
+                    <div class="meteoJ j2"></div>
+                    <div class="meteoJ j3"></div>
+                    <div class="meteoJ j4"></div>
+                    <div class="meteoJ j5"></div>
+                </div>
+            </div>
+    
+        </section>
         <section id="imgEclatement">
             <img src="img/testatina.jpg" alt="">
         </section>
@@ -190,5 +210,9 @@
 
     </footer>
     <script src="js/perspectives.js"></script>>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="js/meteo.js"></script>
 </body>
 </html>
