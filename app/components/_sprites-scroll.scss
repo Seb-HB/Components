@@ -4,7 +4,8 @@
     min-height: 500px;
     animation: horizontal-scroll 25s infinite linear;
     position: relative;
-    div{
+    overflow: hidden;
+    .sf_characters{
         position: absolute;
         bottom: 50px;
         left: 50px;
@@ -16,8 +17,10 @@
     }
     img{
         position: absolute;
-        position: top left;
         animation: deco-scroll 60s infinite linear;
+    }
+    :nth-child(1){
+        overflow: hidden;
     }
     :nth-child(2){
         animation: surplace1 500ms infinite linear;
@@ -69,16 +72,16 @@
 /*Animation du background*/
 @keyframes horizontal-scroll{
     0%{
-        background-position: top left;
+        background-position: top right;
     }
     100%{
-        background-position: top right;
+        background-position: top left;
     }
 }
 /*Animation  des elements de deco*/
 @keyframes deco-scroll{
     0%{
-        left: 0;
+        left: 100%;
     }
     100%{
         left: -3000px;

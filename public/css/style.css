@@ -203,8 +203,9 @@ header {
   min-height: 500px;
   animation: horizontal-scroll 25s infinite linear;
   position: relative;
+  overflow: hidden;
 }
-#spritesuse div {
+#spritesuse .sf_characters {
   position: absolute;
   bottom: 50px;
   left: 50px;
@@ -216,8 +217,10 @@ header {
 }
 #spritesuse img {
   position: absolute;
-  position: top left;
   animation: deco-scroll 60s infinite linear;
+}
+#spritesuse :nth-child(1) {
+  overflow: hidden;
 }
 #spritesuse :nth-child(2) {
   animation: surplace1 500ms infinite linear;
@@ -229,16 +232,16 @@ header {
 /*Animation du background*/
 @keyframes horizontal-scroll {
   0% {
-    background-position: top left;
+    background-position: top right;
   }
   100% {
-    background-position: top right;
+    background-position: top left;
   }
 }
 /*Animation  des elements de deco*/
 @keyframes deco-scroll {
   0% {
-    left: 0;
+    left: 100%;
   }
   100% {
     left: -3000px;
