@@ -217,7 +217,7 @@ header {
 }
 #spritesuse img {
   position: absolute;
-  animation: deco-scroll 60s infinite linear;
+  animation: deco-scroll 140s infinite linear;
 }
 #spritesuse :nth-child(1) {
   overflow: hidden;
@@ -325,6 +325,7 @@ header {
 }
 #sf_bg-animation {
   margin: 0;
+  overflow: hidden;
 }
 
 .sf_bg-animated {
@@ -785,6 +786,9 @@ header {
   overflow: hidden;
 }
 
+#perspectives {
+  overflow: hidden;
+}
 #perspectives div {
   perspective: 1000px;
   perspective-origin: 50% -15%;
