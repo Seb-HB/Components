@@ -66,10 +66,8 @@ function reqSuccess(response){
             meteoIco.src=meteo[prop].icon_big;
             meteoText=document.createElement('p');
             meteoText.innerHTML=meteo[prop].condition;
-            meteoTMin=document.createElement('p');
-            meteoTMin.innerHTML='<img src="img/temperatureMin.png" alt="icone temperature min">'+meteo[prop].tmin;
-            meteoTMax=document.createElement('p');
-            meteoTMax.innerHTML='<img src="img/temperatureMax.png" alt="icone temperature max">'+meteo[prop].tmax;
+            meteoTemp=document.createElement('p');
+            meteoTemp.innerHTML='<img src="img/temperatureMin.png" alt="icone temperature min">'+meteo[prop].tmin+ ' | '+ '<img src="img/temperatureMax.png" alt="icone temperature max">'+meteo[prop].tmax;
             meteoParent=document.querySelector(`.j${counter}`);
             while (meteoParent.hasChildNodes()){
                 meteoParent.removeChild(meteoParent.firstChild);
@@ -78,8 +76,7 @@ function reqSuccess(response){
             document.querySelector(`.j${counter}`).appendChild(meteoDate);
             document.querySelector(`.j${counter}`).appendChild(meteoIco);
             document.querySelector(`.j${counter}`).appendChild(meteoText);
-            document.querySelector(`.j${counter}`).appendChild(meteoTMin);
-            document.querySelector(`.j${counter}`).appendChild(meteoTMax);
+            document.querySelector(`.j${counter}`).appendChild(meteoTemp);
             counter++;
         }
     };

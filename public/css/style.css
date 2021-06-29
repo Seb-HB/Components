@@ -60,6 +60,11 @@ code {
   box-shadow: -1px -1px 5px inset;
 }
 
+.section-presentation a {
+  font-weight: 600;
+  color: #0d0d82;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
@@ -70,6 +75,10 @@ p {
 
 section {
   margin-top: 4rem;
+}
+
+.section-presentation {
+  margin-bottom: 2.5rem;
 }
 
 .sf_img-responsive {
@@ -789,53 +798,53 @@ header {
 #perspectives {
   overflow: hidden;
 }
-#perspectives div {
+#perspectives div:last-child {
   perspective: 1000px;
   perspective-origin: 50% -15%;
   transform-style: preserve-3d;
-  height: 500px;
+  min-height: 450px;
   margin: 4rem 0;
 }
-#perspectives div img {
+#perspectives div:last-child img {
   max-width: 500px;
   perspective: 1600px;
   height: auto;
   position: absolute;
 }
-#perspectives div img.perspRight {
+#perspectives div:last-child img.perspRight {
   transform: rotateY(60deg);
 }
-#perspectives div img.perspLeft {
+#perspectives div:last-child img.perspLeft {
   transform: rotateY(-60deg);
 }
-#perspectives div img:nth-child(1) {
+#perspectives div:last-child img:nth-child(1) {
   left: -250px;
 }
-#perspectives div img:nth-child(2) {
+#perspectives div:last-child img:nth-child(2) {
   left: 0;
 }
-#perspectives div img:nth-child(3) {
+#perspectives div:last-child img:nth-child(3) {
   left: 250px;
 }
-#perspectives div img:nth-child(4) {
+#perspectives div:last-child img:nth-child(4) {
   left: 500px;
 }
-#perspectives div img:nth-child(5) {
+#perspectives div:last-child img:nth-child(5) {
   left: 750px;
 }
-#perspectives div img:nth-child(6) {
+#perspectives div:last-child img:nth-child(6) {
   left: 1000px;
 }
-#perspectives div img:nth-child(7) {
+#perspectives div:last-child img:nth-child(7) {
   left: 1250px;
 }
-#perspectives div img:nth-child(8) {
+#perspectives div:last-child img:nth-child(8) {
   left: 1500px;
 }
-#perspectives div img:nth-child(9) {
+#perspectives div:last-child img:nth-child(9) {
   left: 1750px;
 }
-#perspectives div img:nth-child(10) {
+#perspectives div:last-child img:nth-child(10) {
   left: 2000px;
 }
 
@@ -858,12 +867,16 @@ header {
   display: flex;
   justify-content: space-between;
   min-height: 500px;
+  flex-wrap: wrap;
+}
+#yourMeteo h3 {
+  flex: 0 0 100%;
 }
 #yourMeteo #meteoPlan {
   flex: 0 0 20%;
 }
 #yourMeteo #meteoPlan #meteomap {
-  min-height: 400px;
+  min-height: 90%;
   margin: 0.5rem;
 }
 #yourMeteo #meteoRender {
@@ -875,6 +888,7 @@ header {
   flex: 0 0 19%;
   display: flex;
   flex-direction: column;
+  box-shadow: 3px 5px 7px;
 }
 
 /*# sourceMappingURL=style.css.map */

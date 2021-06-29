@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- liens pour le favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- liens googlefonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- lien CSS map leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Fouvet Sébastien Développeur Web</title>
 </head>
 <body>
     <section id="sf_bg-animation">
@@ -135,9 +141,11 @@
             </div>
         </section>
         <section id='sprites-anim'>
-            <h2>Utilisation des sprites</h2>
-            <p>Le personnage est sous forme de sprites pour simuler son déplacement.</p>
-            <p>Tous les décors sont sous forme d'animations CSS.</p>
+            <div class="section-presentation">
+                <h2>Utilisation des sprites</h2>
+                <p>Le personnage est sous forme de sprites pour simuler son déplacement.</p>
+                <p>Tous les décors sont sous forme d'animations CSS.</p>
+            </div>
             <div id="spritesuse">
                 <img src="img/bg-anim.png" alt="">
                 <div class="sf_characters"></div>
@@ -158,9 +166,11 @@
             </div>
         </section>
         <section id="perspectives">
-            <h2>Perspective CSS</h2>
-            <p>Les images utilisent la propriété CSS <code>persperctive</code> et les transformations</p>
-            <p>Un script JS permet de faire varier la perspective au hover selon le déplacement de la souris</p>
+            <div class="section-presentation">
+                <h2>Perspective CSS</h2>
+                <p>Les images utilisent la propriété CSS <code>persperctive</code> et les transformations</p>
+                <p>Un script JS permet de faire varier la perspective au hover selon le déplacement de la souris</p>
+            </div>
             <div>
                 <img src="img/saint-etienne_gare-chateaucreux.jpg" alt="Saint-Etienne gare de Chateaucreux" class="perspLeft">
                 <img src="img/saint-etienne_cite-des-affaires2.jpg" alt="Cité des affaires de Saint Etienne" class="perspRight" />
@@ -176,10 +186,15 @@
             </div>
         </section>
         <section id="meteocity">
-            <div>
-                <h2>Météo à 5 jours</h2>
+            <div class="section-presentation">
+                <h2>Utilisation des API</h2>
+                <p>Les requêtes AJAX permettent d'obtenir des informations de 2 <em>API</em> différentes</p>
+                <p>D'abord la carte grâce l'<em>API</em> <a href="https://leafletjs.com/">leaflet</a>.</p>
+                <p>Ensuite, lorsqu'on clique sur la carte qu'on vient de générer, la météo grâce à l'<em>API</em> <a href="https://www.prevision-meteo.ch/services/">prevision-meteo.ch</a>.</p>
+                <p>Le tout est mis en forme grace aux <em>Flexbox</em></p>
             </div>
             <div id="yourMeteo">
+                <h3>Météo à 5 jours</h3>
                 <div id="meteoPlan">
                     <p>selectionnez votre ville en cliquant sur la map</p>
                     <div id="meteomap"></div>

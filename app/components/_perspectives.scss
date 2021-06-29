@@ -1,10 +1,10 @@
 #perspectives{
     overflow:hidden;
-    div{
+    div:last-child{
         perspective:1000px;
         perspective-origin: 50% -15%;
         transform-style: preserve-3d; //==> permet un effet 3D lorsqu'un element traverse un autre
-        height:500px;
+        min-height:450px;
         margin: 4rem 0;
         img{
             max-width:500px;
