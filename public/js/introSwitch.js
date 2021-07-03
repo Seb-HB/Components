@@ -1,10 +1,9 @@
 let anim=document.querySelector('#sf_bg-animation');
-let navbar=document.querySelector('header');
 let winHeight=window.innerHeight;
 let scrollUp;
 console.log(anim);
 
-
+//vérifie la direction du scroll. scrollUp sera vrai si on remonte
 const scrollDirection=function(){
     scrollUp=false;
     let initScroll=window.scrollY;
@@ -18,15 +17,16 @@ const scrollDirection=function(){
 window.onscroll = function(e) {
     let initScroll=window.scrollY;
     setTimeout(function(){
-        let finishScroll=window.scrollY;
-        //pas ternaire pour éviter le cas =0
-        if ((initScroll-finishScroll)>0){
+        let deltaScroll=initScroll-window.scrollY;
+        //pas ternaire pour éviter le cas =0 qui arrive systématiquement en fin de scroll
+        // on ne veut pas changer la valeur se scrollUp à l'arret du scroll
+        if (deltaScroll>0){
             scrollUp=true;
-        }else if ((initScroll-finishScroll)<0){
+        }else if (deltaScroll<0){
             scrollUp=false;
         }
         // (initScroll-finishScroll)>=0 ? scrollUp=true : scrollUp=false;
-        console.log('diff: '+(initScroll-finishScroll),scrollUp );
+        console.log('diff: '+(deltaScroll),scrollUp );
     },5);
     console.log(scrollUp);
     console.log('scroll : '+ window.scrollY, 'height: '+winHeight);

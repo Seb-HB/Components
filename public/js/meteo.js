@@ -17,7 +17,6 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 function onMapClick(e) {
     latLong = e.latlng;
     meteoUrl=`https://www.prevision-meteo.ch/services/json/lat=${latLong.lat}lng=${latLong.lng}`;
-    console.log(meteoUrl);
     let marker = L.marker([latLong.lat, latLong.lng]).addTo(meteomap);
     getMeteo(meteoUrl);
 }
@@ -29,10 +28,8 @@ function getMeteo(url){
     // on surveille les changements de statuts
     meteoRequest.addEventListener("readystatechange", function(){
         if (this.readyState==4){
-            console.log('dedans1');
             (this.status == 200) ? reqSuccess(this.response) : reqError(this.status, this.statusText);
         }else{
-            console.log('dedans2');
             reqError(this.status, this.statusText);
         }
     });

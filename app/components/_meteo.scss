@@ -1,26 +1,25 @@
-#yourMeteo{
+#your-meteo{
     display:flex;
     justify-content:space-between;
     min-height: 500px;
     flex-wrap: wrap;
-    h3{
-        flex:0 0 100%;
-    }
-    #meteoPlan{
-        flex: 0 0 20%;
+    #meteo-plan{
+        flex: 0 0 25%;
         #meteomap{
-            min-height: 90%;
+            min-height: 95%;
             margin: .5rem;
         }
     }
-    #meteoRender{
-        flex: 0 0 75%;
+    #meteo-render{
+        flex: 0 0 70%;
         display: flex;
         justify-content: space-around;
-        .meteoJ{
+        flex-wrap: wrap;
+        .meteo-j{
             flex: 0 0 19%;
             display: flex;
             flex-direction:column;
+            justify-content:space-between;
             box-shadow: 3px 5px 7px;
         }
     }

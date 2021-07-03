@@ -8,6 +8,7 @@
   "main": "index.js",
   "dependencies": {
     "anymatch": "^3.1.2",
+    "autoprefixer": "^10.2.6",
     "binary-extensions": "^2.2.0",
     "braces": "^3.0.2",
     "chokidar": "^3.5.1",
@@ -17,15 +18,17 @@
     "is-extglob": "^2.1.1",
     "is-glob": "^4.0.1",
     "is-number": "^7.0.0",
-    "picomatch": "^2.2.3",
     "normalize-path": "^3.0.0",
+    "picomatch": "^2.2.3",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
     "readdirp": "^3.5.0",
     "to-regex-range": "^5.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "css" : "sass ./app/main.scss ./public/css/style.css --watch",
-    "mini" : "sass ./app/main.scss ./public/css/style.css  --style minified"
+    "css": "sass ./app/main.scss ./public/css/style.css --watch",
+    "mini": "sass ./app/main.scss ./public/css/style.css  --style compressed",
+    "prefix": "sass ./app/main.scss ./public/css/style.css  --style compressed && postcss ./public/css/style.css --use autoprefixer -d ./public/css/"
   },
   "repository": {
     "type": "git",

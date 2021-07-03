@@ -1,15 +1,95 @@
-#img-grid {
-    display: grid;
-    // transform: rotate(45deg);
-    grid-template-columns: repeat(16,1fr);
-    grid-template-rows: repeat(8,1fr);
-    width:100%;
-    height:800px;
-    #sf_img-mangas{
-        background-image: url('../img/mangas.jpg');
-        border: 3px solid gray;
-        grid-column: 1 /16;
-        grid-row: 1/5;
+#sf_grid-rotate {
+    overflow: hidden;
+    max-height: 800px;
+    .sf_rotate-grid{
         overflow: hidden;
+        &>div{  // celle qui affiche la grille et contient les autres
+            display: grid;
+            transform: rotate(45deg) translate(-10%, -20%);
+            grid-template-columns: repeat(30,75px);
+            grid-template-rows: repeat(20,75px);
+            div{ //s'applique à toutes les div qui vont afficher des images
+                border: 3px solid gray; 
+                overflow: hidden; 
+                position: relative;
+                box-shadow: 2px 3px 5px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 145%;
+                    height: 145%;
+                    top: -23%;
+                    left: -23%;
+                    z-index: -1;
+                    background: url('../img/mangas.jpg') no-repeat center/contain;
+                    transform: rotate(-45deg);
+                }       
+            }
+
+            :nth-child(1){
+                grid-area:8/10/12/14;
+                &::before{
+                    background-image: url('../img/RG_naruto.jpg');
+                }
+                &:hover::before{
+                    background-image: url('../img/RG_naruto-up.jpg');
+                }
+            }
+            :nth-child(2){//jointure gauche
+                grid-column: 9/10;
+                grid-row: 12/13;
+                &::before{
+                    background-image: url('../img/RG_happy.jpg');
+                    
+                }
+            }
+            // début partie gauche
+            :nth-child(3){//coeur
+                grid-area: 14/6/16/8;
+                &::before{
+                    background-image: url('../img/RG_sangoku.jpg');
+                }
+                &:hover::before{
+                    background-image: url('../img/RG_sangoku-up.jpg');
+                }
+            }
+            :nth-child(4){
+                grid-area: 13 / 8;
+            }
+            :nth-child(5){
+                grid-area: 13 / 7;
+            }
+            :nth-child(6){
+                grid-area: 13 / 6;
+            }
+            :nth-child(7){
+                grid-area: 13 / 5;
+            }
+            :nth-child(8){
+                grid-area: 14 / 5;
+            }
+            :nth-child(9){
+                grid-area: 15 / 5;
+            }
+            :nth-child(10){
+                grid-area: 16 / 5;
+            }
+            :nth-child(11){
+                grid-area: 16 / 6;
+            }
+            :nth-child(12){
+                grid-area: 16 / 7;
+            }
+            :nth-child(13){
+                grid-area: 16 / 8;
+            }
+            :nth-child(14){
+                grid-area: 15 / 8;
+            }
+            :nth-child(15){
+                grid-area: 14 / 8;
+            }
+            //début partie droite
+        }
     }
 }
