@@ -807,7 +807,7 @@ header {
   top: -23%;
   left: -23%;
   z-index: -1;
-  background: url("../img/mangas.jpg") no-repeat center/contain;
+  background: no-repeat center/contain;
   transform: rotate(-45deg);
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(1) {
@@ -838,38 +838,184 @@ header {
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(4) {
   grid-area: 13/8;
 }
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(4)::before {
+  background-image: url("../img/RG_eren.jpg");
+}
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(5) {
   grid-area: 13/7;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(5)::before {
+  background-image: url("../img/RG_kakashi.png");
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(6) {
   grid-area: 13/6;
 }
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(6)::before {
+  background-image: url("../img/RG_saber.jpg");
+}
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(7) {
   grid-area: 13/5;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(7)::before {
+  background-image: url("../img/RG_natsu.jpg");
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(8) {
   grid-area: 14/5;
 }
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(8)::before {
+  background-image: url("../img/RG_evans.png");
+}
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(9) {
   grid-area: 15/5;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(9)::before {
+  background-image: url("../img/RG_chopper.jpg");
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(10) {
   grid-area: 16/5;
 }
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(10)::before {
+  background-image: url("../img/RG_lucy.jpg");
+}
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(11) {
   grid-area: 16/6;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(11)::before {
+  background-image: url("../img/RG_yoh.jpg");
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(12) {
   grid-area: 16/7;
 }
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(12)::before {
+  background-image: url("../img/RG_saitama.jpg");
+}
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(13) {
   grid-area: 16/8;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(13)::before {
+  background-image: url("../img/RG_izuku.jpg");
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(14) {
   grid-area: 15/8;
 }
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(14)::before {
+  background-image: url("../img/RG_kirito.jpg");
+}
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(15) {
   grid-area: 14/8;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(15)::before {
+  background-image: url("../img/RG_teppei.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(15):hover::before {
+  background-image: url("../img/RG_teppei-up.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(16) {
+  grid-area: 7/14;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(16)::before {
+  background-image: url("../img/RG_kon.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(17) {
+  grid-area: 4/16/6/18;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover {
+  grid-area: 3/15/7/19;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(18), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(19), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(20), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(21), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(22), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(23), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(24), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(25), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(26), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(27), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(28), #sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover ~ :nth-child(29) {
+  display: none;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(17)::before {
+  background-image: url("../img/RG_erza.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(17):hover::before {
+  background-image: url("../img/RG_erza-up.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(18) {
+  grid-area: 6/15;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(18)::before {
+  background-image: url("../img/RG_edward.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(19) {
+  grid-area: 5/15;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(19)::before {
+  background-image: url("../img/RG_kira.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(20) {
+  grid-area: 4/15;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(20)::before {
+  background-image: url("../img/RG_meliodas.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(21) {
+  grid-area: 3/15;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(21)::before {
+  background-image: url("../img/RG_seiya.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(22) {
+  grid-area: 3/16;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(22)::before {
+  background-image: url("../img/RG_deathkid.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(23) {
+  grid-area: 3/17;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(23)::before {
+  background-image: url("../img/RG_luffy.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(24) {
+  grid-area: 3/18;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(24)::before {
+  background-image: url("../img/RG_shiroe.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(25) {
+  grid-area: 4/18;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(25)::before {
+  background-image: url("../img/RG_gone.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(26) {
+  grid-area: 5/18;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(26)::before {
+  background-image: url("../img/RG_allmight.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(27) {
+  grid-area: 6/18;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(27)::before {
+  background-image: url("../img/RG_ichigo.png");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(27):hover {
+  overflow: visible;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(27):hover::after {
+  content: "";
+  position: absolute;
+  width: 600%;
+  height: 300%;
+  top: 210%;
+  left: -380%;
+  z-index: 2;
+  background: url("../img/RG_ichigo-up.png") no-repeat center/contain;
+  transform: rotate(-45deg);
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(28) {
+  grid-area: 6/17;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(28)::before {
+  background-image: url("../img/RG_jiraya.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(29) {
+  grid-area: 6/16;
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(29)::before {
+  background-image: url("../img/RG_ken.jpg");
 }
 
 #perspectives {

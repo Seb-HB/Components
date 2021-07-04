@@ -21,7 +21,7 @@
                     top: -23%;
                     left: -23%;
                     z-index: -1;
-                    background: url('../img/mangas.jpg') no-repeat center/contain;
+                    background:no-repeat center/contain;
                     transform: rotate(-45deg);
                 }       
             }
@@ -55,41 +55,188 @@
             }
             :nth-child(4){
                 grid-area: 13 / 8;
+                &::before{
+                    background-image: url('../img/RG_eren.jpg');
+                }
             }
             :nth-child(5){
                 grid-area: 13 / 7;
+                &::before{
+                    background-image: url('../img/RG_kakashi.png');
+                }
             }
             :nth-child(6){
                 grid-area: 13 / 6;
+                &::before{
+                    background-image: url('../img/RG_saber.jpg');
+                }
             }
             :nth-child(7){
                 grid-area: 13 / 5;
+                &::before{
+                    background-image: url('../img/RG_natsu.jpg');
+                }
             }
             :nth-child(8){
                 grid-area: 14 / 5;
+                &::before{
+                    background-image: url('../img/RG_evans.png');
+                }
             }
             :nth-child(9){
                 grid-area: 15 / 5;
+                &::before{
+                    background-image: url('../img/RG_chopper.jpg');
+                }
             }
             :nth-child(10){
                 grid-area: 16 / 5;
+                &::before{
+                    background-image: url('../img/RG_lucy.jpg');
+                }
             }
             :nth-child(11){
                 grid-area: 16 / 6;
+                &::before{
+                    background-image: url('../img/RG_yoh.jpg');
+                }
             }
             :nth-child(12){
                 grid-area: 16 / 7;
+                &::before{
+                    background-image: url('../img/RG_saitama.jpg');
+                }
             }
             :nth-child(13){
                 grid-area: 16 / 8;
+                &::before{
+                    background-image: url('../img/RG_izuku.jpg');
+                }
             }
             :nth-child(14){
                 grid-area: 15 / 8;
+                &::before{
+                    background-image: url('../img/RG_kirito.jpg');
+                }
             }
             :nth-child(15){
                 grid-area: 14 / 8;
+                &::before{
+                    background-image: url('../img/RG_teppei.jpg');
+                }
+                &:hover::before{
+                    background-image: url('../img/RG_teppei-up.jpg');
+                }
             }
             //début partie droite
+            :nth-child(16){//liaison
+                grid-area: 7 / 14;
+                &::before{
+                    background-image: url('../img/RG_kon.jpg');
+                }
+            }
+            :nth-child(17){ //coeur
+                grid-area: 4/16/6/18;
+                &:hover{
+                    grid-area: 3/15/7/19;
+                    &~ :nth-child(18),&~ :nth-child(19),&~ :nth-child(20), &~ :nth-child(21),&~ :nth-child(22), &~ :nth-child(23),&~ :nth-child(24),&~ :nth-child(25),&~ :nth-child(26),&~ :nth-child(27),&~ :nth-child(28),&~ :nth-child(29){
+                        display: none;
+                    }
+                }
+                &::before{
+                    background-image: url('../img/RG_erza.jpg');
+                }
+                &:hover::before{
+                    background-image: url('../img/RG_erza-up.jpg');
+                }
+            }
+            :nth-child(18){
+                grid-area: 6/15;
+                &::before{
+                    background-image: url('../img/RG_edward.jpg');
+                }
+            }
+            :nth-child(19){
+                grid-area: 5/15;
+                &::before{
+                    background-image: url('../img/RG_kira.jpg');
+                }
+            }
+            :nth-child(20){
+                grid-area: 4/15;
+                &::before{
+                    background-image: url('../img/RG_meliodas.jpg');
+                }
+            }
+            :nth-child(21){
+                grid-area: 3/15;
+                &::before{
+                    background-image: url('../img/RG_seiya.jpg');
+                }
+            }
+            :nth-child(22){
+                grid-area: 3/16;
+                &::before{
+                    background-image: url('../img/RG_deathkid.jpg');
+                }
+            }
+            :nth-child(23){
+                grid-area: 3/17;
+                &::before{
+                    background-image: url('../img/RG_luffy.jpg');
+                }
+            }
+            :nth-child(24){
+                grid-area: 3/18;
+                &::before{
+                    background-image: url('../img/RG_shiroe.jpg');
+                }
+            }
+            :nth-child(25){
+                grid-area: 4/18;
+                &::before{
+                    background-image: url('../img/RG_gone.jpg');
+                }
+            }
+            :nth-child(26){
+                grid-area: 5/18;
+                &::before{
+                    background-image: url('../img/RG_allmight.jpg');
+                }
+            }
+            :nth-child(27){
+                grid-area: 6/18;
+                &::before{
+                    background-image: url('../img/RG_ichigo.png');
+                }
+                &:hover{
+                    overflow: visible;
+                }
+                &:hover::after{
+                    content: "";
+                    position: absolute;
+                    width: 600%;
+                    height: 300%;
+                    top: 210%;
+                    left: -380%;
+                    z-index: 2;
+                    background: url('../img/RG_ichigo-up.png') no-repeat center/contain;
+                    transform: rotate(-45deg);
+                }
+            }
+            :nth-child(28){
+                grid-area: 6/17;
+                &::before{
+                    background-image: url('../img/RG_jiraya.jpg');
+                }
+
+            }
+            :nth-child(29){
+                grid-area: 6/16;
+                &::before{
+                    background-image: url('../img/RG_ken.jpg');
+                }
+            }
         }
     }
 }
