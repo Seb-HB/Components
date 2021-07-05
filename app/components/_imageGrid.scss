@@ -27,6 +27,9 @@
             }
 
             :nth-child(1){
+                &:hover{
+                    transition:500ms;
+                }
                 grid-area:8/10/12/14;
                 &::before{
                     background-image: url('../img/RG_naruto.jpg');

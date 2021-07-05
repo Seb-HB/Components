@@ -813,6 +813,9 @@ header {
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(1) {
   grid-area: 8/10/12/14;
 }
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(1):hover {
+  transition: 500ms;
+}
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(1)::before {
   background-image: url("../img/RG_naruto.jpg");
 }
