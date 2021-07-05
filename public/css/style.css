@@ -1112,8 +1112,17 @@ header {
   flex: 0 0 19%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   box-shadow: 3px 5px 7px;
+}
+#your-meteo #meteo-render .meteo-j > div {
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#your-meteo #meteo-render .meteo-j > div div {
+  flex: 0 0 15%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -49,27 +49,23 @@ function getMeteo(url){
 //traitement du résultat quand tout est OK
 function reqSuccess(response){
     const meteo=JSON.parse(response);
-    console.log(meteo);
     let counter=1;
     let meteoParent;
 
     for (prop in meteo){
-        console.log(meteo[prop])
         if (meteo[prop].day_long){
-            console.log(counter);
             meteoDate=document.createElement('p');
             meteoDate.innerHTML=meteo[prop].day_long + ' '+ meteo[prop].date;
             meteoIco=document.createElement('img');
             meteoIco.src=meteo[prop].icon_big;
             meteoText=document.createElement('p');
             meteoText.innerHTML=meteo[prop].condition;
-            meteoTemp=document.createElement('p');
-            meteoTemp.innerHTML='<img src="img/temperatureMin.png" alt="icone temperature min">'+meteo[prop].tmin+ ' | '+ '<img src="img/temperatureMax.png" alt="icone temperature max">'+meteo[prop].tmax;
+            meteoTemp=document.createElement('div');
+            meteoTemp.innerHTML='<img src="img/Tmin.png" alt="icone temperature min">'+meteo[prop].tmin+ ' °C '+ ' <div></div> '+'<img src="img/Tmax.png" alt="icone temperature max">'+meteo[prop].tmax+'°C';
             meteoParent=document.querySelector(`.j${counter}`);
             while (meteoParent.hasChildNodes()){
                 meteoParent.removeChild(meteoParent.firstChild);
             }
-            console.log(`le parent .j${counter} est :` , meteoParent);
             document.querySelector(`.j${counter}`).appendChild(meteoDate);
             document.querySelector(`.j${counter}`).appendChild(meteoIco);
             document.querySelector(`.j${counter}`).appendChild(meteoText);
