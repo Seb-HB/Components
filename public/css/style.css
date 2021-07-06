@@ -782,7 +782,7 @@ header {
 
 #sf_grid-rotate {
   overflow: hidden;
-  max-height: 800px;
+  max-height: 900px;
 }
 #sf_grid-rotate .sf_rotate-grid {
   overflow: hidden;
@@ -1091,12 +1091,19 @@ header {
 
 #your-meteo {
   display: flex;
-  justify-content: space-between;
-  min-height: 500px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 #your-meteo #meteo-plan {
   flex: 0 0 25%;
+  min-height: 300px;
+}
+@media (max-width: 1280px) {
+  #your-meteo #meteo-plan {
+    flex: 0 0 100%;
+    margin-bottom: 3rem;
+    row-gap: 1rem;
+  }
 }
 #your-meteo #meteo-plan #meteomap {
   min-height: 95%;
@@ -1108,21 +1115,49 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+@media (max-width: 1280px) {
+  #your-meteo #meteo-render {
+    flex: 0 0 100%;
+    row-gap: 1rem;
+  }
+}
 #your-meteo #meteo-render .meteo-j {
   flex: 0 0 19%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 0.5rem 0;
   box-shadow: 3px 5px 7px;
 }
+@media (min-width: 300px) and (max-width: 600px) {
+  #your-meteo #meteo-render .meteo-j {
+    flex: 0 0 30%;
+  }
+}
 #your-meteo #meteo-render .meteo-j > div {
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 900px) {
+  #your-meteo #meteo-render .meteo-j > div {
+    padding: 0 1rem;
+  }
+}
 #your-meteo #meteo-render .meteo-j > div div {
   flex: 0 0 15%;
+}
+@media (max-width: 1530px) {
+  #your-meteo #meteo-render .meteo-j > div div {
+    flex: 0 0 0.5%;
+  }
+}
+@media (max-width: 900px) {
+  #your-meteo #meteo-render .meteo-j > div img {
+    width: 10px;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
