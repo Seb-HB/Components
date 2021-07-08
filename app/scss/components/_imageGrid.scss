@@ -95,7 +95,10 @@
             :nth-child(10){
                 grid-area: 16 / 5;
                 &::before{
-                    background-image: url('../img/RG_lucy.jpg');
+                    background-image: url('../img/RG_teppei.jpg');
+                }
+                &:hover::before{
+                    background-image: url('../img/RG_teppei-up.jpg');
                 }
             }
             :nth-child(11){
@@ -106,8 +109,22 @@
             }
             :nth-child(12){
                 grid-area: 16 / 7;
+                &:hover{
+                    overflow: visible;
+                }
                 &::before{
                     background-image: url('../img/RG_saitama.jpg');
+                }
+                &:hover::after{
+                    content: "";
+                    position: absolute;
+                    width: 600%;
+                    height: 300%;
+                    top: 210%;
+                    left: -380%;
+                    z-index: 2;
+                    background: url('../img/RG_saitama-up.png') no-repeat center/contain;
+                    transform: rotate(-45deg);
                 }
             }
             :nth-child(13){
@@ -125,10 +142,7 @@
             :nth-child(15){
                 grid-area: 14 / 8;
                 &::before{
-                    background-image: url('../img/RG_teppei.jpg');
-                }
-                &:hover::before{
-                    background-image: url('../img/RG_teppei-up.jpg');
+                    background-image: url('../img/RG_lucy.jpg');
                 }
             }
             //début partie droite

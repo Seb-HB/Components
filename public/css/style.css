@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/****************************************************************
+                COLORS
+****************************************************************/
+/****************************************************************
+                SIZE
+****************************************************************/
+/***************************************************************
+            ESPACEMENTS
+***************************************************************/
+/****************************************************************
+            FONTS
+****************************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -15,18 +27,6 @@ li {
   display: inline-block;
 }
 
-/****************************************************************
-                COLORS
-****************************************************************/
-/****************************************************************
-                SIZE
-****************************************************************/
-/***************************************************************
-            ESPACEMENTS
-***************************************************************/
-/****************************************************************
-            FONTS
-****************************************************************/
 body {
   font-family: "Dosis", sans-serif;
   text-align: center;
@@ -107,88 +107,6 @@ section {
     background-position: top left;
   }
 }
-header {
-  position: sticky;
-  top: 0;
-  z-index: 5;
-}
-
-#sf-navbar {
-  background-color: lightgrey;
-  display: flex;
-}
-#sf-navbar nav {
-  flex: 0 0 70%;
-  font-family: "Changa", sans-serif;
-}
-#sf-navbar nav ul {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-}
-#sf-navbar nav ul li {
-  margin-right: 20px;
-  position: relative;
-}
-#sf-navbar nav ul li:after {
-  transition: 200ms;
-  position: absolute;
-  background-position: right;
-  bottom: 0;
-  left: 0%;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: transparent;
-}
-#sf-navbar nav ul li:hover:after {
-  left: 0;
-  background-color: black;
-}
-#sf-navbar nav #burger {
-  display: none;
-}
-
-#logo {
-  flex: 0 0 10%;
-  padding: 5px;
-}
-
-.reseaux {
-  flex: 0 0 20%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 1rem;
-}
-.reseaux div {
-  background-image: url("../img/sprites/ReseauxSociaux-32px.png");
-  width: 32px;
-  height: 32px;
-  background-position-y: 468px;
-  transition: background-position-y 500ms;
-  display: inline-block;
-  margin-right: 0.2rem;
-}
-.reseaux div:hover {
-  background-position-y: 500px;
-}
-.reseaux div a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-.reseaux div:nth-child(1) {
-  background-position-x: 238px;
-}
-.reseaux div:nth-child(2) {
-  background-position-x: 0px;
-}
-.reseaux div:nth-child(3) {
-  background-position-x: 206px;
-}
-
 #parallax {
   margin: 200px 0;
 }
@@ -878,7 +796,10 @@ header {
   grid-area: 16/5;
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(10)::before {
-  background-image: url("../img/RG_lucy.jpg");
+  background-image: url("../img/RG_teppei.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(10):hover::before {
+  background-image: url("../img/RG_teppei-up.jpg");
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(11) {
   grid-area: 16/6;
@@ -889,8 +810,22 @@ header {
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(12) {
   grid-area: 16/7;
 }
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(12):hover {
+  overflow: visible;
+}
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(12)::before {
   background-image: url("../img/RG_saitama.jpg");
+}
+#sf_grid-rotate .sf_rotate-grid > div :nth-child(12):hover::after {
+  content: "";
+  position: absolute;
+  width: 600%;
+  height: 300%;
+  top: 210%;
+  left: -380%;
+  z-index: 2;
+  background: url("../img/RG_saitama-up.png") no-repeat center/contain;
+  transform: rotate(-45deg);
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(13) {
   grid-area: 16/8;
@@ -908,10 +843,7 @@ header {
   grid-area: 14/8;
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(15)::before {
-  background-image: url("../img/RG_teppei.jpg");
-}
-#sf_grid-rotate .sf_rotate-grid > div :nth-child(15):hover::before {
-  background-image: url("../img/RG_teppei-up.jpg");
+  background-image: url("../img/RG_lucy.jpg");
 }
 #sf_grid-rotate .sf_rotate-grid > div :nth-child(16) {
   grid-area: 7/14;
@@ -1158,6 +1090,88 @@ header {
     width: 10px;
     height: auto;
   }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+#sf-navbar {
+  background-color: lightgrey;
+  display: flex;
+}
+#sf-navbar nav {
+  flex: 0 0 70%;
+  font-family: "Changa", sans-serif;
+}
+#sf-navbar nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+#sf-navbar nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+#sf-navbar nav ul li:after {
+  transition: 200ms;
+  position: absolute;
+  background-position: right;
+  bottom: 0;
+  left: 0%;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: transparent;
+}
+#sf-navbar nav ul li:hover:after {
+  left: 0;
+  background-color: black;
+}
+#sf-navbar nav #burger {
+  display: none;
+}
+
+#logo {
+  flex: 0 0 10%;
+  padding: 5px;
+}
+
+.reseaux {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+.reseaux div {
+  background-image: url("../img/sprites/ReseauxSociaux-32px.png");
+  width: 32px;
+  height: 32px;
+  background-position-y: 468px;
+  transition: background-position-y 500ms;
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+.reseaux div:hover {
+  background-position-y: 500px;
+}
+.reseaux div a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.reseaux div:nth-child(1) {
+  background-position-x: 238px;
+}
+.reseaux div:nth-child(2) {
+  background-position-x: 0px;
+}
+.reseaux div:nth-child(3) {
+  background-position-x: 206px;
 }
 
 /*# sourceMappingURL=style.css.map */

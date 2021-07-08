@@ -1,0 +1,25 @@
+//7–1 Sass Architecture
+
+//abstract
+@import 'abstracts/var';
+@import 'abstracts/mixins';
+
+//base
+@import 'base/reboot';
+@import 'base/text_format';
+@import 'base/marges';
+@import 'base/sizing';
+
+//components
+@import 'components/shiny';
+@import 'components/parallax';
+@import 'components/sprites-scroll';
+@import 'components/animated-background';
+@import 'components/taglinks';
+@import 'components/imageGrid';
+@import 'components/perspectives';
+@import 'components/explodeImg';
+@import'components/meteo';
+
+//layout
+@import 'layout/navbar';
