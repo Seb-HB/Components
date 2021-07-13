@@ -1,0 +1,43 @@
+$grid-size-ref:8vw;
+
+#sf_mosaic {
+    display: grid;
+    grid-template-columns: repeat(10,$grid-size-ref);
+    grid-template-rows: repeat(5,0.669*$grid-size-ref);
+    margin: auto;
+    width:10*$grid-size-ref;
+    div{
+        background: url("../img/testatina2.jpg") no-repeat;
+        background-size: 10*$grid-size-ref;
+        overflow: hidden;
+    }
+
+}
+@for $i from 0 through 49 {
+    $j:0;
+    @if $i>9 {
+       $j:1; 
+    }
+    @if $i>19 {
+       $j:2; 
+    }
+    @if $i>29 {
+       $j:3; 
+    }
+    @if $i>39 {
+       $j:4; 
+    }
+    $k:$i%10;
+
+    // $k:$i;
+    // @while $k > 10 {
+    //     $j:$j+1;
+
+    // }
+    #sf_mosaic div:nth-child(#{$i+1}) {
+        background-position: $k*11% $j*25%;
+        &:hover{
+            background-position: $k*11%+1% $j*25%-1%;
+        }
+    }
+}

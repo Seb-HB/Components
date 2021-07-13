@@ -1006,19 +1006,367 @@ section {
   left: 2000px;
 }
 
-#imgEclatement {
+#sf_mosaic {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  width: 100%;
-  height: 800px;
+  grid-template-columns: repeat(10, 8vw);
+  grid-template-rows: repeat(5, 5.352vw);
+  margin: auto;
+  width: 80vw;
 }
-#imgEclatement #sf_img-mangas {
-  background-image: url("../img/mangas.jpg");
-  border: 3px solid gray;
-  grid-column: 1/16;
-  grid-row: 1/5;
+#sf_mosaic div {
+  background: url("../img/testatina2.jpg") no-repeat;
+  background-size: 80vw;
   overflow: hidden;
+}
+
+#sf_mosaic div:nth-child(1) {
+  background-position: 0% 0%;
+}
+#sf_mosaic div:nth-child(1):hover {
+  background-position: 1% -1%;
+}
+
+#sf_mosaic div:nth-child(2) {
+  background-position: 11% 0%;
+}
+#sf_mosaic div:nth-child(2):hover {
+  background-position: 12% -1%;
+}
+
+#sf_mosaic div:nth-child(3) {
+  background-position: 22% 0%;
+}
+#sf_mosaic div:nth-child(3):hover {
+  background-position: 23% -1%;
+}
+
+#sf_mosaic div:nth-child(4) {
+  background-position: 33% 0%;
+}
+#sf_mosaic div:nth-child(4):hover {
+  background-position: 34% -1%;
+}
+
+#sf_mosaic div:nth-child(5) {
+  background-position: 44% 0%;
+}
+#sf_mosaic div:nth-child(5):hover {
+  background-position: 45% -1%;
+}
+
+#sf_mosaic div:nth-child(6) {
+  background-position: 55% 0%;
+}
+#sf_mosaic div:nth-child(6):hover {
+  background-position: 56% -1%;
+}
+
+#sf_mosaic div:nth-child(7) {
+  background-position: 66% 0%;
+}
+#sf_mosaic div:nth-child(7):hover {
+  background-position: 67% -1%;
+}
+
+#sf_mosaic div:nth-child(8) {
+  background-position: 77% 0%;
+}
+#sf_mosaic div:nth-child(8):hover {
+  background-position: 78% -1%;
+}
+
+#sf_mosaic div:nth-child(9) {
+  background-position: 88% 0%;
+}
+#sf_mosaic div:nth-child(9):hover {
+  background-position: 89% -1%;
+}
+
+#sf_mosaic div:nth-child(10) {
+  background-position: 99% 0%;
+}
+#sf_mosaic div:nth-child(10):hover {
+  background-position: 100% -1%;
+}
+
+#sf_mosaic div:nth-child(11) {
+  background-position: 0% 25%;
+}
+#sf_mosaic div:nth-child(11):hover {
+  background-position: 1% 24%;
+}
+
+#sf_mosaic div:nth-child(12) {
+  background-position: 11% 25%;
+}
+#sf_mosaic div:nth-child(12):hover {
+  background-position: 12% 24%;
+}
+
+#sf_mosaic div:nth-child(13) {
+  background-position: 22% 25%;
+}
+#sf_mosaic div:nth-child(13):hover {
+  background-position: 23% 24%;
+}
+
+#sf_mosaic div:nth-child(14) {
+  background-position: 33% 25%;
+}
+#sf_mosaic div:nth-child(14):hover {
+  background-position: 34% 24%;
+}
+
+#sf_mosaic div:nth-child(15) {
+  background-position: 44% 25%;
+}
+#sf_mosaic div:nth-child(15):hover {
+  background-position: 45% 24%;
+}
+
+#sf_mosaic div:nth-child(16) {
+  background-position: 55% 25%;
+}
+#sf_mosaic div:nth-child(16):hover {
+  background-position: 56% 24%;
+}
+
+#sf_mosaic div:nth-child(17) {
+  background-position: 66% 25%;
+}
+#sf_mosaic div:nth-child(17):hover {
+  background-position: 67% 24%;
+}
+
+#sf_mosaic div:nth-child(18) {
+  background-position: 77% 25%;
+}
+#sf_mosaic div:nth-child(18):hover {
+  background-position: 78% 24%;
+}
+
+#sf_mosaic div:nth-child(19) {
+  background-position: 88% 25%;
+}
+#sf_mosaic div:nth-child(19):hover {
+  background-position: 89% 24%;
+}
+
+#sf_mosaic div:nth-child(20) {
+  background-position: 99% 25%;
+}
+#sf_mosaic div:nth-child(20):hover {
+  background-position: 100% 24%;
+}
+
+#sf_mosaic div:nth-child(21) {
+  background-position: 0% 50%;
+}
+#sf_mosaic div:nth-child(21):hover {
+  background-position: 1% 49%;
+}
+
+#sf_mosaic div:nth-child(22) {
+  background-position: 11% 50%;
+}
+#sf_mosaic div:nth-child(22):hover {
+  background-position: 12% 49%;
+}
+
+#sf_mosaic div:nth-child(23) {
+  background-position: 22% 50%;
+}
+#sf_mosaic div:nth-child(23):hover {
+  background-position: 23% 49%;
+}
+
+#sf_mosaic div:nth-child(24) {
+  background-position: 33% 50%;
+}
+#sf_mosaic div:nth-child(24):hover {
+  background-position: 34% 49%;
+}
+
+#sf_mosaic div:nth-child(25) {
+  background-position: 44% 50%;
+}
+#sf_mosaic div:nth-child(25):hover {
+  background-position: 45% 49%;
+}
+
+#sf_mosaic div:nth-child(26) {
+  background-position: 55% 50%;
+}
+#sf_mosaic div:nth-child(26):hover {
+  background-position: 56% 49%;
+}
+
+#sf_mosaic div:nth-child(27) {
+  background-position: 66% 50%;
+}
+#sf_mosaic div:nth-child(27):hover {
+  background-position: 67% 49%;
+}
+
+#sf_mosaic div:nth-child(28) {
+  background-position: 77% 50%;
+}
+#sf_mosaic div:nth-child(28):hover {
+  background-position: 78% 49%;
+}
+
+#sf_mosaic div:nth-child(29) {
+  background-position: 88% 50%;
+}
+#sf_mosaic div:nth-child(29):hover {
+  background-position: 89% 49%;
+}
+
+#sf_mosaic div:nth-child(30) {
+  background-position: 99% 50%;
+}
+#sf_mosaic div:nth-child(30):hover {
+  background-position: 100% 49%;
+}
+
+#sf_mosaic div:nth-child(31) {
+  background-position: 0% 75%;
+}
+#sf_mosaic div:nth-child(31):hover {
+  background-position: 1% 74%;
+}
+
+#sf_mosaic div:nth-child(32) {
+  background-position: 11% 75%;
+}
+#sf_mosaic div:nth-child(32):hover {
+  background-position: 12% 74%;
+}
+
+#sf_mosaic div:nth-child(33) {
+  background-position: 22% 75%;
+}
+#sf_mosaic div:nth-child(33):hover {
+  background-position: 23% 74%;
+}
+
+#sf_mosaic div:nth-child(34) {
+  background-position: 33% 75%;
+}
+#sf_mosaic div:nth-child(34):hover {
+  background-position: 34% 74%;
+}
+
+#sf_mosaic div:nth-child(35) {
+  background-position: 44% 75%;
+}
+#sf_mosaic div:nth-child(35):hover {
+  background-position: 45% 74%;
+}
+
+#sf_mosaic div:nth-child(36) {
+  background-position: 55% 75%;
+}
+#sf_mosaic div:nth-child(36):hover {
+  background-position: 56% 74%;
+}
+
+#sf_mosaic div:nth-child(37) {
+  background-position: 66% 75%;
+}
+#sf_mosaic div:nth-child(37):hover {
+  background-position: 67% 74%;
+}
+
+#sf_mosaic div:nth-child(38) {
+  background-position: 77% 75%;
+}
+#sf_mosaic div:nth-child(38):hover {
+  background-position: 78% 74%;
+}
+
+#sf_mosaic div:nth-child(39) {
+  background-position: 88% 75%;
+}
+#sf_mosaic div:nth-child(39):hover {
+  background-position: 89% 74%;
+}
+
+#sf_mosaic div:nth-child(40) {
+  background-position: 99% 75%;
+}
+#sf_mosaic div:nth-child(40):hover {
+  background-position: 100% 74%;
+}
+
+#sf_mosaic div:nth-child(41) {
+  background-position: 0% 100%;
+}
+#sf_mosaic div:nth-child(41):hover {
+  background-position: 1% 99%;
+}
+
+#sf_mosaic div:nth-child(42) {
+  background-position: 11% 100%;
+}
+#sf_mosaic div:nth-child(42):hover {
+  background-position: 12% 99%;
+}
+
+#sf_mosaic div:nth-child(43) {
+  background-position: 22% 100%;
+}
+#sf_mosaic div:nth-child(43):hover {
+  background-position: 23% 99%;
+}
+
+#sf_mosaic div:nth-child(44) {
+  background-position: 33% 100%;
+}
+#sf_mosaic div:nth-child(44):hover {
+  background-position: 34% 99%;
+}
+
+#sf_mosaic div:nth-child(45) {
+  background-position: 44% 100%;
+}
+#sf_mosaic div:nth-child(45):hover {
+  background-position: 45% 99%;
+}
+
+#sf_mosaic div:nth-child(46) {
+  background-position: 55% 100%;
+}
+#sf_mosaic div:nth-child(46):hover {
+  background-position: 56% 99%;
+}
+
+#sf_mosaic div:nth-child(47) {
+  background-position: 66% 100%;
+}
+#sf_mosaic div:nth-child(47):hover {
+  background-position: 67% 99%;
+}
+
+#sf_mosaic div:nth-child(48) {
+  background-position: 77% 100%;
+}
+#sf_mosaic div:nth-child(48):hover {
+  background-position: 78% 99%;
+}
+
+#sf_mosaic div:nth-child(49) {
+  background-position: 88% 100%;
+}
+#sf_mosaic div:nth-child(49):hover {
+  background-position: 89% 99%;
+}
+
+#sf_mosaic div:nth-child(50) {
+  background-position: 99% 100%;
+}
+#sf_mosaic div:nth-child(50):hover {
+  background-position: 100% 99%;
 }
 
 #your-meteo {
