@@ -1377,6 +1377,7 @@ section {
 #your-meteo #meteo-plan {
   flex: 0 0 25%;
   min-height: 300px;
+  z-index: 0;
 }
 @media (max-width: 1280px) {
   #your-meteo #meteo-plan {

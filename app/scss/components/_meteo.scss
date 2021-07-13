@@ -6,6 +6,8 @@
     #meteo-plan{
         flex: 0 0 25%;
         min-height: 300px;
+        //obligatoire pour ne pas passer au dessus de la navbar
+        z-index: 0;
         @media (max-width:1280px) {
             flex: 0 0 100%;
             margin-bottom: 3rem;
