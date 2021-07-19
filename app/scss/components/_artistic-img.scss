@@ -1,33 +1,38 @@
-$grid-size-ref:8vw;
+$grid-size-ref:5vw;
 
 #sf_mosaic {
     display: grid;
-    grid-template-columns: repeat(10,$grid-size-ref);
-    grid-template-rows: repeat(5,0.669*$grid-size-ref);
+    grid-template-columns: repeat(16,$grid-size-ref);
+    grid-template-rows: repeat(6,$grid-size-ref);
     margin: auto;
-    width:10*$grid-size-ref;
+    width:16*$grid-size-ref;
     div{
         background: url("../img/testatina2.jpg") no-repeat;
-        background-size: 10*$grid-size-ref;
+        background-size: 16*$grid-size-ref;
         overflow: hidden;
     }
 
 }
-@for $i from 0 through 49 {
+@for $i from 0 through 99 {
     $j:0;
-    @if $i>9 {
+    @if $i>15 {
        $j:1; 
     }
-    @if $i>19 {
+    @if $i>31 {
        $j:2; 
     }
-    @if $i>29 {
+    @if $i>47 {
        $j:3; 
     }
-    @if $i>39 {
+    @if $i>63 {
        $j:4; 
     }
-    $k:$i%10;
+    @if $i>79 {
+       $j:5; 
+    }
+
+
+    $k:$i%16;
 
     // $k:$i;
     // @while $k > 10 {
@@ -35,9 +40,20 @@ $grid-size-ref:8vw;
 
     // }
     #sf_mosaic div:nth-child(#{$i+1}) {
-        background-position: $k*11% $j*25%;
+        background-position: $k*6.5% $j*20%;
         &:hover{
-            background-position: $k*11%+1% $j*25%-1%;
+            // background-position: $k*11%+1% $j*25%-1%;
+            scale: 1.2;
         }
+    }
+    #sf_mosaic:hover div:nth-child(#{$i+1}) {
+        $calc-pos-x: calc(#{$k*6.5%} + #{#{20-$i%8*3-$j%3*10}px});
+        @if $k==0{
+            $calc-pos-x:-50px+ $j%3*20;
+        }
+        // $calc-pos-y:calc(#{$j*20%} + #{$i%8}*#{#{$i%8}px});
+        $calc-pos-y:calc(#{$j*20%} + #{$j}*#{$i%8px});
+        // $calc-pos-y: calc(#{$j * 20%} + #{($i % 8) * ($i % 8)}px);
+        background-position: $calc-pos-x $calc-pos-y;
     }
 }
