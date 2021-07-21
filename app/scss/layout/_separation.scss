@@ -1,0 +1,13 @@
+.sf_separation{
+    width:50%;
+    height:3px;
+    background: linear-gradient(90deg, 
+    $line-green 0%, $line-green 1%,$line-green-transparent 2%,$line-green-transparent 3%,
+    $line-green 4%,$line-green 7%,$line-green-transparent 8%, $line-green-transparent 9%,
+    $line-green 10%,$line-green 15%,$line-green-transparent 16%, $line-green-transparent 17%,
+    $line-green 18%,$line-green 82%,
+    $line-green-transparent 83%, $line-green-transparent 84%,$line-green 85%, $line-green 90%,
+    $line-green-transparent 91%, $line-green-transparent 92%,$line-green 93%, $line-green 96%,
+    $line-green-transparent 97%, $line-green-transparent 98%,$line-green 99%, $line-green 100%);
+    margin: 4rem auto;
+}
