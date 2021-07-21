@@ -55,5 +55,11 @@ $grid-size-ref:5vw;
         $calc-pos-y:calc(#{$j*20%} + #{$j}*#{$i%8px});
         // $calc-pos-y: calc(#{$j * 20%} + #{($i % 8) * ($i % 8)}px);
         background-position: $calc-pos-x $calc-pos-y;
+
+        width: 110%;
+        height:110%;
+        transform: translate(5%, 2%);
+        background-clip: border-box;
+        margin: 5px;
     }
 }

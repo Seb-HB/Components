@@ -1028,6 +1028,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(1) {
   background-position: -50px calc(0% + 0*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(2) {
@@ -1039,6 +1044,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(2) {
   background-position: calc(6.5% + 17px) calc(0% + 0*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(3) {
@@ -1050,6 +1060,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(3) {
   background-position: calc(13% + 14px) calc(0% + 0*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(4) {
@@ -1061,6 +1076,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(4) {
   background-position: calc(19.5% + 11px) calc(0% + 0*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(5) {
@@ -1072,6 +1092,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(5) {
   background-position: calc(26% + 8px) calc(0% + 0*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(6) {
@@ -1083,6 +1108,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(6) {
   background-position: calc(32.5% + 5px) calc(0% + 0*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(7) {
@@ -1094,6 +1124,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(7) {
   background-position: calc(39% + 2px) calc(0% + 0*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(8) {
@@ -1105,6 +1140,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(8) {
   background-position: calc(45.5% + -1px) calc(0% + 0*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(9) {
@@ -1116,6 +1156,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(9) {
   background-position: calc(52% + 20px) calc(0% + 0*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(10) {
@@ -1127,6 +1172,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(10) {
   background-position: calc(58.5% + 17px) calc(0% + 0*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(11) {
@@ -1138,6 +1188,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(11) {
   background-position: calc(65% + 14px) calc(0% + 0*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(12) {
@@ -1149,6 +1204,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(12) {
   background-position: calc(71.5% + 11px) calc(0% + 0*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(13) {
@@ -1160,6 +1220,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(13) {
   background-position: calc(78% + 8px) calc(0% + 0*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(14) {
@@ -1171,6 +1236,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(14) {
   background-position: calc(84.5% + 5px) calc(0% + 0*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(15) {
@@ -1182,6 +1252,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(15) {
   background-position: calc(91% + 2px) calc(0% + 0*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(16) {
@@ -1193,6 +1268,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(16) {
   background-position: calc(97.5% + -1px) calc(0% + 0*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(17) {
@@ -1204,6 +1284,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(17) {
   background-position: -30px calc(20% + 1*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(18) {
@@ -1215,6 +1300,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(18) {
   background-position: calc(6.5% + 7px) calc(20% + 1*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(19) {
@@ -1226,6 +1316,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(19) {
   background-position: calc(13% + 4px) calc(20% + 1*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(20) {
@@ -1237,6 +1332,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(20) {
   background-position: calc(19.5% + 1px) calc(20% + 1*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(21) {
@@ -1248,6 +1348,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(21) {
   background-position: calc(26% + -2px) calc(20% + 1*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(22) {
@@ -1259,6 +1364,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(22) {
   background-position: calc(32.5% + -5px) calc(20% + 1*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(23) {
@@ -1270,6 +1380,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(23) {
   background-position: calc(39% + -8px) calc(20% + 1*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(24) {
@@ -1281,6 +1396,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(24) {
   background-position: calc(45.5% + -11px) calc(20% + 1*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(25) {
@@ -1292,6 +1412,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(25) {
   background-position: calc(52% + 10px) calc(20% + 1*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(26) {
@@ -1303,6 +1428,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(26) {
   background-position: calc(58.5% + 7px) calc(20% + 1*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(27) {
@@ -1314,6 +1444,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(27) {
   background-position: calc(65% + 4px) calc(20% + 1*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(28) {
@@ -1325,6 +1460,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(28) {
   background-position: calc(71.5% + 1px) calc(20% + 1*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(29) {
@@ -1336,6 +1476,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(29) {
   background-position: calc(78% + -2px) calc(20% + 1*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(30) {
@@ -1347,6 +1492,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(30) {
   background-position: calc(84.5% + -5px) calc(20% + 1*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(31) {
@@ -1358,6 +1508,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(31) {
   background-position: calc(91% + -8px) calc(20% + 1*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(32) {
@@ -1369,6 +1524,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(32) {
   background-position: calc(97.5% + -11px) calc(20% + 1*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(33) {
@@ -1380,6 +1540,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(33) {
   background-position: -10px calc(40% + 2*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(34) {
@@ -1391,6 +1556,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(34) {
   background-position: calc(6.5% + -3px) calc(40% + 2*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(35) {
@@ -1402,6 +1572,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(35) {
   background-position: calc(13% + -6px) calc(40% + 2*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(36) {
@@ -1413,6 +1588,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(36) {
   background-position: calc(19.5% + -9px) calc(40% + 2*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(37) {
@@ -1424,6 +1604,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(37) {
   background-position: calc(26% + -12px) calc(40% + 2*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(38) {
@@ -1435,6 +1620,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(38) {
   background-position: calc(32.5% + -15px) calc(40% + 2*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(39) {
@@ -1446,6 +1636,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(39) {
   background-position: calc(39% + -18px) calc(40% + 2*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(40) {
@@ -1457,6 +1652,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(40) {
   background-position: calc(45.5% + -21px) calc(40% + 2*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(41) {
@@ -1468,6 +1668,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(41) {
   background-position: calc(52% + 0px) calc(40% + 2*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(42) {
@@ -1479,6 +1684,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(42) {
   background-position: calc(58.5% + -3px) calc(40% + 2*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(43) {
@@ -1490,6 +1700,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(43) {
   background-position: calc(65% + -6px) calc(40% + 2*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(44) {
@@ -1501,6 +1716,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(44) {
   background-position: calc(71.5% + -9px) calc(40% + 2*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(45) {
@@ -1512,6 +1732,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(45) {
   background-position: calc(78% + -12px) calc(40% + 2*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(46) {
@@ -1523,6 +1748,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(46) {
   background-position: calc(84.5% + -15px) calc(40% + 2*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(47) {
@@ -1534,6 +1764,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(47) {
   background-position: calc(91% + -18px) calc(40% + 2*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(48) {
@@ -1545,6 +1780,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(48) {
   background-position: calc(97.5% + -21px) calc(40% + 2*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(49) {
@@ -1556,6 +1796,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(49) {
   background-position: -50px calc(60% + 3*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(50) {
@@ -1567,6 +1812,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(50) {
   background-position: calc(6.5% + 17px) calc(60% + 3*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(51) {
@@ -1578,6 +1828,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(51) {
   background-position: calc(13% + 14px) calc(60% + 3*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(52) {
@@ -1589,6 +1844,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(52) {
   background-position: calc(19.5% + 11px) calc(60% + 3*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(53) {
@@ -1600,6 +1860,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(53) {
   background-position: calc(26% + 8px) calc(60% + 3*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(54) {
@@ -1611,6 +1876,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(54) {
   background-position: calc(32.5% + 5px) calc(60% + 3*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(55) {
@@ -1622,6 +1892,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(55) {
   background-position: calc(39% + 2px) calc(60% + 3*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(56) {
@@ -1633,6 +1908,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(56) {
   background-position: calc(45.5% + -1px) calc(60% + 3*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(57) {
@@ -1644,6 +1924,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(57) {
   background-position: calc(52% + 20px) calc(60% + 3*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(58) {
@@ -1655,6 +1940,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(58) {
   background-position: calc(58.5% + 17px) calc(60% + 3*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(59) {
@@ -1666,6 +1956,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(59) {
   background-position: calc(65% + 14px) calc(60% + 3*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(60) {
@@ -1677,6 +1972,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(60) {
   background-position: calc(71.5% + 11px) calc(60% + 3*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(61) {
@@ -1688,6 +1988,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(61) {
   background-position: calc(78% + 8px) calc(60% + 3*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(62) {
@@ -1699,6 +2004,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(62) {
   background-position: calc(84.5% + 5px) calc(60% + 3*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(63) {
@@ -1710,6 +2020,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(63) {
   background-position: calc(91% + 2px) calc(60% + 3*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(64) {
@@ -1721,6 +2036,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(64) {
   background-position: calc(97.5% + -1px) calc(60% + 3*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(65) {
@@ -1732,6 +2052,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(65) {
   background-position: -30px calc(80% + 4*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(66) {
@@ -1743,6 +2068,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(66) {
   background-position: calc(6.5% + 7px) calc(80% + 4*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(67) {
@@ -1754,6 +2084,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(67) {
   background-position: calc(13% + 4px) calc(80% + 4*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(68) {
@@ -1765,6 +2100,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(68) {
   background-position: calc(19.5% + 1px) calc(80% + 4*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(69) {
@@ -1776,6 +2116,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(69) {
   background-position: calc(26% + -2px) calc(80% + 4*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(70) {
@@ -1787,6 +2132,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(70) {
   background-position: calc(32.5% + -5px) calc(80% + 4*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(71) {
@@ -1798,6 +2148,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(71) {
   background-position: calc(39% + -8px) calc(80% + 4*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(72) {
@@ -1809,6 +2164,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(72) {
   background-position: calc(45.5% + -11px) calc(80% + 4*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(73) {
@@ -1820,6 +2180,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(73) {
   background-position: calc(52% + 10px) calc(80% + 4*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(74) {
@@ -1831,6 +2196,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(74) {
   background-position: calc(58.5% + 7px) calc(80% + 4*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(75) {
@@ -1842,6 +2212,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(75) {
   background-position: calc(65% + 4px) calc(80% + 4*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(76) {
@@ -1853,6 +2228,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(76) {
   background-position: calc(71.5% + 1px) calc(80% + 4*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(77) {
@@ -1864,6 +2244,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(77) {
   background-position: calc(78% + -2px) calc(80% + 4*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(78) {
@@ -1875,6 +2260,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(78) {
   background-position: calc(84.5% + -5px) calc(80% + 4*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(79) {
@@ -1886,6 +2276,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(79) {
   background-position: calc(91% + -8px) calc(80% + 4*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(80) {
@@ -1897,6 +2292,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(80) {
   background-position: calc(97.5% + -11px) calc(80% + 4*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(81) {
@@ -1908,6 +2308,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(81) {
   background-position: -10px calc(100% + 5*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(82) {
@@ -1919,6 +2324,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(82) {
   background-position: calc(6.5% + -3px) calc(100% + 5*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(83) {
@@ -1930,6 +2340,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(83) {
   background-position: calc(13% + -6px) calc(100% + 5*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(84) {
@@ -1941,6 +2356,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(84) {
   background-position: calc(19.5% + -9px) calc(100% + 5*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(85) {
@@ -1952,6 +2372,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(85) {
   background-position: calc(26% + -12px) calc(100% + 5*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(86) {
@@ -1963,6 +2388,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(86) {
   background-position: calc(32.5% + -15px) calc(100% + 5*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(87) {
@@ -1974,6 +2404,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(87) {
   background-position: calc(39% + -18px) calc(100% + 5*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(88) {
@@ -1985,6 +2420,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(88) {
   background-position: calc(45.5% + -21px) calc(100% + 5*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(89) {
@@ -1996,6 +2436,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(89) {
   background-position: calc(52% + 0px) calc(100% + 5*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(90) {
@@ -2007,6 +2452,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(90) {
   background-position: calc(58.5% + -3px) calc(100% + 5*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(91) {
@@ -2018,6 +2468,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(91) {
   background-position: calc(65% + -6px) calc(100% + 5*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(92) {
@@ -2029,6 +2484,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(92) {
   background-position: calc(71.5% + -9px) calc(100% + 5*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(93) {
@@ -2040,6 +2500,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(93) {
   background-position: calc(78% + -12px) calc(100% + 5*4px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(94) {
@@ -2051,6 +2516,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(94) {
   background-position: calc(84.5% + -15px) calc(100% + 5*5px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(95) {
@@ -2062,6 +2532,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(95) {
   background-position: calc(91% + -18px) calc(100% + 5*6px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(96) {
@@ -2073,6 +2548,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(96) {
   background-position: calc(97.5% + -21px) calc(100% + 5*7px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(97) {
@@ -2084,6 +2564,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(97) {
   background-position: -10px calc(100% + 5*0px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(98) {
@@ -2095,6 +2580,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(98) {
   background-position: calc(6.5% + -3px) calc(100% + 5*1px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(99) {
@@ -2106,6 +2596,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(99) {
   background-position: calc(13% + -6px) calc(100% + 5*2px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #sf_mosaic div:nth-child(100) {
@@ -2117,6 +2612,11 @@ section {
 
 #sf_mosaic:hover div:nth-child(100) {
   background-position: calc(19.5% + -9px) calc(100% + 5*3px);
+  width: 110%;
+  height: 110%;
+  transform: translate(5%, 2%);
+  background-clip: border-box;
+  margin: 5px;
 }
 
 #your-meteo {
