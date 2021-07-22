@@ -697,11 +697,12 @@ section {
 .sf_tag-links {
   margin: 1.5rem 0;
 }
-.sf_tag-links .tagcss:hover {
-  content: url("img/objects/tag-CSS-hover.png");
+.sf_tag-links img {
+  margin: 0 0.5rem;
 }
 .sf_tag-links img:hover {
   animation: sway 1s linear;
+  transform-origin: center 5px;
 }
 
 @keyframes sway {

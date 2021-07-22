@@ -1,12 +1,14 @@
 .sf_tag-links{
     margin:1.5rem 0;
-    .tagcss{
+    // .tagcss:hover{
+            
+    // }
+    img{
+        margin: 0 .5rem;
         &:hover{
-            content: url("img/objects/tag-CSS-hover.png");
+            animation: sway 1s linear;
+            transform-origin: center 5px;
         }
-    }
-    img:hover{
-        animation: sway 1s linear;
     }
 }
 
