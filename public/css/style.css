@@ -2841,6 +2841,7 @@ header {
 
 footer {
   min-height: 600px;
+  background-image: url("../images/footer-wave.svg");
 }
 
 .sf_separation {
