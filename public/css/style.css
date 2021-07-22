@@ -694,10 +694,36 @@ section {
     transform: translateX(0) skewX(0);
   }
 }
-.tag-links .tagcss:hover {
+.sf_tag-links {
+  margin: 1.5rem 0;
+}
+.sf_tag-links .tagcss:hover {
   content: url("img/objects/tag-CSS-hover.png");
 }
+.sf_tag-links img:hover {
+  animation: sway 1s linear;
+}
 
+@keyframes sway {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(-30deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 #sf_grid-rotate {
   overflow: hidden;
   max-height: 900px;
@@ -956,53 +982,53 @@ section {
 #perspectives {
   overflow-x: hidden;
 }
-#perspectives div:last-child {
+#perspectives div:nth-child(2) {
   perspective: 1000px;
   perspective-origin: 50% -15%;
   transform-style: preserve-3d;
   min-height: 450px;
   margin-top: 4rem;
 }
-#perspectives div:last-child img {
+#perspectives div:nth-child(2) img {
   max-width: 500px;
   perspective: 1600px;
   height: auto;
   position: absolute;
 }
-#perspectives div:last-child img.perspRight {
+#perspectives div:nth-child(2) img.perspRight {
   transform: rotateY(60deg);
 }
-#perspectives div:last-child img.perspLeft {
+#perspectives div:nth-child(2) img.perspLeft {
   transform: rotateY(-60deg);
 }
-#perspectives div:last-child img:nth-child(1) {
+#perspectives div:nth-child(2) img:nth-child(1) {
   left: -250px;
 }
-#perspectives div:last-child img:nth-child(2) {
+#perspectives div:nth-child(2) img:nth-child(2) {
   left: 0;
 }
-#perspectives div:last-child img:nth-child(3) {
+#perspectives div:nth-child(2) img:nth-child(3) {
   left: 250px;
 }
-#perspectives div:last-child img:nth-child(4) {
+#perspectives div:nth-child(2) img:nth-child(4) {
   left: 500px;
 }
-#perspectives div:last-child img:nth-child(5) {
+#perspectives div:nth-child(2) img:nth-child(5) {
   left: 750px;
 }
-#perspectives div:last-child img:nth-child(6) {
+#perspectives div:nth-child(2) img:nth-child(6) {
   left: 1000px;
 }
-#perspectives div:last-child img:nth-child(7) {
+#perspectives div:nth-child(2) img:nth-child(7) {
   left: 1250px;
 }
-#perspectives div:last-child img:nth-child(8) {
+#perspectives div:nth-child(2) img:nth-child(8) {
   left: 1500px;
 }
-#perspectives div:last-child img:nth-child(9) {
+#perspectives div:nth-child(2) img:nth-child(9) {
   left: 1750px;
 }
-#perspectives div:last-child img:nth-child(10) {
+#perspectives div:nth-child(2) img:nth-child(10) {
   left: 2000px;
 }
 
