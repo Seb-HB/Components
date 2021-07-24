@@ -2831,6 +2831,9 @@ header {
   flex: 0 0 10%;
   padding: 5px;
 }
+#logo:hover {
+  animation: logoRollOver 1s linear;
+}
 
 .reseaux {
   flex: 0 0 20%;
@@ -2866,6 +2869,14 @@ header {
   background-position-x: 206px;
 }
 
+@keyframes logoRollOver {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
 footer {
   min-height: 600px;
   background-image: url("../images/footer-wave.svg");
