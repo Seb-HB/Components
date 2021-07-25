@@ -1,8 +1,9 @@
 #spritesuse{
-    background-image: url("../img/desert-repetable-sm.jpg");
+    background-image: url("../img/desert3000px.jpg");
     background-repeat: repeat-x;
+    background-position-y: top;
     min-height: 500px;
-    animation: horizontal-scroll 25s infinite linear;
+    animation: horizontal-scroll 40s infinite linear;
     position: relative;
     overflow: hidden;
     .sf_characters{
@@ -15,17 +16,10 @@
         display: inline-block;
         background-position-y: 146px;
     }
-    img{
-        position: absolute;
-        animation: deco-scroll 140s infinite linear;
-    }
     :nth-child(1){
-        overflow: hidden;
-    }
-    :nth-child(2){
         animation: surplace1 500ms infinite linear;
     }
-    :nth-child(3){
+    :nth-child(2){
         animation: surplace2 500ms infinite linear;
     }
 
@@ -72,10 +66,13 @@
 /*Animation du background*/
 @keyframes horizontal-scroll{
     0%{
-        background-position: top right;
+        background-position-x: 0;
+    }
+    99.99%{
+        background-position-x: -3000px;
     }
     100%{
-        background-position: top left;
+        background-position-x: 0;
     }
 }
 /*Animation  des elements de deco*/
