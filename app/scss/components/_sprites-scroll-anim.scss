@@ -6,7 +6,7 @@
     animation: horizontal-scroll 40s infinite linear;
     position: relative;
     overflow: hidden;
-    .sf_characters{
+    .sf_character{
         position: absolute;
         bottom: 50px;
         left: 50px;
@@ -75,16 +75,8 @@
         background-position-x: 0;
     }
 }
-/*Animation  des elements de deco*/
-@keyframes deco-scroll{
-    0%{
-        left: 100%;
-    }
-    100%{
-        left: -3000px;
-    }
-}
 
+// premiere div du perso
 @keyframes surplace1{
     0%{
         background-position-x: 600px;
@@ -125,6 +117,8 @@
         left: 54px;
     } 
 }
+
+//seconde div du perso
 @keyframes surplace2{
     0%{
         background-position-x: 523px;
@@ -161,13 +155,3 @@
         left: 51px;
     } 
 }
-
-// @keyframes disparition{
-//     0%{
-//         opacity:100%;
-//     }
-//     100%{
-//         opacity:0%;
-//     }
-// }
-

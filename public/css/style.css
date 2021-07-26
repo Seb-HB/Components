@@ -133,7 +133,7 @@ section {
   position: relative;
   overflow: hidden;
 }
-#spritesuse .sf_characters {
+#spritesuse .sf_character {
   position: absolute;
   bottom: 50px;
   left: 50px;
@@ -160,15 +160,6 @@ section {
   }
   100% {
     background-position-x: 0;
-  }
-}
-/*Animation  des elements de deco*/
-@keyframes deco-scroll {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -3000px;
   }
 }
 @keyframes surplace1 {
