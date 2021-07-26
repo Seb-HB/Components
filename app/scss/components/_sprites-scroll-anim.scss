@@ -20,49 +20,8 @@
         }
     }
     :nth-child(1){
-        animation: surplace1 2s infinite linear;
+        animation: hero-move 2s infinite linear;
     }
-    // :nth-child(2){
-    //     animation: surplace2 500ms infinite linear;
-    // }
-
-    // :nth-child(4){
-    //     background-position-x: 600px;
-    //     left: 200px;
-    //     top: 10px;
-    //     animation: disparition 500ms linear infinite;
-    // }
-    // :nth-child(4){
-    //     background-position-x: 523px;
-    //     left: 200px;
-    //     top: 80px;
-    // }
-    // :nth-child(5){
-    //     background-position-x: 447px;
-    //     left: 200px;
-    //     top: 150px;
-    // }
-    // :nth-child(6){
-    //     background-position-x: 371px;
-    //     left: 200px;
-    //     top: 230px
-    // }
-    // :nth-child(7){
-    //     background-position-x: 296px;
-    //     left: 200px;
-    //     top: 300px;
-    // }
-    // :nth-child(8){
-    //     background-position-x: 219px;
-    //     left: 200px;
-    //     top: 370px;
-    // }
-    // :nth-child(9){
-    //     //intermediaire 141px
-    //     background-position-x: 63px;
-    //     left: 200px;
-    //     top: 440px;
-    // }
 }
 
 
@@ -79,9 +38,9 @@
     }
 }
 
-// premiere div du perso
+//mouvements du hero
 // position-x du sprite 600/523/447/371/296/219/141/63
-@keyframes surplace1{
+@keyframes hero-move{
     0%{
         background-position-x: 600px;
         left: 50px;
@@ -92,11 +51,9 @@
     }
     12.5%{
         background-position-x: 523px;
-        // l'autre apparait à 51px
     }
     24.9%{
         background-position-x: 523px;
-        // left: 52px;
     }
     25%{   
         background-position-x: 447px;
@@ -109,21 +66,18 @@
     } 
     49.9%{
         background-position-x: 371px;
-        // left: 54px;
     }
     50%{
         background-position-x: 296px;
     }
     62.4%{
         background-position-x: 296px;
-        // left: 54px;
     }
     62.5%{
         background-position-x: 219px;
     }
     74.9%{
         background-position-x: 219px;
-        // left: 54px;
     }
     75%{
         background-position-x: 141px;
@@ -140,6 +94,5 @@
     100%{
         background-position-x: 600px;
         opacity:1;
-        // left: 54px;
     } 
 }

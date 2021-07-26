@@ -147,7 +147,7 @@ section {
   animation-play-state: paused;
 }
 #spritesuse :nth-child(1) {
-  animation: surplace1 2s infinite linear;
+  animation: hero-move 2s infinite linear;
 }
 
 /*Animation du background*/
@@ -162,7 +162,7 @@ section {
     background-position-x: 0;
   }
 }
-@keyframes surplace1 {
+@keyframes hero-move {
   0% {
     background-position-x: 600px;
     left: 50px;
