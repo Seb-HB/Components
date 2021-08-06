@@ -2762,14 +2762,6 @@ section {
 #sf_bd-manga #bd-frame div {
   position: absolute;
 }
-#sf_bd-manga #bd-frame div p {
-  position: absolute;
-  color: white;
-  font-weight: 900;
-  font-size: 2rem;
-  top: 5px;
-  left: 5%;
-}
 #sf_bd-manga #bd-frame div img {
   width: 100%;
   height: auto;
