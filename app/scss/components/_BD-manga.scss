@@ -1,0 +1,74 @@
+#sf_bd-manga{
+    #bd-frame{
+        width: 80%;
+        height: 42vw;
+        margin: auto;
+        // display: flex;
+        // flex-wrap: wrap;
+        position: relative;
+        overflow: hidden;
+        div{
+            position: absolute;
+            p{
+                position: absolute;
+                color: white;
+                font-weight: 900;
+                font-size: 2rem;
+                top: 5px;
+                left:5%;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        div:nth-child(1){
+            top: 0;
+            left: 0;
+            width: 33%;
+            height:auto;
+            img{
+                clip-path: polygon(100% 0%, 89% 100%, 0% 100%, 0% 0%);
+            }
+        }
+            
+        div:nth-child(2){
+            top: 0;
+            left: 26%;
+            height:100%;
+            width: auto;
+            img{
+                clip-path: polygon(85% 0%, 100% 100%, 0% 100%, 25% 0%);
+                height: 100%;
+                width: auto;
+             }
+        }
+        div:nth-child(3){
+            top: 0;
+            right: 0;
+            height:auto;
+            width: 35%;
+            img{
+                clip-path: polygon(100% 0%, 100% 100%, 8% 100%, 0% 0%);
+             }
+        }
+        div:nth-child(4){
+            bottom: 0;
+            left: 0;
+            width: 33%;
+            height:auto;
+            img{
+                clip-path: polygon(89% 0%, 71% 100%, 0% 100%, 0% 0%);
+             }
+        }
+        div:nth-child(5){
+            bottom: 0;
+            right: 0;
+            width: 35%;
+            height:auto;
+            img{
+                clip-path: polygon(100% 0%, 100% 100%, 17% 100%, 7% 0%);
+             }
+        }
+    }
+}

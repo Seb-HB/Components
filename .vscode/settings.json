@@ -7,5 +7,6 @@
     "database-client.showQuery": true,
     "database-client.showTrigger": true,
     "database-client.showUser": true,
-    "todo-tree.tree.showBadges": true
+    "todo-tree.tree.showBadges": true,
+    "liveServer.settings.port": 5501
 }
