@@ -139,7 +139,7 @@ section {
   left: 50px;
   width: 50px;
   height: 65px;
-  background-image: url("../img/sprites/perso.png");
+  background-image: url("../img/sprites/personnage.png");
   display: inline-block;
   background-position-y: 146px;
 }
