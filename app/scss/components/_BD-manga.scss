@@ -21,6 +21,12 @@
             height:auto;
             img{
                 clip-path: polygon(100% 0%, 89% 100%, 0% 100%, 0% 0%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                &:hover{
+                    opacity: 0;
+                }
             }
         }
             
@@ -33,6 +39,12 @@
                 clip-path: polygon(85% 0%, 100% 100%, 0% 100%, 25% 0%);
                 height: 100%;
                 width: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                &:hover{
+                    opacity: 0;
+                }
              }
         }
         div:nth-child(3){
@@ -42,6 +54,12 @@
             width: 35%;
             img{
                 clip-path: polygon(100% 0%, 100% 100%, 8% 100%, 0% 0%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                &:hover{
+                    opacity: 0;
+                }
              }
         }
         div:nth-child(4){
@@ -51,6 +69,12 @@
             height:auto;
             img{
                 clip-path: polygon(89% 0%, 71% 100%, 0% 100%, 0% 0%);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                &:hover{
+                    opacity: 0;
+                }
              }
         }
         div:nth-child(5){
@@ -60,6 +84,12 @@
             height:auto;
             img{
                 clip-path: polygon(100% 0%, 100% 100%, 17% 100%, 7% 0%);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                &:hover{
+                    opacity: 0;
+                }
              }
         }
     }
