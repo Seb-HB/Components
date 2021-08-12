@@ -9,6 +9,7 @@
 @import 'base/text_format';
 @import 'base/marges';
 @import 'base/sizing';
+@import 'base/class';
 
 //components
 @import 'components/shiny';
@@ -27,3 +28,6 @@
 @import 'layout/navbar';
 @import 'layout/footer';
 @import 'layout/separation';
+
+//pages
+@import 'pages/about';
