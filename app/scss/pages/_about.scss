@@ -1,5 +1,6 @@
 #sf_entete{
     justify-content:space-between;
+    border: 8px double hsl(22, 30%, 46%);
     div:nth-child(2){
         flex: 0 0 50%;
     }
@@ -27,14 +28,44 @@
      height: 50px;
      margin: auto;
 }
+.sf_precisions{
+    display: none;
+    div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.sf_professional-exp, .sf_formation-exp{
+    border: 8px outset;
+    width: 30%;
+    margin: auto;
+    border-radius: 5px;
+    cursor: url("../img/objects/Help.cur"), pointer;
+}
 
 .sf_professional-exp{
-    border: 1px solid rgb(94, 15, 15);
-    width: 50%;
-    margin: auto;
+    border-color: hsl(46, 91%, 54%);
+    background:linear-gradient( hsl(76, 79%, 53%) 0%, hsl(76, 67%, 39%) 100%);
+    transition: margin 2000ms;
+    &:hover{
+        transition: margin 2000ms;
+        margin-left:67%;
+        border-style: inset;
+        .sf_precisions{
+            display: block;
+        }
+    }
 }
 .sf_formation-exp{
-    border: 1px solid rgb(14, 7, 110);
-    width: 50%;
-    margin: auto;
+    border-color: hsl(76, 79%, 53%);  
+    background:linear-gradient( hsl(46, 91%, 54%) 0%, hsl(46, 79%, 40%) 100%);
+    &:hover{
+        transition: margin 2000ms;
+        margin-left:3%;
+        border-style: inset;
+        .sf_precisions{
+            display: block;
+        }
+    }
 }

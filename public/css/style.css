@@ -2960,6 +2960,7 @@ footer {
 
 #sf_entete {
   justify-content: space-between;
+  border: 8px double #986c52;
 }
 #sf_entete div:nth-child(2) {
   flex: 0 0 50%;
@@ -2987,16 +2988,47 @@ footer {
   margin: auto;
 }
 
-.sf_professional-exp {
-  border: 1px solid #5e0f0f;
-  width: 50%;
+.sf_precisions {
+  display: none;
+}
+.sf_precisions div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sf_professional-exp, .sf_formation-exp {
+  border: 8px outset;
+  width: 30%;
   margin: auto;
+  border-radius: 5px;
+  cursor: url("../img/objects/Help.cur"), pointer;
+}
+
+.sf_professional-exp {
+  border-color: #f4c31f;
+  background: linear-gradient(#b3e628 0%, #83a621 100%);
+  transition: margin 2000ms;
+}
+.sf_professional-exp:hover {
+  transition: margin 2000ms;
+  margin-left: 67%;
+  border-style: inset;
+}
+.sf_professional-exp:hover .sf_precisions {
+  display: block;
 }
 
 .sf_formation-exp {
-  border: 1px solid #0e076e;
-  width: 50%;
-  margin: auto;
+  border-color: #b3e628;
+  background: linear-gradient(#f4c31f 0%, #b79115 100%);
+}
+.sf_formation-exp:hover {
+  transition: margin 2000ms;
+  margin-left: 3%;
+  border-style: inset;
+}
+.sf_formation-exp:hover .sf_precisions {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
