@@ -1,12 +1,28 @@
+/*****************************************************************************
+                Partie Haute de la page
+******************************************************************************/
+
 #sf_entete{
     justify-content:space-between;
     border: 8px double hsl(22, 30%, 46%);
-    div:nth-child(2){
-        flex: 0 0 50%;
+    //colonne centrale avec texte et CV
+    #aboutMe{
+        flex: 0 0 70%;
+        #loadCV{
+            display: flex;
+            div:nth-child(1){
+                flex: 0 0 50%;
+            }
+            img{
+                width: 30%;
+            }
+        }
     }
+    //colonne de droite
     div[class='sf_flex-wrap sf_flex-column']:nth-child(3){
         flex: 0 0 10%;
         background-color:hsl(22, 30%, 46%);
+        color: $font-white;
         justify-content:space-evenly;
         div{
             background-image: url("../img/sprites/ReseauxSociaux-32px.png");
@@ -21,19 +37,16 @@
     }
 }
 
+/********************************************************************************
+                Frise Expérience / formations
+***********************************************************************************/
 
+// la fleche centrale
 .sf_cv-arrow{
     background-color: darkmagenta;
-    width: 20px;
-     height: 50px;
-     margin: auto;
-}
-.sf_precisions{
-    display: none;
-    div{
-        display: flex;
-        justify-content: space-evenly;
-    }
+    width: 15px;
+    height: 50px;
+    margin: auto;
 }
 
 .sf_professional-exp, .sf_formation-exp{
@@ -47,25 +60,17 @@
 .sf_professional-exp{
     border-color: hsl(46, 91%, 54%);
     background:linear-gradient( hsl(76, 79%, 53%) 0%, hsl(76, 67%, 39%) 100%);
-    transition: margin 2000ms;
-    &:hover{
-        transition: margin 2000ms;
-        margin-left:67%;
-        border-style: inset;
-        .sf_precisions{
-            display: block;
-        }
-    }
 }
 .sf_formation-exp{
     border-color: hsl(76, 79%, 53%);  
     background:linear-gradient( hsl(46, 91%, 54%) 0%, hsl(46, 79%, 40%) 100%);
-    &:hover{
-        transition: margin 2000ms;
-        margin-left:3%;
-        border-style: inset;
-        .sf_precisions{
-            display: block;
-        }
+}
+
+// les détails qui apparaissent au click
+.sf_precisions{
+    display: none;
+    div{
+        display: flex;
+        justify-content: space-evenly;
     }
 }

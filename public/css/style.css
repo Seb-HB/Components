@@ -30,6 +30,7 @@ li {
 body {
   font-family: "Dosis", sans-serif;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 code {
@@ -2853,6 +2854,10 @@ section {
   opacity: 0;
 }
 
+.sf_btn {
+  padding: 10px 5px;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -2958,16 +2963,29 @@ footer {
   margin: 4rem auto;
 }
 
+/*****************************************************************************
+                Partie Haute de la page
+******************************************************************************/
 #sf_entete {
   justify-content: space-between;
   border: 8px double #986c52;
 }
-#sf_entete div:nth-child(2) {
+#sf_entete #aboutMe {
+  flex: 0 0 70%;
+}
+#sf_entete #aboutMe #loadCV {
+  display: flex;
+}
+#sf_entete #aboutMe #loadCV div:nth-child(1) {
   flex: 0 0 50%;
+}
+#sf_entete #aboutMe #loadCV img {
+  width: 30%;
 }
 #sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) {
   flex: 0 0 10%;
   background-color: #986c52;
+  color: white;
   justify-content: space-evenly;
 }
 #sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) div {
@@ -2981,19 +2999,14 @@ footer {
   background-position-y: 404px;
 }
 
+/********************************************************************************
+                Frise Expérience / formations
+***********************************************************************************/
 .sf_cv-arrow {
   background-color: darkmagenta;
-  width: 20px;
+  width: 15px;
   height: 50px;
   margin: auto;
-}
-
-.sf_precisions {
-  display: none;
-}
-.sf_precisions div {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .sf_professional-exp, .sf_formation-exp {
@@ -3007,28 +3020,19 @@ footer {
 .sf_professional-exp {
   border-color: #f4c31f;
   background: linear-gradient(#b3e628 0%, #83a621 100%);
-  transition: margin 2000ms;
-}
-.sf_professional-exp:hover {
-  transition: margin 2000ms;
-  margin-left: 67%;
-  border-style: inset;
-}
-.sf_professional-exp:hover .sf_precisions {
-  display: block;
 }
 
 .sf_formation-exp {
   border-color: #b3e628;
   background: linear-gradient(#f4c31f 0%, #b79115 100%);
 }
-.sf_formation-exp:hover {
-  transition: margin 2000ms;
-  margin-left: 3%;
-  border-style: inset;
+
+.sf_precisions {
+  display: none;
 }
-.sf_formation-exp:hover .sf_precisions {
-  display: block;
+.sf_precisions div {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style.css.map */
