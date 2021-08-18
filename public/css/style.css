@@ -20,6 +20,7 @@
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 li {
@@ -2855,7 +2856,7 @@ section {
 }
 
 .sf_btn {
-  padding: 10px 5px;
+  padding: 20px 15px;
 }
 
 header {
@@ -2968,7 +2969,7 @@ footer {
 ******************************************************************************/
 #sf_entete {
   justify-content: space-between;
-  border: 8px double #986c52;
+  border: 8px double #3e60bb;
 }
 #sf_entete #aboutMe {
   flex: 0 0 70%;
@@ -2984,26 +2985,38 @@ footer {
 }
 #sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) {
   flex: 0 0 10%;
-  background-color: #986c52;
+  background-color: #3e60bb;
   color: white;
+  font-size: 1rem;
   justify-content: space-evenly;
+  padding: 10px;
 }
-#sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) div {
+#sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) div a {
   background-image: url("../img/sprites/ReseauxSociaux-32px.png");
   width: 32px;
   height: 32px;
-  background-position-y: 306px;
+  background-position-y: 212px;
   transition: background-position-y 500ms;
 }
-#sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) div:hover {
-  background-position-y: 404px;
+#sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) div a:hover {
+  background-position-y: 244px;
+}
+#sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) div a:nth-child(1) {
+  background-position-x: 0px;
+}
+#sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) div a:nth-child(2) {
+  background-position-x: -32px;
+  margin: 0 0.3rem;
+}
+#sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) div a:nth-child(3) {
+  background-position-x: -128px;
 }
 
 /********************************************************************************
                 Frise Expérience / formations
 ***********************************************************************************/
 .sf_cv-arrow {
-  background-color: darkmagenta;
+  background-color: #3e60bb;
   width: 15px;
   height: 50px;
   margin: auto;

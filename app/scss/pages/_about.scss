@@ -4,7 +4,7 @@
 
 #sf_entete{
     justify-content:space-between;
-    border: 8px double hsl(22, 30%, 46%);
+    border: 8px double hsl(224, 50%, 49%);
     //colonne centrale avec texte et CV
     #aboutMe{
         flex: 0 0 70%;
@@ -21,17 +21,29 @@
     //colonne de droite
     div[class='sf_flex-wrap sf_flex-column']:nth-child(3){
         flex: 0 0 10%;
-        background-color:hsl(22, 30%, 46%);
+        background-color:hsl(224, 50%, 49%);
         color: $font-white;
+        font-size: 1rem;
         justify-content:space-evenly;
-        div{
+        padding: 10px;
+        div a{
             background-image: url("../img/sprites/ReseauxSociaux-32px.png");
             width: $size-rs;
             height: $size-rs;
-            background-position-y: 306px;
+            background-position-y: 212px;
             transition: background-position-y 500ms;
             &:hover{
-                background-position-y: 404px;
+                background-position-y: 244px;
+            }
+            &:nth-child(1){
+                background-position-x: 0px;
+            }
+            &:nth-child(2){
+                background-position-x: -32px;
+                margin: 0 .3rem;
+            }
+            &:nth-child(3){
+                background-position-x:-128px;
             }
         }
     }
@@ -43,7 +55,7 @@
 
 // la fleche centrale
 .sf_cv-arrow{
-    background-color: darkmagenta;
+    background-color: hsl(224, 50%, 49%);
     width: 15px;
     height: 50px;
     margin: auto;
