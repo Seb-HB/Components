@@ -2984,6 +2984,9 @@ footer {
 #sf_entete #aboutMe #loadCV img {
   width: 30%;
 }
+#sf_entete > div {
+  flex: 0 0 10%;
+}
 #sf_entete div[class="sf_flex-wrap sf_flex-column"]:nth-child(3) {
   flex: 0 0 10%;
   background-color: #3e60bb;
