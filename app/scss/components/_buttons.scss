@@ -1,3 +1,16 @@
 .sf_btn{
-    padding: 20px 15px;
+    display: inline-block;
+    border: 8px double;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: hsl(208, 57%, 95%);
+    box-shadow: 2px 2px 10px;
+    transition: 200ms;
+    font-size: 1.5rem;
+    color:hsl(213, 22%, 49%);
+    margin: 0.5rem;
+    &:hover{
+        box-shadow: -1px -1px 5px inset;
+        background-color: hsl(207, 56%, 93%);
+    }
 }
