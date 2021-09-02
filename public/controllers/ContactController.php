@@ -4,12 +4,20 @@ class ContactController{
     private $sujets=['Stage', 'Travail', 'Comment', 'Divers'];
 
 
-    function sendmail($post){
+    function contactRouting(){
+        if($_SERVER['REQUEST_METHOD']=='POST'){
+            echo($this->sendmail());
+        }else{
+            require 'vues/contact.php';
+        }
+    }
+
+
+    function sendmail(){
         if(!isset($_SESSION['mail'])){
             $_SESSION['mail']=0;
         }
-        $data=$this->verifData($post);
-        
+        $data=$this->verifData($_POST);
         if($data==FALSE){
             return "Mail non délivré, des données sont non conformes.";
         }
@@ -17,7 +25,7 @@ class ContactController{
         if ($_SESSION['mail']<3){
             $retour=$this->prepaMail($data);
         }else{
-            $retour="Envoi impossible car vous avez dépassé le nombre maximal de mails à envoyer";
+            $retour="Vous ne pouvez pas envoyer plus de 3 mails";
         }
         return $retour;
         
@@ -26,19 +34,19 @@ class ContactController{
     
     function verifData($data){
         if(!preg_match("#^[a-zA-Z]{3,}$#", $data['nom'])){
-            return false;
+            return 'nom ko';
         }
         if(!preg_match('#^[a-zA-Z]{3,}$#', $data['prenom'])){
-            return false;
+            return 'prenom ko';
         }
         if(!preg_match('#^[a-z]([a-z0-9]*[\.\-\_]?[a-z0-9]+)+@[a-z]{2,15}[.][a-z]{2,20}$#', $data['mail'])){
-            return false;
+            return 'mail ko';
         }
         if(!in_array($data['sujet'], $this->sujets)){
-            return false;
+            return 'sujet ko';
         }
         if(!preg_match('#^[a-zA-Z0-9]{10,}$#', $data['message'])){
-            return false;
+            return 'message ko';
         } 
        
         foreach ($data as $key=>$value){
@@ -62,7 +70,7 @@ class ContactController{
         $encoded_subject = substr($encoded_subject, strlen('Subject: '));
        
         
-        $message="<b>Nom : </b>".$data['nom']."<br/><b>Prénom : </b>".$data['prenom']."<br/><b>Tel : </b>".$data['tel']."<br/><b>Mail : </b>".$data['mail']."<br/><b>Sujet : </b>".$data['sujet']."<br/><b>Message : </b><br/>".$data['message']."<br/>";
+        $message="<b>Nom : </b>".$data['nom']."<br/><b>Prénom : </b>".$data['prenom']."<br/><b>Mail : </b>".$data['mail']."<br/><b>Sujet : </b>".$data['sujet']."<br/><b>Message : </b><br/>".$data['message']."<br/>";
         
         
         $headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -77,7 +85,7 @@ class ContactController{
             $retour="Echec lors de l'envoi";
         }
         
-        return $retour;
+        echo($retour);
     }
 
 

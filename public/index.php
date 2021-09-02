@@ -20,12 +20,18 @@ spl_autoload_register(function ($class){
 });
 
 
-if (isset($_GET['page'])){
-    if ($_GET['page'] =='about'){
-        $controller=new AboutController;
-        $controller->getPage();
+if (isset($_GET['p'])){
+    switch ($_GET['p']){
+        case 'about' :
+            $controller=new AboutController;
+            $controller->getPage();
+            break;
+        case 'contact' :
+            $controller=new ContactController;
+            $controller->contactRouting();
+            break;
+            
     }
-
 }else{
     $controller=new HomeController;
     $controller->getHomepage();

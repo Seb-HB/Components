@@ -5,30 +5,26 @@
 ?>
 
     <section id="contact-me">
-        <form method='post' action="index.php?p=mail">
-            <label>Votre Nom:
-                <input type="text" name="nom" required="required" >
-            </label>
+        <form method='post' action="index.php?p=contact">
+            <label for='inName'>Votre Nom:</label>
+            <input type="text" name="nom" required="required" id='inName' >
             <div class="sf_field-error"></div>
-            <label >Votre Prénom:
-                <input type="text" name="prenom" required="required">
-            </label>
+            <label for='infirsname'>Votre Prénom:</label>
+            <input type="text" name="prenom" required="required" id='infirsname'>
             <div class="sf_field-error"></div>
-            <label >Votre Mail:
-                <input type="mail" name="mail" required="required">
-            </label>
+            <label for='inMail'>Votre Mail:</label>
+            <input type="mail" name="mail" required="required" id='inMail'>
             <div class="sf_field-error"></div>
-            <label >Choisissez un sujet:
-                <select name="sujet" >
-                    <option value="Stage">Proposer un stage</option>
-                    <option value="Travail">Proposer une mission</option>
-                    <option value="Comment">Laisser un commentaire</option>
-                    <option value="Divers">Autre sujet</option>
-                </select>
-            </label>
-            <label >
-                <textarea name="message"  required="required"></textarea>
-            </label>
+            <label for='sujet-select'>Choisissez un sujet:</label>
+            <select name="sujet"  id='sujet-select'>
+                <option value="Stage">Proposer un stage</option>
+                <option value="Travail">Proposer une mission</option>
+                <option value="Comment">Laisser un commentaire</option>
+                <option value="Divers">Autre sujet</option>
+            </select>
+            
+            <label >Votre Message</label>
+            <textarea name="message"  required="required"></textarea>
             <div class="sf_field-error"></div>
             <button type="submit" name="contact-post">Poster</button>
         </form>

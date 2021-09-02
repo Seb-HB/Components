@@ -1,0 +1,25 @@
+#contact-me{
+    width:100%;
+    min-height: 600px;
+    background-image: url('../img/bg-contact.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    form{
+        width:40%;
+        margin: auto;
+        background-color: rgba(255, 255, 255,.5);
+        padding:1rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        label{
+            flex: 0 0 30%;
+            text-align: left;
+        }
+        input, textarea, select{
+            margin-bottom: 1rem;
+            flex: 0 0 70%;
+        }
+    }
+}

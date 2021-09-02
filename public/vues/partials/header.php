@@ -8,9 +8,9 @@
                 <li><a href="">CSS</a></li>
                 <li><a href="">JS</a></li>
                 <li><a href="">PHP</a></li>
-                <li><a href="index.php?page=models">Maquettes</a></li>
-                <li><a href="index.php?page=about">A propos</a></li>
-                <li><a href="index.php?page=contact">Contact</a></li>
+                <li><a href="index.php?p=models">Maquettes</a></li>
+                <li><a href="index.php?p=about">A propos</a></li>
+                <li><a href="index.php?p=contact">Contact</a></li>
             </ul>
             <div id="burger">
 
