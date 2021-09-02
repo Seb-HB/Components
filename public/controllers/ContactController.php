@@ -55,7 +55,7 @@ class ContactController{
     //    }
         
         
-        $to="contact@sebastienfouvet.fr";
+        $to="XXX";
         $subject="Vous avez un nouveaux message envoyé par ".$data['nom'];
         $preferences = ['input-charset' => 'UTF-8', 'output-charset' => 'UTF-8'];
         $encoded_subject = iconv_mime_encode('Subject', $subject, $preferences);
@@ -67,7 +67,7 @@ class ContactController{
         
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $headers .= 'To: Webecom <contact@sebastienfouvet.fr>' . "\r\n";
+        $headers .= 'To: Seb <XXX>' . "\r\n";
         $headers .= 'From: SiteEval <site@contact.fr>' . "\r\n";
     
         if (mail($to, $encoded_subject, $message, $headers)){
