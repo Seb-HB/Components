@@ -30,6 +30,22 @@ if (isset($_GET['p'])){
             $controller=new ContactController;
             $controller->contactRouting();
             break;
+        case 'CSS':
+            $controller=new ComponentController;
+            $controller->selectComponents('CSS');
+            break;
+        case 'JS':
+            $controller=new ComponentController;
+            $controller->selectComponents('JS');
+            break;
+        case 'API':
+            $controller=new ComponentController;
+            $controller->selectComponents('API');
+            break;
+        case 'PHP':
+            $controller=new ComponentController;
+            $controller->selectComponents('PHP');
+            break;
             
     }
 }else{

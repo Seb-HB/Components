@@ -1,13 +1,14 @@
 <header>
     <div id="sf-navbar">
         <div id="logo">
-            <a href="index.html#sf-navbar" ><img src="img/logo50px.png" alt="Logo retour accueil"></a>
+            <a href="index.php#sf-navbar" ><img src="img/logo50px.png" alt="Logo retour accueil"></a>
         </div>
         <nav>
             <ul>
-                <li><a href="">CSS</a></li>
-                <li><a href="">JS</a></li>
-                <li><a href="">PHP</a></li>
+                <li><a href="index.php?p=CSS">CSS</a></li>
+                <li><a href="index.php?p=JS">JS</a></li>
+                <li><a href="index.php?p=API">API</a></li>
+                <li><a href="index.php?p=PHP" disabled>PHP</a></li>
                 <li><a href="index.php?p=models">Maquettes</a></li>
                 <li><a href="index.php?p=about">A propos</a></li>
                 <li><a href="index.php?p=contact">Contact</a></li>

@@ -22,6 +22,6 @@
     <!-- ma feuille de style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- données de la page -->
-    <title>Fouvet Sébastien Développeur Web</title>
-    <meta name="description" content="Développeur fullstack junior en formation, découvrez le portfolio de mes réalisations en CSS PHP, JS... Contactez moi si vous aimez, je cherche un stage du 2/11/2021 au 10/01/2022." />
+    <title><?php echo ($this->metaTitle)?></title>
+    <meta name="description" content="<?php echo ($this->metaDescription)?>" />
 </head>

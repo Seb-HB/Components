@@ -2,6 +2,8 @@
 
 class ContactController{
     private $sujets=['Stage', 'Travail', 'Comment', 'Divers'];
+    private $metaTitle='Contactez-moi!';
+    private $metaDescription='Vous cherchez un développeur fullStack pour un projet ou vous avez un stage à me proposer à partir du 2 novembre? Alors écrivez moi, je vous répondrai.';
 
 
     function contactRouting(){
@@ -29,10 +31,10 @@ class ContactController{
     
     
     function verifData($data){
-        if(!preg_match("#^[a-zA-Z]{3,}$#", $data['nom'])){
+        if(!preg_match("#^[a-zA-Zéèàêô]{3,}$#", $data['nom'])){
             $_SESSION['sendMail']['errors'][]='le nom saisi ne respecte pas les ciritères';
         }
-        if(!preg_match('#^[a-zA-Z]{3,}$#', $data['prenom'])){
+        if(!preg_match('#^[a-zA-Zéèàêô]{3,}$#', $data['prenom'])){
             $_SESSION['sendMail']['errors'][]='le prénom saisi ne respecte pas les ciritères';
         }
         if(!preg_match('#^[a-z]([a-z0-9]*[\.\-\_]?[a-z0-9]+)+@[a-z]{2,15}[.][a-z]{2,20}$#', $data['mail'])){
@@ -41,7 +43,7 @@ class ContactController{
         if(!in_array($data['sujet'], $this->sujets)){
             $_SESSION['sendMail']['errors'][]='Utilisez un sujet de la séléction.';
         }
-        if(!preg_match('#^[a-zA-Z0-9]{10,}$#', $data['message'])){
+        if(!preg_match('#^[a-zA-Z0-9éèàêôù ]{10,}$#', $data['message'])){
             $_SESSION['sendMail']['errors'][]='le texte ne doit pas contenir de caractères spéciaux';
         } 
        
@@ -74,8 +76,8 @@ class ContactController{
         
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $headers .= 'To: Seb <XXX>' . "\r\n";
-        $headers .= 'From: SiteEval <site@contact.fr>' . "\r\n";
+        $headers .= 'To: Seb <contact@sebastienfouvet.fr>' . "\r\n";
+        $headers .= 'From: sebastienfouvet.fr <'.$data['mail'].'>' . "\r\n";
     
         if (mail($to, $encoded_subject, $message, $headers)){
             $_SESSION['sendMail']['nb']++;

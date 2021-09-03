@@ -2,7 +2,7 @@
 
 class Component{
     private $id;
-    private $sesignation;
+    private $designation;
     private $filePHP;
     private $primaryCSSFile;
     private $secondaryCSSFile;
@@ -14,9 +14,9 @@ class Component{
     private $useAPI;
 
 
-    public function __construct($sesignation, $filePHP, $primaryCSSFile,$secondaryCSSFile,$scriptJS,$fullWidth,$addDate,$useCSS,$useJS,$useAPI; $id=null){
+    public function __construct($designation, $filePHP, $primaryCSSFile,$secondaryCSSFile,$scriptJS,$fullWidth,$addDate,$useCSS,$useJS, $useAPI, $id=null){
         $this->id = $id;
-        $this->sesignation = $sesignation;
+        $this->designation = $designation;
         $this->filePHP = $filePHP;
         $this->primaryCSSFile = $primaryCSSFile;
         $this->secondaryCSSFile = $secondaryCSSFile;
@@ -25,7 +25,7 @@ class Component{
         $this->addDate = $addDate;
         $this->useCSS = $useCSS;
         $this->useJS = $useJS;
-        $this->UseApi = $UseApi;
+        $this->UseApi = $useAPI;
     }
 
 
