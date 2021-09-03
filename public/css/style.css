@@ -3054,12 +3054,13 @@ footer {
 
 #contact-me {
   width: 100%;
-  min-height: 600px;
+  min-height: 70vh;
   background-image: url("../img/bg-contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0;
   padding-top: 5rem;
+  color: #617a98;
 }
 #contact-me > div {
   width: 35%;
@@ -3070,6 +3071,7 @@ footer {
 #contact-me form {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 #contact-me form label {
   flex: 0 0 25%;
@@ -3080,6 +3082,11 @@ footer {
   margin: 1rem 0 0.5rem 0;
   flex: 0 0 70%;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  color: #617a98;
+}
+#contact-me form button {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .sf_field-error {

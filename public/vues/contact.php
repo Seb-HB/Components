@@ -29,6 +29,18 @@
                 <div class="sf_field-error"></div>
                 <button class="sf_btn" type="submit" name="contact-post">Poster</button>
             </form>
+            <div id="sendmailalert">
+                <?php
+                if(isset($_SESSION['sendMail']['errors'])){
+                    foreach ($_SESSION['sendMail']['errors'] as $error){
+                        echo('<p>'.$error.'</p>');
+                    }
+                }
+                if(isset($_SESSION['sendMail']['result'])){
+                    echo('<p>'.$_SESSION['sendMail']['result'].'</p>');
+                }
+                ?>
+            </div>
         </div>
     </section>
 

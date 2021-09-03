@@ -48,7 +48,7 @@ document.querySelector("input[type='mail']").addEventListener('beforeinput', fun
 
 document.querySelector("textarea").addEventListener('beforeinput', function(e) {
     setTimeout(function() {
-        let filtre=new RegExp('[a-zA-Z0-9]{10,}');
+        let filtre=new RegExp('[a-zA-Z0-9 \.]{10,}');
         if (filtre.test(e.target.value)){
             e.target.className='highlight-green';
             document.querySelector("textarea + .sf_field-error").innerHTML="";

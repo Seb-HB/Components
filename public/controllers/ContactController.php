@@ -6,51 +6,50 @@ class ContactController{
 
     function contactRouting(){
         if($_SERVER['REQUEST_METHOD']=='POST'){
-            echo($this->sendmail());
-        }else{
-            require 'vues/contact.php';
+            $_SESSION['sendMail']['errors']=[];
+            $this->sendmail();
         }
+        require 'vues/contact.php';
     }
 
 
     function sendmail(){
-        if(!isset($_SESSION['mail'])){
-            $_SESSION['mail']=0;
+        if(!isset($_SESSION['sendMail']['nb'])){
+            $_SESSION['sendMail']['nb']=0;
         }
-        $data=$this->verifData($_POST);
-        if($data==FALSE){
-            return "Mail non délivré, des données sont non conformes.";
-        }
-        
-        if ($_SESSION['mail']<3){
-            $retour=$this->prepaMail($data);
+        if($_SESSION['sendMail']['nb']<3){
+            $data=$this->verifData($_POST);
         }else{
-            $retour="Vous ne pouvez pas envoyer plus de 3 mails";
+            $_SESSION['sendMail']['errors'][]='Vous avez atteint le quota de mails quotidien';
         }
-        return $retour;
-        
+        if (count($_SESSION['sendMail']['errors'])==0){
+            $this->prepaMail($data);
+        }
     }
     
     
     function verifData($data){
         if(!preg_match("#^[a-zA-Z]{3,}$#", $data['nom'])){
-            return 'nom ko';
+            $_SESSION['sendMail']['errors'][]='le nom saisi ne respecte pas les ciritères';
         }
         if(!preg_match('#^[a-zA-Z]{3,}$#', $data['prenom'])){
-            return 'prenom ko';
+            $_SESSION['sendMail']['errors'][]='le prénom saisi ne respecte pas les ciritères';
         }
         if(!preg_match('#^[a-z]([a-z0-9]*[\.\-\_]?[a-z0-9]+)+@[a-z]{2,15}[.][a-z]{2,20}$#', $data['mail'])){
-            return 'mail ko';
+            $_SESSION['sendMail']['errors'][]='l\'email saisi ne semble pas être valide';
         }
         if(!in_array($data['sujet'], $this->sujets)){
-            return 'sujet ko';
+            $_SESSION['sendMail']['errors'][]='Utilisez un sujet de la séléction.';
         }
         if(!preg_match('#^[a-zA-Z0-9]{10,}$#', $data['message'])){
-            return 'message ko';
+            $_SESSION['sendMail']['errors'][]='le texte ne doit pas contenir de caractères spéciaux';
         } 
        
-        foreach ($data as $key=>$value){
-            $data2[$key]=  htmlentities($value);
+        $data2=[];
+        if (count($_SESSION['sendMail']['errors'])==0){
+            foreach ($data as $key=>$value){
+                $data2[$key]=  htmlentities($value);
+            }
         }
         return $data2;
     }
@@ -63,7 +62,7 @@ class ContactController{
     //    }
         
         
-        $to="XXX";
+        $to="contact@sebastienfouvet.fr";
         $subject="Vous avez un nouveaux message envoyé par ".$data['nom'];
         $preferences = ['input-charset' => 'UTF-8', 'output-charset' => 'UTF-8'];
         $encoded_subject = iconv_mime_encode('Subject', $subject, $preferences);
@@ -79,13 +78,11 @@ class ContactController{
         $headers .= 'From: SiteEval <site@contact.fr>' . "\r\n";
     
         if (mail($to, $encoded_subject, $message, $headers)){
-            $_SESSION['mail']++;
-            $retour="Votre mail est envoyé, il sera traité dans les plus brefs délais";
+            $_SESSION['sendMail']['nb']++;
+            $_SESSION['sendMail']['result']="Votre mail est envoyé, il sera traité dans les plus brefs délais";
         }else{
-            $retour="Echec lors de l'envoi";
+            $_SESSION['sendMail']['result']="Echec lors de l'envoi";
         }
-        
-        echo($retour);
     }
 
 
