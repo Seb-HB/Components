@@ -3057,23 +3057,42 @@ footer {
   min-height: 600px;
   background-image: url("../img/bg-contact.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 5rem;
+}
+#contact-me > div {
+  width: 35%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
 }
 #contact-me form {
-  width: 40%;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
 #contact-me form label {
-  flex: 0 0 30%;
+  flex: 0 0 25%;
   text-align: left;
+  margin: 1rem 0 0.5rem 0;
 }
 #contact-me form input, #contact-me form textarea, #contact-me form select {
-  margin-bottom: 1rem;
+  margin: 1rem 0 0.5rem 0;
   flex: 0 0 70%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.sf_field-error {
+  color: #8f1515;
+  flex: 0 0 80%;
+}
+
+.highlight-green {
+  border: 2px solid green;
+}
+
+.highlight-red {
+  border: 2px solid #8f1515;
 }
 
 /*# sourceMappingURL=style.css.map */
