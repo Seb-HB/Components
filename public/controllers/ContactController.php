@@ -59,27 +59,9 @@ class ContactController{
     
     
     function prepaMail($data){
-    //    foreach ($data as $key=>$value){
-    //        $data[$key]=mb_encode_mimeheader( $value);   
-    //    }
-        
-        
-        $to="contact@sebastienfouvet.fr";
-        $subject="Vous avez un nouveaux message envoyé par ".$data['nom'];
-        $preferences = ['input-charset' => 'UTF-8', 'output-charset' => 'UTF-8'];
-        $encoded_subject = iconv_mime_encode('Subject', $subject, $preferences);
-        $encoded_subject = substr($encoded_subject, strlen('Subject: '));
-       
-        
-        $message="<b>Nom : </b>".$data['nom']."<br/><b>Prénom : </b>".$data['prenom']."<br/><b>Mail : </b>".$data['mail']."<br/><b>Sujet : </b>".$data['sujet']."<br/><b>Message : </b><br/>".$data['message']."<br/>";
-        
-        
-        $headers  = 'MIME-Version: 1.0' . "\r\n";
-        $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $headers .= 'To: Seb <contact@sebastienfouvet.fr>' . "\r\n";
-        $headers .= 'From: sebastienfouvet.fr <'.$data['mail'].'>' . "\r\n";
+        $message=new Message($data);
     
-        if (mail($to, $encoded_subject, $message, $headers)){
+        if (mail($message->getTo(), $message->getEncoded_subject(), $message->getContent(), $message->getHeaders())){
             $_SESSION['sendMail']['nb']++;
             $_SESSION['sendMail']['result']="Votre mail est envoyé, il sera traité dans les plus brefs délais";
         }else{

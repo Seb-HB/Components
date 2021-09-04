@@ -1,4 +1,5 @@
 <?php
+require_once 'var.php';
 spl_autoload_register(function ($class){
 
     $folders=[
@@ -11,10 +12,6 @@ spl_autoload_register(function ($class){
             require_once $folder.$class.'.php';
             break;
         }
-        // else{
-        //     echo($class.' n\'a pas été trouvé dans le répertoire '.$folder.'<br>');
-        //     echo($folder.$class.'.php <br>');
-        // }
     }
 
 });
@@ -31,22 +28,12 @@ if (isset($_GET['p'])){
             $controller->contactRouting();
             break;
         case 'CSS':
-            $controller=new ComponentController;
-            $controller->selectComponents('CSS');
-            break;
         case 'JS':
-            $controller=new ComponentController;
-            $controller->selectComponents('JS');
-            break;
         case 'API':
-            $controller=new ComponentController;
-            $controller->selectComponents('API');
-            break;
         case 'PHP':
             $controller=new ComponentController;
-            $controller->selectComponents('PHP');
+            $controller->selectComponents($_GET['p']);
             break;
-            
     }
 }else{
     $controller=new HomeController;

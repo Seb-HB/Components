@@ -10,24 +10,21 @@ class ComponentController{
     }
 
     public function selectComponents($cat){
+        $tag='use'.$cat;
         switch($cat){
             case 'CSS': 
-                $tag='useCSS';
                 $this->metaTitle ='Composants CSS';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables utilisant des propriétés CSS. J\'utilise le préprocesseur SCSS.';
                 break;
             case 'JS': 
-                $tag='useJS';
                 $this->metaTitle ='Composants JS';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables utilisant Javascript. J\'utilise Javascript natif, sans librairie.';
                 break;
             case 'API': 
-                $tag='useAPI';
                 $this->metaTitle ='Composants utilisant une API';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables qui explore les API diverses et variées disponibles sur internet.';
                 break;
             case 'PHP': 
-                $tag='usePHP';
                 $this->metaTitle ='Composants utilisant dss propriétés PHP';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables développés en PHP orienté objets.';
             default: 
