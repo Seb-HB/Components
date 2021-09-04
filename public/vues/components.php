@@ -5,6 +5,7 @@
 
     foreach ($components as $component) {
         require $component->getFilePHP();
+        include 'vues/partials/separation.php';
         if( !is_null($component->getScriptJS())){
             $this->scripts[]=$component->getScriptJS();
         }
@@ -15,6 +16,5 @@
         echo($script);
     }
     ?>
-    <script src="js/about.js"></script>>
 </body>
 </html>
