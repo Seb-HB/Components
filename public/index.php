@@ -1,32 +1,43 @@
 <?php
-try
-{
-	// On se connecte à MySQL
-	$bdd = new PDO('mysql:host=localhost:3306;dbname=kickboosteryohan;charset=utf8', 'root', '');
+require_once 'var.php';
+spl_autoload_register(function ($class){
+
+    $folders=[
+        'controllers/',
+        'models/',
+        'models/managers/'
+    ];
+    foreach($folders as $folder){
+        if (file_exists($folder.$class.'.php')){
+            require_once $folder.$class.'.php';
+            break;
+        }
+    }
+
+});
+
+
+if (isset($_GET['p'])){
+    switch ($_GET['p']){
+        case 'about' :
+            $controller=new AboutController;
+            $controller->getPage();
+            break;
+        case 'contact' :
+            $controller=new ContactController;
+            $controller->contactRouting();
+            break;
+        case 'CSS':
+        case 'JS':
+        case 'API':
+        case 'PHP':
+            $controller=new ComponentController;
+            $controller->selectComponents($_GET['p']);
+            break;
+    }
+}else{
+    $controller=new HomeController;
+    $controller->getHomepage();
 }
-catch(Exception $e)
-{
-	// En cas d'erreur, on affiche un message et on arrête tout
-    die('Erreur : '.$e->getMessage());
-}
-
-// Si tout va bien, on peut continuer
-
-// On récupère tout le contenu de la table jeux_video
-$reponse = $bdd->query('SELECT * FROM Projet');
-
-// On affiche chaque entrée une à une
-while ($donnees = $reponse->fetch())
-{
-?>
-    <p>
-    <strong>Projet</strong> : <?php echo $donnees['titre']; ?>
-    (<?php echo $donnees['description']; ?>) durée <?php echo $donnees['duree']; ?> jours !<br />
-    Objectif financier : <?php echo $donnees['objectifFinancier']; ?> €.
-	</p>
-<?php
-}
-
-$reponse->closeCursor(); // Termine le traitement de la requête
 
 ?>

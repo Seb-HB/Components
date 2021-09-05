@@ -1,51 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- liens pour le favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/icons/favicons/site.webmanifest">
-    <!-- liens googlefonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
-    <!-- ma feuille de style -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- données de la page -->
-    <title>Maquettes Fouvet Sébastien</title>
-    <meta name="description" content="Développeur fullstack junior en formation, découvrez le portfolio de mes réalisations en CSS PHP, JS... Contactez moi si vous aimez, je cherche un stage du 2/11/2021 au 10/01/2022." />
-</head>
+<?php
+    require 'vues/partials/head.php';
+?>
 <body>
-    <header>
-        <div id="sf-navbar">
-            <div id="logo">
-                <a href="index.html#sf-navbar"><img src="img/logo50px.png" alt="portrait Sébastien Fouvet"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">CSS</a></li>
-                    <li><a href="">JS</a></li>
-                    <li><a href="">PHP</a></li>
-                    <li><a href="models.html">Maquettes</a></li>
-                    <li><a href="about.html">A propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div id="burger">
-
-                </div>
-            </nav>
-            <div class="reseaux">
-                <div><a href="https://www.linkedin.com/in/fouvetsébastien-développeurweb" ></a></div>
-                <div><a href="https://www.facebook.com/sebastien.fouvet.311" target="blank"></a></div>
-                <div><a href="https://www.behance.net/fouvet-sebastien" target="blank"></a></div>
-            </div>
-        </div>
-    </header>
-
+    <?php
+        require 'vues/partials/header.php';
+    ?>
     <section>
         <h1 class="sf-shiny">Fouvet Sébastien <br>Dévellopeur FullStack junior</h1>
         <div id='sf_entete' class="sf_flex-wrap">
@@ -190,14 +149,10 @@
         </div>
         <div class='sf_cv-arrow'></div>
 
-
-
-
-
     </section>
-    <footer>
-
-    </footer>
+    <?php
+        require 'vues/partials/footer.php';
+    ?>
     <script src="js/about.js"></script>>
 </body>
 </html>
