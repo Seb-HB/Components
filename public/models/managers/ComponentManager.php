@@ -69,7 +69,7 @@ class ComponentManager extends Database implements Crud{
 	 * @param mixed $objet 
 	 */
 	public function insert($component) {
-		$request=$this->bdd->prepare("INSERT INTO component(`designation`, `filePHP`, `primaryFileCSS`, `secondaryFileCSS`, `scriptJS`, `fullWidth`, `dateAjout`, `useCSS`, `useJS`, `useAPI`) 
+		$request=$this->bdd->prepare("INSERT INTO components(`designation`, `filePHP`, `primaryFileCSS`, `secondaryFileCSS`, `scriptJS`, `fullWidth`, `dateAjout`, `useCSS`, `useJS`, `useAPI`) 
         VALUES (:designation, :filePHP, :priCSS, :secondCSS, :script, :full, :dateAjout, :CSS, :JS, :API)");
         $request->execute([':designation'=> $component->getDesignation(),
                             ':filePHP'=> $component->getFilePHP(),

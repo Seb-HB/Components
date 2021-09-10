@@ -5,11 +5,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.php?p=CSS">CSS</a></li>
-                <li><a href="index.php?p=JS">JS</a></li>
-                <li><a href="index.php?p=API">API</a></li>
-                <li><a href="index.php?p=PHP" disabled>PHP</a></li>
-                <li><a href="index.php?p=models">Maquettes</a></li>
+                <li><a href="index.php?p=css">CSS</a></li>
+                <li><a href="index.php?p=js">JS</a></li>
+                <li><a href="index.php?p=api">API</a></li>
+                <li><a href="index.php?p=php" disabled>PHP</a></li>
+                <li><a href="index.php?p=mockup">Maquettes</a></li>
                 <li><a href="index.php?p=about">A propos</a></li>
                 <li><a href="index.php?p=contact">Contact</a></li>
             </ul>

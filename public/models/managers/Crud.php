@@ -6,5 +6,6 @@ interface Crud{
     public function Delete($id);
     public function update($objet);
     public function insert($objet);
+    private function transformDatas($datas);
 }
 ?>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'var.php';
 spl_autoload_register(function ($class){
 
@@ -27,10 +28,13 @@ if (isset($_GET['p'])){
             $controller=new ContactController;
             $controller->contactRouting();
             break;
-        case 'CSS':
-        case 'JS':
-        case 'API':
-        case 'PHP':
+        case 'mockup':
+            $controller=new MockupController;
+
+        case 'css':
+        case 'js':
+        case 'api':
+        case 'php':
             $controller=new ComponentController;
             $controller->selectComponents($_GET['p']);
             break;
