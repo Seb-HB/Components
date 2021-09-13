@@ -1,0 +1,23 @@
+#sf_morpion{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    div{
+        flex: 0 0 50%;
+    }
+    td{
+        border: 3px solid green;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+
+}
+
+#morpionchat{
+    display: none;
+    border: 1px solid black;
+    text-align: left;
+    scroll-behavior: auto;
+}

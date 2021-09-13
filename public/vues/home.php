@@ -23,6 +23,7 @@
         require 'vues/partials/separation.php';
         require 'vues/components/bd-manga.php';
         require 'vues/partials/separation.php';
+        require 'vues/components/morpion.php';
     ?>
 
 
@@ -39,6 +40,7 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
     <script src="js/meteo.js"></script>
+    <script src="js/morpion.js"></script>
     <!-- <script src="js/requestAPI.js"></script> -->
 </body>
 </html>

@@ -2860,6 +2860,29 @@ section {
   background-color: #e3eef7;
 }
 
+#sf_morpion {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#sf_morpion div {
+  flex: 0 0 50%;
+}
+#sf_morpion td {
+  border: 3px solid green;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+#morpionchat {
+  display: none;
+  border: 1px solid black;
+  text-align: left;
+  scroll-behavior: auto;
+}
+
 header {
   position: sticky;
   top: 0;
