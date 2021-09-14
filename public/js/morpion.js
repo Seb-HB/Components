@@ -64,7 +64,12 @@ bouton.addEventListener("click",function(e) {
 function startGame(){
     document.querySelector("#morpionparams").style.display='none';
     tchat.style.display='block';
-    insertTchatLine('Bienvenue <b>'+player.name+'</b> je m\'appelle Tatiana.');
+    insertTchatLine('Encahntée <b>'+player.name+'</b>.');
+    let firstNameSentence=aleaSentence(1);
+    if(firstNameSentence!=''){
+        insertTchatLine(firstNameSentence);
+    }
+    insertTchatLine('Moi c\'est Tatiana.');
     insertTchatLine('Ravie de jouer contre toi, bonne chance!!');
 
     // si l'IA commence
@@ -219,6 +224,12 @@ function playTurn(line, column){
     if ((line==1 && column==3)||(line==2 && column==2)|| (line==3 && column==1)){
         activePlayer['d2']++;
     }
+    if(activePlayer['l'+line]==2 || activePlayer['c'+column]==2 || activePlayer['d1']==2 || activePlayer['d2']==2){
+        let goodTurnSentence=aleaSentence(2);
+        if(goodTurnSentence!=''){
+            insertTchatLine(goodTurnSentence);
+        }
+    }
     if(activePlayer['l'+line]==3 || activePlayer['c'+column]==3 || activePlayer['d1']==3 || activePlayer['d2']==3){
         gameEnd();
     }
@@ -233,4 +244,40 @@ function insertTchatLine(texte){
 function gameEnd(){
     insertTchatLine('Victoire de '+activePlayer.name);
     activePlayer='';
+}
+
+function  aleaSentence(situation){
+    firstName=[
+        'Quel joli prénom.',
+        'J\'adore ce prénom.',
+        'Hummm! Ca me rappelle de bons souvenirs....',
+        'Je compatie, tu n\'en as pas trop voulu à tes parents?'
+    ];
+    goodTurn=[
+        'Tu l\'as fait par hasard?', 
+        'Pas mal, mais peux mieux faire.',
+        'Bien tenté, mais on ne m\'a pas aussi facilement',
+        'Un coup de génie!!',
+        'Si ce n\'avait pas été moi ton adversaire, ça aurait pu marcher.',
+        'hum hum, surprenant!',
+        'Je n\'aurais pas fait mieux'
+    ]
+
+    let maxRand, randNumberSentence, sentence, sentencesTab;
+    switch(situation){
+        case 1:
+            sentencesTab=firstName;
+            break;
+        case 2:
+            sentencesTab=goodTurn;
+            break;
+    }
+    maxRand=sentencesTab.length*2;
+    randNumberSentence=Math.floor(Math.random() *maxRand);
+    if (randNumberSentence<sentencesTab.length){
+        return sentencesTab[randNumberSentence];
+    } else{
+        return '';
+    }
+
 }

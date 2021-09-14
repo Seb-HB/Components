@@ -17,7 +17,9 @@
 
 #morpionchat{
     display: none;
-    border: 1px solid black;
+    border: 8px double black;
     text-align: left;
-    scroll-behavior: auto;
+    padding:2vw;
+    max-height: 400px;
+    overflow-y: scroll;
 }
