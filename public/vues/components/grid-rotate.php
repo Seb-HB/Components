@@ -14,6 +14,6 @@
         </div>
     </div>
     <div class="sf_tag-links">
-        <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS"></a>
+        <a href="index.php?p=css"><img src="img/objects/tag-CSS.png" alt="Tag CSS"></a>
     </div>
 </section>

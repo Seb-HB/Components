@@ -1,16 +1,19 @@
 #sf_morpion{
     width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    div{
-        flex: 0 0 50%;
-    }
-    td{
-        border: 3px solid green;
-        width: 100px;
-        height: 100px;
-        text-align: center;
+    #morpiongame{
+        display: flex;
+        justify-content: center;
+
+        div{
+            flex: 0 0 50%;
+        }
+        td{
+            border: 3px solid green;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
     }
 
 }
@@ -20,6 +23,6 @@
     border: 8px double black;
     text-align: left;
     padding:2vw;
-    max-height: 400px;
+    max-height: 300px;
     overflow-y: scroll;
 }

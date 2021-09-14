@@ -2863,13 +2863,15 @@ section {
 #sf_morpion {
   width: 80%;
   margin: auto;
+}
+#sf_morpion #morpiongame {
   display: flex;
   justify-content: center;
 }
-#sf_morpion div {
+#sf_morpion #morpiongame div {
   flex: 0 0 50%;
 }
-#sf_morpion td {
+#sf_morpion #morpiongame td {
   border: 3px solid green;
   width: 100px;
   height: 100px;
@@ -2881,7 +2883,7 @@ section {
   border: 8px double black;
   text-align: left;
   padding: 2vw;
-  max-height: 400px;
+  max-height: 300px;
   overflow-y: scroll;
 }
 

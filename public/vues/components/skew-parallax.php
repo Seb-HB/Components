@@ -9,6 +9,6 @@
         <p>Si vous voulez profiter pleinement de l'effet, je vous déconseille d'utiliser firefox.</p>
     </div>
     <div class="sf_tag-links">
-        <a href="#"><img src="img/objects/tag-CSS.png" alt="Tag CSS" class="tagcss"></a>
+        <a href="index.php?p=css"><img src="img/objects/tag-CSS.png" alt="Tag CSS" class="tagcss"></a>
     </div>
 </section>
