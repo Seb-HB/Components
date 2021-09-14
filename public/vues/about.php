@@ -48,7 +48,7 @@
                 </div>
                 <p>Formation Diplômante en cours</p>
                 <p>HTML/CSS, PHP, JS, Angular, symfony, POO</p>
-                <p>A la recherche d'un stage du 02/11 au 10/01/22, <a href="contact.html">contactez moi</a></p>
+                <p>A la recherche d'un stage du 02/11 au 10/01/22, <a href="index.php?p=contact">contactez moi</a></p>
             </div>
         </div>
         <div class='sf_cv-arrow'></div>
