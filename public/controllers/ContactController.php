@@ -43,8 +43,8 @@ class ContactController{
         if(!in_array($data['sujet'], $this->sujets)){
             $_SESSION['sendMail']['errors'][]='Utilisez un sujet de la séléction.';
         }
-        if(!preg_match('#^[a-zA-Z0-9éèàêôù ]{10,}$#', $data['message'])){
-            $_SESSION['sendMail']['errors'][]='le texte ne doit pas contenir de caractères spéciaux';
+        if(!preg_match('#^[^\{\[\]\}$]{10,}$#', $data['message'])){
+            $_SESSION['sendMail']['errors'][]='les caratères [], {} et $ ne sont pas autorisés et le message doit en comporter plus de 10';
         } 
        
         $data2=[];

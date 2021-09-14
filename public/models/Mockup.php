@@ -12,7 +12,7 @@ class Mockup{
     private $isIntegrated;
     private $video;
 
-    public function __construct($title, $description, $specifications, $miniature, $fullImg, , $isIntegrated, $secondImg=null, $thirdImg=null, $responsiveImg=null, $video=null, $id=null){
+    public function __construct($title, $description, $specifications, $miniature, $fullImg, $isIntegrated, $secondImg=null, $thirdImg=null, $responsiveImg=null, $video=null, $id=null){
         $this->id = $id;
         $this->title = $title;
         $this->description = $description;

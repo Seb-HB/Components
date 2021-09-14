@@ -10,12 +10,12 @@ Class Message{
     public function __construct($datas){
         global $targetMail;
         $this->to = $targetMail;
-        $this->subject = $$datas['sujet'];
+        $this->subject = $datas['sujet'];
         $this->encoded_subject = iconv_mime_encode('Subject', $this->subject, $this->preferences);
         $this->encoded_subject= substr($this->encoded_subject, strlen('Subject: '));
 
         $this->content="<b>Nom : </b>".$datas['nom']."<br/><b>Prénom : </b>".$datas['prenom']."<br/><b>Mail : </b>".$datas['mail'].
-        "<br/><b>Sujet : </b>".$datas['sujet']."<br/><b>Message : </b><br/>".$data['message']."<br/>";
+        "<br/><b>Sujet : </b>".$datas['sujet']."<br/><b>Message : </b><br/>".$datas['message']."<br/>";
 
         $this->headers='MIME-Version: 1.0' . "\r\n";
         $this->headers.='Content-type: text/html; charset=utf-8' . "\r\n";
