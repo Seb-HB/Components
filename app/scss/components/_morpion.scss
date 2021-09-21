@@ -9,10 +9,13 @@
             flex: 0 0 50%;
         }
         td{
-            border: 3px solid green;
+            border: 3px solid #ea5c00;
             width: 100px;
             height: 100px;
             text-align: center;
+        }
+        table{
+            margin: auto;
         }
     }
 
@@ -20,9 +23,33 @@
 
 #morpionchat{
     display: none;
-    border: 8px double black;
+    box-shadow:2px 2px 5px;
     text-align: left;
     padding:2vw;
     max-height: 300px;
     overflow-y: scroll;
+}
+
+#morpionparams{
+    box-shadow:2px 2px 5px;
+    padding: 1rem;
+    form{
+        width: 50%;
+        margin: 1rem auto;
+        input{
+            box-shadow: inset 2px 2px;
+            padding: 5px 10px;
+        }
+        input[type="radio"]{
+            visibility: hidden;
+        }
+        input[type="radio"]:checked + label{
+            border: 1px solid black;
+            padding: 5px 10px;
+            box-shadow:2px 2px 5px;
+        }
+        div{
+            margin-bottom: 1rem;
+        }
+    }
 }

@@ -29,19 +29,24 @@
         <div id="morpionparams">
             <h3>Selectionnez vos options</h3>
             <form action="" method="post" name="morpionoptions">
-                <label >Votre nom :
-                    <input type="text" name="player" id="player">
-                </label>
                 <div>
+                    <label >Votre nom :
+                        <input type="text" name="player" id="player">
+                    </label>
+                </div>
+                <div>
+                    <p>Choisissez votre camp:</p>
                     <input type="radio" name="team" id="crossteam" value="cross" checked=checked><label for="crossteam">X</label>
                     <input type="radio" name="team" id="circleteam" value="circle"><label for="circleteam">O</label>
                 </div>
-                <label for="playerstart">Joueur qui commence :</label>
-                <select name="playerstart" id="playerstart" disabled="disabled">
-                    <option value="IA" >IA</option>
-                    <option value="">Joueur</option>
-                </select>
-                <button name="startgame" type="submit" disabled="disabled">Démarrer la partie</button>
+                <div>
+                    <label for="playerstart">Joueur qui commence :</label>
+                    <select name="playerstart" id="playerstart" disabled="disabled">
+                        <option value="IA" >IA</option>
+                        <option value="">Joueur</option>
+                    </select>
+                </div>
+                <button class="sf_btn" name="startgame" type="submit" disabled="disabled">Démarrer la partie</button>
             </form>
         
         </div>

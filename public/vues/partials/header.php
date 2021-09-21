@@ -1,7 +1,7 @@
 <header>
     <div id="sf-navbar">
         <div id="logo">
-            <a href="index.php#sf-navbar" ><img src="img/logo50px.png" alt="Logo retour accueil"></a>
+            <a href="index.php#sf-navbar" ><img src="img/logo-blue-orange50px.png" alt="Logo retour accueil"></a>
         </div>
         <nav>
             <ul>
