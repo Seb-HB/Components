@@ -23,6 +23,9 @@
                     <td class='sf_morpion-col3'></td>
                 </tr>
             </table>
+            <div class="sf_mVictory">
+                
+            </div>
         </div>
         <div id="morpionchat">
         </div>

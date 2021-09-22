@@ -25,6 +25,7 @@ let IA={
 }
 let activePlayer;
 let nbTurn=0;
+let gameActive=false;
 let bouton=document.querySelector("button[name='startgame']");
 let select=document.querySelector('select');
 let tchat=document.querySelector("#morpionchat");
@@ -64,12 +65,13 @@ bouton.addEventListener("click",function(e) {
 function startGame(){
     document.querySelector("#morpionparams").style.display='none';
     tchat.style.display='block';
+    gameActive=true;
     insertTchatLine('Encahntée <b>'+player.name+'</b>.');
     let firstNameSentence=aleaSentence(1);
     if(firstNameSentence!=''){
         insertTchatLine(firstNameSentence);
     }
-    insertTchatLine('Moi c\'est Tatiana.');
+    insertTchatLine('Moi c\'est '+IA['name']+'.');
     insertTchatLine('Ravie de jouer contre toi, bonne chance!!');
 
     // si l'IA commence
@@ -108,15 +110,27 @@ function activeBoard(){
     let squares=document.querySelectorAll('td');
     squares.forEach(function(square){
         square.addEventListener('click', function(e){
-            if (e.target.innerHTML==''){
-                let colonne= e.target.className.substr(-1);
-                let ligne= e.target.parentNode.className.substr(-1);
-                playerTurn(ligne, colonne);
-            }else{
-                insertTchatLine('Cette case est déjà occupée.');
+            if(gameActive){
+                if (e.target.innerHTML==''){
+                    let colonne= e.target.className.substr(-1);
+                    let ligne= e.target.parentNode.className.substr(-1);
+                    playerTurn(ligne, colonne);
+                }else{
+                    insertTchatLine('Cette case est déjà occupée.');
+                }  
             }
-            
         });
+    });
+}
+
+
+function resetBoard(){
+    let squares=document.querySelectorAll('td');
+    squares.forEach(function(square){
+        square.addEventListener('click', function(e){
+            insertTchatLine('La partie est terminée');
+        });
+        square.innerHTML='';
     });
 }
 
@@ -153,12 +167,21 @@ function iaTurn(){
         for(let key in IA){
             if (IA[key]==2 && player[key]==0){
                 next=key;
+                insertTchatLine(aleaSentence(4));
                 break;
             }
         }
         if(next==''){
             for(let key in player){
                 if (player[key]==2 && IA[key]==0){
+                    next=key;
+                    break;
+                }
+            }
+        }
+        if(next==''){
+            for(let key in player){
+                if ((IA[key]+player[key])<3){
                     next=key;
                     break;
                 }
@@ -225,7 +248,8 @@ function playTurn(line, column){
         activePlayer['d2']++;
     }
     if(activePlayer['l'+line]==2 || activePlayer['c'+column]==2 || activePlayer['d1']==2 || activePlayer['d2']==2){
-        let goodTurnSentence=aleaSentence(2);
+        let goodTurnSentence;
+        (activePlayer['name']==player['name'])? goodTurnSentence=aleaSentence(2) : goodTurnSentence=aleaSentence(3);
         if(goodTurnSentence!=''){
             insertTchatLine(goodTurnSentence);
         }
@@ -242,8 +266,27 @@ function insertTchatLine(texte){
 }
 
 function gameEnd(){
+    let victory=document.querySelector(".sf_mVictory");
     insertTchatLine('Victoire de '+activePlayer.name);
+    gameActive=false;
+    victory.innerHTML='Victoire de '+activePlayer.name;
+    victory.style.display='block';
+    victory.animate([
+        { transform: 'scale(0) rotate(0deg)' },
+        { transform: 'scale(1) rotate(720deg)'},
+        ],{
+            duration: 5000,
+            fill: "forwards"
+        }
+    );
     activePlayer='';
+
+    setTimeout(function() {
+        resetBoard();
+        document.querySelector("#morpionparams").style.display='block';
+        tchat.style.display='none';
+    },5000);
+
 }
 
 function  aleaSentence(situation){
@@ -262,14 +305,34 @@ function  aleaSentence(situation){
         'hum hum, surprenant!',
         'Je n\'aurais pas fait mieux'
     ]
+    autoSuff=[
+        'Je vais t\'écraser',
+        'Tu vas perdre',
+        'N\'ai pas peur, ça ne fait pas mal',
+        'Hahahahahaha!!!!!',
+        'Tremble vermiceau!'
+    ]
+    victoryProud=[
+        'Tu retenteras.',
+        'Tu pensais pouvoir me battre?', 
+        'Tu n\'avais aucune chance!',
+        'C\'est qui le lion maintenant?',
+        'Désolé, c\'est le jeu.'
+    ]
 
-    let maxRand, randNumberSentence, sentence, sentencesTab;
+    let maxRand, randNumberSentence, sentencesTab;
     switch(situation){
         case 1:
             sentencesTab=firstName;
             break;
         case 2:
             sentencesTab=goodTurn;
+            break;
+        case 3:
+            sentencesTab=autoSuff;
+            break;
+        case 4:
+            sentencesTab=victoryProud;
             break;
     }
     maxRand=sentencesTab.length*2;
