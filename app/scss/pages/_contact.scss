@@ -4,18 +4,21 @@
     background-image: url('../img/bg-contact.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background: opacity(.5);
     margin-top: 0;
-    padding-top: 5rem;
-    color: #617a98;
+    padding-top: 20vh;
+    color: white;
     >div{
         width:35%;
         margin: auto;
-        background-color: rgba(255, 255, 255,.7);
+        background-color: hsla(204, 100%, 50%, 0.6);
         padding:1rem;
     }
     form{
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        font-weight: 600;
         text-align:center;
         label{
             flex: 0 0 25%;
@@ -27,6 +30,7 @@
             flex: 0 0 70%;
             box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
             color: #617a98;
+            padding: 5px 10px;
         }
         button{
             margin-left:50%;
@@ -36,14 +40,19 @@
 }
 
 .sf_field-error{
-    color: rgb(143, 21, 21);
-    flex: 0 0 80%;
+    background-color: hsl(23, 100%, 42%);
+    flex: 0 0 70%;
+    margin-left: 25%;
+    text-align:left;
+    font-family:$font-nav;
 }
 
 .highlight-green{
-    border: 2px solid green;
+    border-right: 3px solid green;
+    border-bottom: 3px solid green;
 }
 
 .highlight-red{
-    border: 2px solid rgb(143, 21, 21);
+    border-right: 3px solid hsl(23, 100%, 46%);
+    border-bottom: 3px solid hsl(23, 100%, 46%);
 }

@@ -10,8 +10,8 @@
                 <label for='inName'>Votre Nom:</label>
                 <input type="text" name="nom" required="required" id='inName' >
                 <div class="sf_field-error"></div>
-                <label for='infirsname'>Votre Prénom:</label>
-                <input type="text" name="prenom" required="required" id='infirsname'>
+                <label for='infirstname'>Votre Prénom:</label>
+                <input type="text" name="prenom" required="required" id='infirstname'>
                 <div class="sf_field-error"></div>
                 <label for='inMail'>Votre Mail:</label>
                 <input type="mail" name="mail" required="required" id='inMail'>
@@ -24,7 +24,7 @@
                     <option value="Divers">Autre sujet</option>
                 </select>
             
-                <label >Votre Message</label>
+                <label >Votre Message:</label>
                 <textarea name="message"  required="required"></textarea>
                 <div class="sf_field-error"></div>
                 <button class="sf_btn" type="submit" name="contact-post">Poster</button>

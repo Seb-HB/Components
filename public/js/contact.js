@@ -10,7 +10,7 @@ document.querySelector("input[name='nom']").addEventListener('beforeinput', func
             testEnableForm(0,1);
         }else{
             e.target.className='highlight-red';
-            document.querySelector("input[name='nom'] + .sf_field-error").innerHTML="Le nom ne doit comporter que des lettres et un minimum de 3 caratères";
+            document.querySelector("input[name='nom'] + .sf_field-error").innerHTML="Uniquement des lettres et minimum 3 caratères";
             testEnableForm(0,0);
         }
     },50);
@@ -25,7 +25,7 @@ document.querySelector("input[name='prenom']").addEventListener('beforeinput', f
             testEnableForm(1,1);
         }else{
             e.target.className='highlight-red';
-            document.querySelector("input[name='prenom'] + .sf_field-error").innerHTML="Le prénom ne doit comporter que des lettres et un minimum de 3 caratères";
+            document.querySelector("input[name='prenom'] + .sf_field-error").innerHTML="Uniquement des lettres et minimum 3 caratères";
             testEnableForm(1,0);
         }
     },50);
@@ -55,7 +55,7 @@ document.querySelector("textarea").addEventListener('beforeinput', function(e) {
             testEnableForm(4,1);
         }else{
             e.target.className='highlight-red';
-            document.querySelector("textarea + .sf_field-error").innerHTML="Le message doit comporter au minimum 10 caractères";
+            document.querySelector("textarea + .sf_field-error").innerHTML="Taile minimale de 10 caractères";
             testEnableForm(4,0);
         }
     },50);
