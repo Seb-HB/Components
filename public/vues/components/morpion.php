@@ -2,6 +2,7 @@
     <div class="section-presentation">
         <h2>Morpion et IA</h2>
         <p>Le but est de coder une micro <em>Intelligence Artificielle</em></p>
+        <p>Le jeu est pontué de phrases humoristiques semi-aléatoires pour le rendre plus fun.</p>
         <p>Amusez vous bien avec ce morpion.</p>
     </div>
     <div id='morpiongame'>
@@ -32,6 +33,10 @@
         <div id="morpionparams">
             <h3>Selectionnez vos options</h3>
             <form action="" method="post" name="morpionoptions">
+                <div>
+                    <input type="checkbox" name="audio" id="audio">
+                    <label for="audio"></label> 
+                </div>
                 <div>
                     <label >Votre nom :
                         <input type="text" name="player" id="player">

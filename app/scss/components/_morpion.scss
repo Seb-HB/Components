@@ -28,6 +28,7 @@
     padding:2vw;
     max-height: 300px;
     overflow-y: scroll;
+    font-family: 'Changa', sans-serif;
 }
 
 #morpionparams{
@@ -40,7 +41,7 @@
             box-shadow: inset 2px 2px;
             padding: 5px 10px;
         }
-        input[type="radio"]{
+        input[type="radio"], input[type="checkbox"]{
             visibility: hidden;
         }
         input[type="radio"]:checked + label{
@@ -57,15 +58,26 @@
     position: relative;
     .sf_mVictory{
         position: absolute;
-        top: 39%;
-        left: 26%;
+        top: 38%;
+        left: 23%;
         display: none;
         transform: scale(0);
-        color: red;
+        color: white;
         font-size: 40px;
         font-weight: bold;
         border: 2px solid black;
         border-radius: 5px;
-        background-color: hsla(205, 90%, 40%, 0.6);
+        background-color: hsla(205, 90%, 40%, 0.9);
+        padding:10px;
     }
+}
+
+#audio + label{
+    display:block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/icons/no-audio.png');
+}
+#audio:checked + label{
+    background-image: url('../img/icons/audio.png');
 }
