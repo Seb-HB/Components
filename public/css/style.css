@@ -2731,7 +2731,7 @@ section {
   position: relative;
 }
 #sf_models-portfolio .sf_product-card .sf_product-title span {
-  background-color: lightgrey;
+  background-color: rgba(0, 138, 230, 0.8);
   position: absolute;
   height: 100%;
   width: 0;
@@ -2951,7 +2951,7 @@ header {
 }
 
 #sf-navbar {
-  background-color: lightgrey;
+  background: linear-gradient(rgba(0, 153, 255, 0.8) 0%, rgba(77, 184, 255, 0.8) 50%, rgba(0, 153, 255, 0.8) 100%);
   display: flex;
 }
 #sf-navbar nav {
@@ -3138,7 +3138,7 @@ footer {
 
 #contact-me {
   width: 100%;
-  min-height: 70vh;
+  min-height: 90vh;
   background-image: url("../img/bg-contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;

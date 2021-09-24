@@ -4,7 +4,8 @@ header{
     z-index: 5;
 }
 #sf-navbar{
-    background-color: $bg-navbar;
+    // background-color: $bg-navbar;
+    background: linear-gradient(hsla(204, 100%, 50%, 0.8) 0%, hsla(204, 100%, 65%, 0.8) 50%, hsla(204, 100%, 50%, 0.8) 100%);
     display: flex;
    
     nav{
