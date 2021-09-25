@@ -43,7 +43,7 @@
             <p>2021-2022</p>
             <div class='sf_precisions'>
                 <div>
-                    <h3>HumanBooster</h3>
+                    <h3><a href="https://humanbooster.com/" target="blank">HumanBooster</a></h3>
                     <p>Saint-Étienne</p>
                 </div>
                 <p>Formation Diplômante en cours</p>
@@ -75,7 +75,22 @@
                 </div>
                 <p>Travail en équipe</p>
                 <p>Requêtes des résultats en BDD</p>
+                <p>Développement d'outils pour la production en VBA sous Excel</p>
                 <p>Analyse et mise en place de plans d'action</p>
+            </div>
+        </div>
+        <div class='sf_cv-arrow'></div>
+        <div class='sf_professional-exp'>
+            <h2>Développeur back-end</h2>
+            <p>2017 stage 2 mois</p>
+            <div class='sf_precisions'>
+                <div>
+                    <h3><a href="https://www.webqam.fr/" target="blank"></a></h3>
+                    <p>Saint-Étienne</p>
+                </div>
+                <p>Utilisation de Zend framework</p>
+                <p>Développement de fonctionnalités back-end pour un site de vidéos</p>
+                <p>Utilisation API pour souscription de nouveaux serveurs </p>
             </div>
         </div>
         <div class='sf_cv-arrow'></div>
@@ -94,11 +109,11 @@
         </div>
         <div class='sf_cv-arrow'></div>
         <div class='sf_formation-exp'>
-            <h2><a href="https://www.certificat-voltaire.fr/" target="blank">Certification Voltaire</a></h2>
+            <h2>Certification Voltaire</h2>
             <p>2015</p>
             <div class='sf_precisions'>
                 <div>
-                    <h3>Certificat Voltaire</h3>
+                    <h3><a href="https://www.certificat-voltaire.fr/" target="blank">Certification Voltaire</a></h3>
                     <p>Saint-Étienne</p>
                 </div>
                 <p>Evaluation du niveau en orthographe</p>

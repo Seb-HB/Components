@@ -7,7 +7,7 @@
     background: opacity(.5);
     margin-top: 0;
     padding-top: 20vh;
-    color: white;
+    color: $font-white;
     >div{
         width:35%;
         margin: auto;
@@ -48,11 +48,11 @@
 }
 
 .highlight-green{
-    border-right: 3px solid green;
-    border-bottom: 3px solid green;
+    border-right: 3px solid $major-blue;
+    border-bottom: 3px solid $major-blue;
 }
 
 .highlight-red{
-    border-right: 3px solid hsl(23, 100%, 46%);
-    border-bottom: 3px solid hsl(23, 100%, 46%);
+    border-right: 3px solid $major-orange;
+    border-bottom: 3px solid $major-orange;
 }

@@ -74,11 +74,11 @@
 
 .sf_professional-exp{
     border-color: hsl(46, 91%, 54%);
-    background:linear-gradient( hsl(76, 79%, 53%) 0%, hsl(76, 67%, 39%) 100%);
+    background:linear-gradient( $major-orange 0%,lighten($major-orange,10%)50%, $major-orange 100%);
 }
 .sf_formation-exp{
     border-color: hsl(76, 79%, 53%);  
-    background:linear-gradient( hsl(46, 91%, 54%) 0%, hsl(46, 79%, 40%) 100%);
+    background:linear-gradient( $major-blue 0%, lighten( $major-blue,10%) 50%, $major-blue 100%);
 }
 
 // les détails qui apparaissent au click

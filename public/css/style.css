@@ -3120,12 +3120,12 @@ footer {
 
 .sf_professional-exp {
   border-color: #f4c31f;
-  background: linear-gradient(#b3e628 0%, #83a621 100%);
+  background: linear-gradient(#eb5a00 0%, #ff751f 50%, #eb5a00 100%);
 }
 
 .sf_formation-exp {
   border-color: #b3e628;
-  background: linear-gradient(#f4c31f 0%, #b79115 100%);
+  background: linear-gradient(#0099ff 0%, #33adff 50%, #0099ff 100%);
 }
 
 .sf_precisions {
@@ -3186,8 +3186,8 @@ footer {
 }
 
 .highlight-green {
-  border-right: 3px solid green;
-  border-bottom: 3px solid green;
+  border-right: 3px solid #0099ff;
+  border-bottom: 3px solid #0099ff;
 }
 
 .highlight-red {
