@@ -3203,10 +3203,12 @@ footer {
 #sf_mockup-detail {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto;
 }
 #sf_mockup-detail div {
-  flex: 0 0 45%;
+  flex: 0 0 48%;
   text-align: left;
 }
 #sf_mockup-detail div img {
@@ -3215,6 +3217,22 @@ footer {
 }
 #sf_mockup-detail div:first-child figure {
   margin: 5rem 0;
+}
+#sf_mockup-detail #mockup-integration {
+  flex: 0 0 100%;
+  align-items: center;
+  margin-top: 5rem;
+}
+#sf_mockup-detail #mockup-integration h3 + div {
+  display: flex;
+  justify-content: space-between;
+}
+#sf_mockup-detail #mockup-integration h3 + div div {
+  flex: 0 0 48%;
+}
+#sf_mockup-detail #mockup-integration h3 + div div video {
+  width: 100%;
+  height: auto;
 }
 
 #sf_mockup-suggest {
@@ -3231,6 +3249,12 @@ footer {
 #sf_mockup-suggest h2 + div div img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 600px) {
+  #sf_mockup-detail {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

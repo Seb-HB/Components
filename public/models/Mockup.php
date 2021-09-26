@@ -11,8 +11,9 @@ class Mockup{
     private $responsiveImg;
     private $isIntegrated;
     private $video;
+    private $technos;
 
-    public function __construct($title, $description, $specifications, $miniature, $fullImg, $isIntegrated, $secondImg=null, $thirdImg=null, $responsiveImg=null, $video=null, $id=null){
+    public function __construct($title, $description, $specifications, $miniature, $fullImg, $isIntegrated, $secondImg=null, $thirdImg=null, $responsiveImg=null, $video=null, $technos=null, $id=null){
         $this->id = $id;
         $this->title = $title;
         $this->description = $description;
@@ -24,6 +25,7 @@ class Mockup{
         $this->responsiveImg = $responsiveImg;
         $this->isIntegrated = $isIntegrated;
         $this->video = $video;
+        $this->technos= $technos;
     }
 
     /**
@@ -245,6 +247,23 @@ class Mockup{
 
         return $this;
     }
+	/**
+	 * 
+	 * @return mixed
+	 */
+	function getTechnos() {
+		return $this->technos;
+	}
+	
+	/**
+	 * 
+	 * @param mixed $technos 
+	 * @return Mockup
+	 */
+	function setTechnos($technos): self {
+		$this->technos = $technos;
+		return $this;
+	}
 }
 
 ?>

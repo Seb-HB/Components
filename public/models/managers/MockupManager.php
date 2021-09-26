@@ -16,12 +16,12 @@ class MockupManager extends Database implements Crud{
         $retour=$request->fetch();
         return new Mockup($retour['title'], $retour['description'], $retour['specifications'], $retour['miniature'],
         $retour['img_full'], $retour['is_integrated'], $retour['img_second'],$retour['img_third'], 
-        $retour['img_responsive'],$retour['video'],$retour['id']);
+        $retour['img_responsive'],$retour['video'],$retour['technos_integration'], $retour['id']);
 	}
 
 
     public function findXOthers($idExclu, int $nb){
-        $request=$this->bdd->prepare("SELECT * FROM mockups WHERE id!=:id LIMIT 3");
+        $request=$this->bdd->prepare("SELECT * FROM mockups WHERE id!=:id ORDER BY RAND() LIMIT 3");
         $request->execute([
             'id'=>$idExclu,
         ]);
@@ -32,7 +32,7 @@ class MockupManager extends Database implements Crud{
 
 
     public function findBy($field, $value){
-        $request=$this->bdd->prepare("SELECT * FROM mockups WHERE ".$field."=:filter ORDER BY dateAjout");
+        $request=$this->bdd->prepare("SELECT * FROM mockups WHERE ".$field."=:filter");
         $request->execute(['filter'=>$value]);
         $retour=$request->fetchAll();
         return $this->transformDatas($retour);
@@ -47,6 +47,8 @@ class MockupManager extends Database implements Crud{
         $request->execute([':id' => $id]);
 	}
 	
+
+    // TODO fonction à adapter à la classe
 	/**
 	 *
 	 * @param mixed $object 
@@ -70,6 +72,7 @@ class MockupManager extends Database implements Crud{
                             ':API'=> $mockup->getUseAPI()]);
 	}
 	
+    // TODO fonction à adapter à la classe
 	/**
 	 *
 	 * @param mixed $objet 
@@ -94,7 +97,7 @@ class MockupManager extends Database implements Crud{
         foreach($datas as $mockup) {
             $mockups[]=new Mockup($mockup['title'], $mockup['description'], $mockup['specifications'], $mockup['miniature'],
                                 $mockup['img_full'], $mockup['is_integrated'], $mockup['img_second'],$mockup['img_third'], 
-                                $mockup['img_responsive'],$mockup['video'],$mockup['id']);
+                                $mockup['img_responsive'],$mockup['video'],$mockup['technos_integration'],$mockup['id']);
         }
         return $mockups;
     }

@@ -34,6 +34,28 @@
             </figure>
             
         </div>
+        <div id='mockup-integration'>
+            <?php 
+ 
+            if(!is_null($mockup->getVideo())){
+                echo('
+                <h3>Vidéo de l\'intégration de la maquette</h3>
+                <div>
+                    <div>
+                        <video controls>
+                            <source src="img/mockup/'.$mockup->getVideo().'" type="video/webm">
+                            <p>Sorry, your browser doesn\'t support HTML5 embedded videos.</p>
+                        </video>
+                    </div>
+                    <div>
+                        <h4>Technologies utilisées pour l\'intégration</h4>'.
+                        $mockup->getTechnos().'
+                    </div>
+                </div>
+                ');
+            }
+            ?>
+        </div>
     </main>
     <section id='sf_mockup-suggest'>
         <h2>Vous aimerez aussi:</h2>

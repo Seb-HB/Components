@@ -1,10 +1,11 @@
 #sf_mockup-detail{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
+    width: 80%;
+    margin: 5rem auto;
     div{
-        flex: 0 0 45%;
+        flex: 0 0 48%;
         text-align: left;
         img{
             max-width:100%;
@@ -14,7 +15,22 @@
     div:first-child figure{
         margin:5rem 0;
     }
-
+    #mockup-integration{
+        flex: 0 0 100%;
+        align-items: center;
+        margin-top: 5rem;
+        h3 + div {
+            display: flex;
+            justify-content: space-between;
+            div{
+                flex: 0 0 48%;
+                video{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
 }
 
 #sf_mockup-suggest{
@@ -30,5 +46,17 @@
                 height: auto;
             }
         }
+    }
+}
+
+
+
+// video{
+//     width: 300px;
+// }
+
+@media (max-width:600px){
+    #sf_mockup-detail{
+        width:95%;
     }
 }
