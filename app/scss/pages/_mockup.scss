@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+
     div{
         flex: 0 0 45%;
         text-align: left;
@@ -19,7 +19,7 @@
 
 #sf_mockup-suggest{
     width: 80%;
-    margin: auto;
+    margin: 5rem auto;
     h2 + div{
         display: flex;
         justify-content: space-evenly;

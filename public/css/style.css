@@ -2727,6 +2727,11 @@ section {
 #sf_models-portfolio .sf_product-card .overlay p {
   text-align: left;
 }
+#sf_models-portfolio .sf_product-card .overlay div {
+  border: 1px solid;
+  padding: 1rem;
+  margin-top: 2rem;
+}
 #sf_models-portfolio .sf_product-card .sf_product-title {
   position: relative;
 }
@@ -3214,7 +3219,7 @@ footer {
 
 #sf_mockup-suggest {
   width: 80%;
-  margin: auto;
+  margin: 5rem auto;
 }
 #sf_mockup-suggest h2 + div {
   display: flex;

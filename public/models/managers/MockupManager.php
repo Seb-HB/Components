@@ -22,7 +22,6 @@ class MockupManager extends Database implements Crud{
 
     public function findXOthers($idExclu, int $nb){
         $request=$this->bdd->prepare("SELECT * FROM mockups WHERE id!=:id LIMIT 3");
-        var_dump($request);
         $request->execute([
             'id'=>$idExclu,
         ]);

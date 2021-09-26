@@ -42,7 +42,10 @@
             foreach ($othersMockups as $mockup) {
                 echo('
                 <div>
-                    <a href="index.php?p=mockup&n='.$mockup->getId().'" ><img src="img/mockup/'.$mockup->getMiniature().'" alt="maquette '.$mockup->getTitle().'"></a>
+                    <figure>
+                        <a href="index.php?p=mockup&n='.$mockup->getId().'" ><img src="img/mockup/'.$mockup->getMiniature().'" alt="maquette '.$mockup->getTitle().'"></a>
+                        <figcaption>Maquette '.$mockup->getTitle().'.</figcaption>
+                    </figure>
                 </div>
                 ');
             }

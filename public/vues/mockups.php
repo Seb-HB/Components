@@ -22,9 +22,11 @@
                                 <img src="img/mockup/'.$mockup->getMiniature().'" alt="" class="sf_img-responsive">
                                 <div class="overlay">'
                                     .$mockup->getDescription().'
-                                    <p>
-                                        Maquette intégrée: '.$integree.'
-                                    </p>
+                                    <div>
+                                        <p>
+                                            Maquette intégrée: '.$integree.'
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="sf_product-title">
