@@ -3195,4 +3195,37 @@ footer {
   border-bottom: 3px solid #eb5a00;
 }
 
+#sf_mockup-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#sf_mockup-detail div {
+  flex: 0 0 45%;
+  text-align: left;
+}
+#sf_mockup-detail div img {
+  max-width: 100%;
+  height: auto;
+}
+#sf_mockup-detail div:first-child figure {
+  margin: 5rem 0;
+}
+
+#sf_mockup-suggest {
+  width: 80%;
+  margin: auto;
+}
+#sf_mockup-suggest h2 + div {
+  display: flex;
+  justify-content: space-evenly;
+}
+#sf_mockup-suggest h2 + div div {
+  flex: 0 0 30%;
+}
+#sf_mockup-suggest h2 + div div img {
+  width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=style.css.map */

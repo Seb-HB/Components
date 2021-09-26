@@ -2,14 +2,33 @@
 class MockupManager extends Database implements Crud{
 
 
-	/**
-	 */
 	public function findAll() {
         $request=$this->bdd->prepare("SELECT * FROM mockups");
         $request->execute();
         $retour=$request->fetchAll();
         return $this->transformDatas($retour);
 	}
+
+
+	public function findOne($id) {
+        $request=$this->bdd->prepare("SELECT * FROM mockups WHERE id=:id");
+        $request->execute(['id'=>$id]);
+        $retour=$request->fetch();
+        return new Mockup($retour['title'], $retour['description'], $retour['specifications'], $retour['miniature'],
+        $retour['img_full'], $retour['is_integrated'], $retour['img_second'],$retour['img_third'], 
+        $retour['img_responsive'],$retour['video'],$retour['id']);
+	}
+
+
+    public function findXOthers($idExclu, int $nb){
+        $request=$this->bdd->prepare("SELECT * FROM mockups WHERE id!=:id LIMIT 3");
+        var_dump($request);
+        $request->execute([
+            'id'=>$idExclu,
+        ]);
+        $retour=$request->fetchAll();
+        return $this->transformDatas($retour);
+    }
 
 
 
@@ -71,7 +90,7 @@ class MockupManager extends Database implements Crud{
                             ':API'=> $mockup->getUseAPI()]);
     }
 
-    private function transformDatas($datas){
+    public function transformDatas($datas){
         $mockups=[];
         foreach($datas as $mockup) {
             $mockups[]=new Mockup($mockup['title'], $mockup['description'], $mockup['specifications'], $mockup['miniature'],

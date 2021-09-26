@@ -30,7 +30,8 @@ if (isset($_GET['p'])){
             break;
         case 'mockup':
             $controller=new MockupController;
-
+            $controller->mockupRouting();
+            break;
         case 'css':
         case 'js':
         case 'api':

@@ -8,13 +8,7 @@ class ComponentManager extends Database implements Crud{
         $request=$this->bdd->prepare("SELECT * FROM components");
         $request->execute();
         $retour=$request->fetchAll();
-        $components=[];
-        foreach($retour as $component) {
-            $components[]=new Component($component['designation'], $component['filePHP'], $component['primaryFileCSS'], $component['secondaryFileCSS'],
-                                        $component['scriptJS'], $component['fullWidth'],$component['dateAjout'], $component['useCSS'],$component['useJS'],
-                                        $component['useJS'],$component['useAPI'],$component['id']);
-        }
-        return $components;
+        return $this->transformDatas($retour);
 	}
 
 
@@ -23,13 +17,7 @@ class ComponentManager extends Database implements Crud{
         $request=$this->bdd->prepare("SELECT * FROM components WHERE ".$field."=:filter ORDER BY dateAjout");
         $request->execute(['filter'=>$value]);
         $retour=$request->fetchAll();
-        $components=[];
-        foreach($retour as $component) {
-            $components[]=new Component($component['designation'], $component['filePHP'], $component['primaryFileCSS'], $component['secondaryFileCSS'],
-                                        $component['scriptJS'], $component['fullWidth'],$component['dateAjout'], $component['useCSS'],$component['useJS'],
-                                        $component['useJS'],$component['useAPI'],$component['id']);
-        }
-        return $components;
+        return $this->transformDatas($retour);
     }
 	
 	/**
@@ -81,6 +69,18 @@ class ComponentManager extends Database implements Crud{
                             ':CSS'=> $component->getUseCSS(),
                             ':JS'=> $component->getUseJS(),
                             ':API'=> $component->getUseAPI()]);
+    }
+
+
+
+    public function transformDatas($datas){
+        $components=[];
+        foreach($datas as $component) {
+            $components[]=new Component($component['designation'], $component['filePHP'], $component['primaryFileCSS'], $component['secondaryFileCSS'],
+                                        $component['scriptJS'], $component['fullWidth'],$component['dateAjout'], $component['useCSS'],$component['useJS'],
+                                        $component['useJS'],$component['useAPI'],$component['id']);
+        }
+        return $components;
     }
 }
 
