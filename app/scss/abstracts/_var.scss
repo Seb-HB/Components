@@ -23,6 +23,10 @@ $major-orange: hsl(23, 100%, 46%);
                 SIZE
 ****************************************************************/
 $size-rs: 32px;
+$container-width:80%;
+@media (min-width: 768px) {
+    $container-width:95%;
+}
 
 
 

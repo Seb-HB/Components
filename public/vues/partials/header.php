@@ -1,10 +1,17 @@
 <header>
     <div id="sf-navbar">
         <div id="logo">
-            <a href="index.php#sf-navbar" ><img src="img/logo-blue-orange50px.png" alt="Logo retour accueil"></a>
+            <label for="burger-menu" class='sf_for-mobile'>
+                <img src="img/logo-blue-orange50px.png" alt="Logo retour accueil">
+            </label>    
+            <a href="index.php#sf-navbar" >
+                <img src="img/logo-blue-orange50px.png" alt="Logo retour accueil">
+            </a>   
         </div>
+        <input type="checkbox" name="burger-menu" id="burger-menu" >
         <nav>
-            <ul>
+            <ul class="sf_dropdown">
+                <li class='sf_for-mobile'><a href="/">accueil</a></li>
                 <li><a href="index.php?p=css">CSS</a></li>
                 <li><a href="index.php?p=js">JS</a></li>
                 <li><a href="index.php?p=api">API</a></li>

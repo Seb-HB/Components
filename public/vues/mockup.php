@@ -57,6 +57,7 @@
             ?>
         </div>
     </main>
+    <?php include 'vues/partials/separation.php'; ?>
     <section id='sf_mockup-suggest'>
         <h2>Vous aimerez aussi:</h2>
         <div>

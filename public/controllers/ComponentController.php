@@ -27,11 +27,17 @@ class ComponentController{
             case 'php': 
                 $this->metaTitle ='Composants utilisant dss propriétés PHP';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables développés en PHP orienté objets.';
-            default: 
+                break;
+                default: 
                 header('location: index.php');
         }
-        $components=$this->getComponentsByTag($tag, 1);
-        require 'vues/components.php';
+        
+        if ($cat!='php'){
+            $components=$this->getComponentsByTag($tag, 1);
+            require 'vues/components.php';
+        }else{
+            require 'vues/infosPhp.php';
+        }
     }
 
 

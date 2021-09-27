@@ -56,3 +56,10 @@
     border-right: 3px solid $major-orange;
     border-bottom: 3px solid $major-orange;
 }
+
+
+@media (max-width:600){
+    #contact-me > div{
+        width: 90%;
+    }
+}

@@ -51,6 +51,10 @@ header{
     }
 }
 
+.sf_for-mobile, #burger-menu{
+    display: none;
+}
+
 .reseaux{
     flex: 0 0 20%;
     display: flex;
@@ -91,5 +95,41 @@ header{
     }
     100%{
         transform: rotate(720deg);
+    }
+}
+
+
+
+@media (max-width:768px){
+    #logo {
+        position:relative;
+        a{
+            display: none;
+        }
+    }
+    .sf_for-mobile{
+        display: block;
+    }
+    #sf-navbar nav {
+        flex: 0 0 55%;
+        .sf_dropdown{
+            display: none;
+            position: absolute;
+        }
+    }
+
+    #sf-navbar #burger-menu:checked + nav> .sf_dropdown{
+        display: block;
+        top: 60px;
+        left: 0;
+        height:250px;
+        width:40%;
+        text-align:left;
+        background-color:$major-blue;
+        z-index: 2;
+        padding:10px;
+        li{
+            display: block;
+        }
     }
 }

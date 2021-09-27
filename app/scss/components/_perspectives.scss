@@ -1,3 +1,5 @@
+$images-width:500px;
+
 #perspectives{
     overflow-x: hidden;
     div:nth-child(2){
@@ -7,7 +9,7 @@
         min-height:450px;
         margin-top: 4rem;
         img{
-            max-width:500px;
+            width:$images-width;
             perspective: 1600px;
             height:auto;
             position: absolute;
@@ -18,35 +20,73 @@
                 transform: rotateY(-60deg);
             }
             &:nth-child(1){
-                left: -250px;
+                left: -($images-width/2);
             }
             &:nth-child(2){
                 left: 0;
             }
             &:nth-child(3){
-                left: 250px;
+                left: $images-width/2;
             }
             &:nth-child(4){
-                left: 500px;
+                left: $images-width;
             }
             &:nth-child(5){
-                left:750px;
+                left:$images-width*1.5;
             }
             &:nth-child(6){
-                left:1000px;
+                left:$images-width*2;
             }
             &:nth-child(7){
-                left:1250px;
+                left:$images-width*2.5;
             }
             &:nth-child(8){
-                left: 1500px;;
+                left: $images-width*3;
             }
             &:nth-child(9){
-                left: 1750px;;
+                left: $images-width*3.5;
             }
             &:nth-child(10){
-                left: 2000px;;
+                left: $images-width*4;;
             }
         }
     }
+}
+
+@media (max-width:600px){
+    $images-width:100px;
+    #perspectives div:nth-child(2) img{
+        width:$images-width;
+        &:nth-child(1){
+            left: -($images-width/2);
+        }
+        &:nth-child(2){
+            left: 0;
+        }
+        &:nth-child(3){
+            left: $images-width/2;
+        }
+        &:nth-child(4){
+            left: $images-width;
+        }
+        &:nth-child(5){
+            left:$images-width*1.5;
+        }
+        &:nth-child(6){
+            left:$images-width*2;
+        }
+        &:nth-child(7){
+            left:$images-width*2.5;
+        }
+        &:nth-child(8){
+            left: $images-width*3;
+        }
+        &:nth-child(9){
+            left: $images-width*3.5;
+        }
+        &:nth-child(10){
+            left: $images-width*4;;
+        }
+    }
+    
 }
