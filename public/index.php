@@ -39,6 +39,11 @@ if (isset($_GET['p'])){
             $controller=new ComponentController;
             $controller->selectComponents($_GET['p']);
             break;
+        case 'ml':
+            $controller=new LegalController;
+            $controller->routing();
+            break;
+
     }
 }else{
     $controller=new HomeController;

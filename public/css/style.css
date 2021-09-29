@@ -3133,8 +3133,10 @@ header {
   }
 }
 footer {
-  min-height: 600px;
-  background-image: url("../images/footer-wave.svg");
+  min-height: 500px;
+  background-image: url("../img/footer-wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sf_separation {
@@ -3350,6 +3352,17 @@ footer {
   #sf_mockup-detail {
     width: 95%;
   }
+}
+#legal-notice {
+  width: 80%;
+  margin: auto;
+}
+#legal-notice p, #legal-notice li {
+  text-align: left;
+}
+
+#legal-notice li {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
