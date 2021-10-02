@@ -37,6 +37,15 @@ class MockupManager extends Database implements Crud{
         $retour=$request->fetchAll();
         return $this->transformDatas($retour);
     }
+
+    public function findOneRand(){
+        $request=$this->bdd->prepare("SELECT * FROM mockups ORDER BY RAND() LIMIT 1");
+        $request->execute();
+        $retour= $request->fetch();
+        return new Mockup($retour['title'], $retour['description'], $retour['specifications'], $retour['miniature'],
+        $retour['img_full'], $retour['is_integrated'], $retour['img_second'],$retour['img_third'], 
+        $retour['img_responsive'],$retour['video'],$retour['technos_integration'], $retour['id']);
+    }
 	
 	/**
 	 *

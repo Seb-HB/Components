@@ -4,6 +4,7 @@ class ComponentController{
     private $scripts=[];
     private $metaTitle;
     private $metaDescription;
+    private $entete;
 
     public function __construct(){
         $this->componentManager = new ComponentManager;
@@ -15,29 +16,38 @@ class ComponentController{
             case 'css': 
                 $this->metaTitle ='Composants CSS';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables utilisant des propriétés CSS. J\'utilise le préprocesseur SCSS.';
+                $this->entete="";
                 break;
             case 'js': 
                 $this->metaTitle ='Composants JS';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables utilisant Javascript. J\'utilise Javascript natif, sans librairie.';
+                $this->entete="";
                 break;
             case 'api': 
                 $this->metaTitle ='Composants utilisant une API';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables qui explore les API diverses et variées disponibles sur internet.';
+                $this->entete="";
                 break;
             case 'php': 
                 $this->metaTitle ='Composants utilisant dss propriétés PHP';
                 $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables développés en PHP orienté objets.';
+                $this->entete= '
+                    <section id="shiny">
+                        <h1 class="sf-shiny">Développement PHP Objets</h1>
+                        <p>L\'ensemble de ce site est développé en <strong>PHP orienté objet</strong>.</p>
+                        <p>Contrairement au autres technologies, il n\'y a pas de composants exclusifs PHP.</p>
+                        <p>Je vais donc simplement recensé quelques exemples de ce qu\'on trouve sur le site et qui est développé en PHP objet.</p>
+                    </section>';
+                $mM=new MockupManager;
+                $mockupExemple=$mM->findOneRand();
                 break;
                 default: 
                 header('location: index.php');
         }
         
-        if ($cat!='php'){
-            $components=$this->getComponentsByTag($tag, 1);
-            require 'vues/components.php';
-        }else{
-            require 'vues/infosPhp.php';
-        }
+        $components=$this->getComponentsByTag($tag, 1);
+        require 'vues/components.php';
+
     }
 
 

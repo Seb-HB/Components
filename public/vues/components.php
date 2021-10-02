@@ -3,6 +3,7 @@
     echo('<body>');
     require 'vues/partials/header.php';
 
+    echo($this->entete);
     foreach ($components as $component) {
         require $component->getFilePHP();
         include 'vues/partials/separation.php';

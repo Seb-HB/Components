@@ -9,18 +9,7 @@
         <p>Contrairement au autres technologies, il n'y a pas de composants exclusifs PHP.</p>
         <p>Je vais donc simplement recensé quelques exemples de ce qu'on trouve sur le site et qui est développé en PHP objet.</p>
     </section>
-    <section>
-        <h2>La page contact</h2>
-        <div>
-            <div>
 
-            </div>
-            <div>
-                
-            </div>
-        </div>
-
-    </section>
 
 
 <?php
