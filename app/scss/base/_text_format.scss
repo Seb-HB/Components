@@ -20,3 +20,10 @@ code{
     font-weight:600;
     color: $font-a-blue;
 }
+
+a{
+    color: inherit;
+    &:hover{
+        color: $major-orange;
+    }
+}

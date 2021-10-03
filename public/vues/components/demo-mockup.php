@@ -1,7 +1,7 @@
 <section>
     <h2>La page des maquettes de sites web</h2>
-    <div id='mockup-php'>
-        <div>
+    <div class="sf_demo-container">
+        <div class="sf_demo-text">
             <p>Toute la partie PHP est basée sur le <strong>modèle MVC</strong> (Modèle, Vue, Controller).</p>
             <p>Toutes les maquettes sont enregistrées en BDD avec toutes leurs informations relatives.</p>
             <p>Un unique contolleur les gère, que ce soit pour l'affichage en gallerie  sur la page <a href="index.php?p=mockup">maquettes</a>, ou pour le détail de l'une d'entre elles.</p>

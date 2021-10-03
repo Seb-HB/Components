@@ -1,12 +1,14 @@
-#mockup-php{
+.sf_demo-container{
     display: flex;
     width:80%;
     margin: auto;
-    div:first-child{
+    justify-content: space-between;
+    .sf_demo-text{
         flex:0 0 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: left;
     }
+    
 }
