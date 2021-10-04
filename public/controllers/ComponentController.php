@@ -29,8 +29,8 @@ class ComponentController{
                 $this->entete="";
                 break;
             case 'php': 
-                $this->metaTitle ='Composants utilisant dss propriétés PHP';
-                $this->metaDescription ='Cette page est composée d\'un ensemble de composants individuels réutilisables développés en PHP orienté objets.';
+                $this->metaTitle ='Developpement PHP objet';
+                $this->metaDescription ='Cette page les différents éléments du site qui ont été développés en PHP orienté objets.';
                 $this->entete= '
                     <section id="shiny">
                         <h1 class="sf-shiny">Développement PHP Objets</h1>
