@@ -23,7 +23,12 @@ code{
 
 a{
     color: inherit;
+}
+
+p a{
+    font-style: italic;
+    font-weight: 500;
     &:hover{
-        color: $major-orange;
+    color: $major-orange;
     }
 }

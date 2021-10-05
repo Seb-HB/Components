@@ -57,7 +57,12 @@ code {
 a {
   color: inherit;
 }
-a:hover {
+
+p a {
+  font-style: italic;
+  font-weight: 500;
+}
+p a:hover {
   color: #eb5a00;
 }
 
@@ -3033,6 +3038,18 @@ section {
   text-align: left;
 }
 
+@media (max-width: 600px) {
+  .sf_demo-container {
+    flex-wrap: wrap;
+  }
+  .sf_demo-container .sf_product-card, .sf_demo-container .sf_flex-30 {
+    flex: 0 0 100%;
+  }
+
+  .sf_demo-container .sf_demo-text {
+    flex: 0 0 100%;
+  }
+}
 header {
   position: sticky;
   top: 0;
@@ -3081,7 +3098,7 @@ header {
   padding: 5px;
 }
 #logo:hover {
-  animation: logoRollOver 1s linear;
+  animation: logoRollOver 500ms linear;
 }
 
 .sf_for-mobile, #burger-menu {

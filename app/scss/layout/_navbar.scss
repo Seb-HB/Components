@@ -47,7 +47,7 @@ header{
     flex: 0 0 10%;
     padding: 5px;
     &:hover {
-        animation: logoRollOver 1s linear;
+        animation: logoRollOver 500ms linear;
     }
 }
 

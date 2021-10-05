@@ -12,3 +12,15 @@
     }
     
 }
+
+@media (max-width:600px){
+    .sf_demo-container{
+        flex-wrap: wrap;
+        .sf_product-card, .sf_flex-30{
+            flex: 0 0 100%;
+        }
+    }
+    .sf_demo-container .sf_demo-text{
+        flex:0 0 100%;
+    }
+}
