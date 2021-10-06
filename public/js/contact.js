@@ -2,7 +2,7 @@ let $goodInputs=[0,0,0,1,0];
 
 document.querySelector("input[name='nom']").addEventListener('beforeinput', function(e) {
     setTimeout(function() {
-        let filtre=new RegExp('[a-zA-Z]{3,}');
+        let filtre=new RegExp('^[a-zA-Z]{3,}$');
         console.log(e.target);
         if (filtre.test(e.target.value)){
             e.target.className='highlight-green';
@@ -18,7 +18,7 @@ document.querySelector("input[name='nom']").addEventListener('beforeinput', func
 
 document.querySelector("input[name='prenom']").addEventListener('beforeinput', function(e) {
     setTimeout(function() {
-        let filtre=new RegExp('[a-zA-Z]{3,}');
+        let filtre=new RegExp('^[a-zA-Z]{3,}$');
         if (filtre.test(e.target.value)){
             e.target.className='highlight-green';
             document.querySelector("input[name='prenom'] + .sf_field-error").innerHTML="";
@@ -33,14 +33,16 @@ document.querySelector("input[name='prenom']").addEventListener('beforeinput', f
 
 document.querySelector("input[type='mail']").addEventListener('beforeinput', function(e) {
     setTimeout(function() {
-        let filtre=new RegExp('[a-z]([a-z0-9]*[\.\-\_]?[a-z0-9]+)+@[a-z]{2,15}[.][a-z]{2,20}');
+        // regex developpée avec majuscules autorisées
+        // ^(([A-Za-z0-9]+_)|([A-Za-z0-9]+\-)|([A-Za-z0-9]+\.))*[A-Za-z0-9]+@(([a-zA-Z0-9]+\-)|([a-zA-Z0-9]+\.))*[a-zA-Z0-9]{1,63}[\.][a-zA-Z]{2,6}$
+        let filtre=new RegExp('^([a-z0-9]+(_|\-|\.))*[a-z0-9]+@([a-z0-9]+(\-|\.))*[a-z0-9]{1,63}[\.][a-z]{2,6}$');
         if (filtre.test(e.target.value)){
             e.target.className='highlight-green';
             document.querySelector("input[type='mail'] + .sf_field-error").innerHTML="";
             testEnableForm(2,1);
         }else{
             e.target.className='highlight-red';
-            document.querySelector("input[type='mail'] + .sf_field-error").innerHTML="Le mail saisi n'est pas valide";
+            document.querySelector("input[type='mail'] + .sf_field-error").innerHTML="Le mail saisi est invalide. N'utilisez pas de majuscules.";
             testEnableForm(2,0);
         }
     },50);
@@ -65,7 +67,6 @@ function testEnableForm($index, $value){
     $goodInputs[$index]=$value*1;
     let $somme=($goodInputs[0]+$goodInputs[1]+$goodInputs[2]+$goodInputs[3]+$goodInputs[4]);
     console.log($goodInputs);
-    console.log($somme);
     if($somme>4){
         document.querySelector("#contact-me form button").disabled=false;
     }else{
