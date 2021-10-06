@@ -31,7 +31,7 @@ function chooseRandomVoice(langage, voiceSex){
 
 function getAudio(baseUrl,texte,language='en-us', codec='MP3', voiceSex='f'){
     let audioRequest = new XMLHttpRequest();
-    audioRequestUrl=baseUrl+language+'&c='+codec+'&src'+texte;
+    audioRequestUrl=baseUrl+language+'&c='+codec+'&src='+texte;
     // on surveille les changements de statuts
     audioRequest.addEventListener("readystatechange", function(){
         if (this.readyState==4){
@@ -49,8 +49,8 @@ function getAudio(baseUrl,texte,language='en-us', codec='MP3', voiceSex='f'){
     // }
     
     //on lance la requete
-    meteoRequest.open("GET", audioRequestUrl);
-    meteoRequest.send();
+    audioRequest.open("GET", audioRequestUrl);
+    audioRequest.send();
 }
 
 function audioReceived(response){
