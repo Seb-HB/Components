@@ -2,7 +2,7 @@ let $goodInputs=[0,0,0,1,0];
 
 document.querySelector("input[name='nom']").addEventListener('beforeinput', function(e) {
     setTimeout(function() {
-        let filtre=new RegExp('^[a-zA-Z]{3,}$');
+        let filtre=new RegExp('^[a-zA-Zéèàê]{3,}$');
         console.log(e.target);
         if (filtre.test(e.target.value)){
             e.target.className='highlight-green';
@@ -18,7 +18,7 @@ document.querySelector("input[name='nom']").addEventListener('beforeinput', func
 
 document.querySelector("input[name='prenom']").addEventListener('beforeinput', function(e) {
     setTimeout(function() {
-        let filtre=new RegExp('^[a-zA-Z]{3,}$');
+        let filtre=new RegExp('^[a-zA-Zéèàê]{3,}$');
         if (filtre.test(e.target.value)){
             e.target.className='highlight-green';
             document.querySelector("input[name='prenom'] + .sf_field-error").innerHTML="";

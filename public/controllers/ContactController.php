@@ -37,7 +37,7 @@ class ContactController{
         if(!preg_match('#^[a-zA-Zéèàêô]{3,}$#', $data['prenom'])){
             $_SESSION['sendMail']['errors'][]='le prénom saisi ne respecte pas les ciritères';
         }
-        if(!preg_match('#^[a-z]([a-z0-9]*[\.\-\_]?[a-z0-9]+)+@[a-z]{2,15}[.][a-z]{2,20}$#', $data['mail'])){
+        if(!preg_match('#^([a-z0-9]+(_|\-|\.))*[a-z0-9]+@([a-z0-9]+(\-|\.))*[a-z0-9]{1,63}[\.][a-z]{2,6}$#', $data['mail'])){
             $_SESSION['sendMail']['errors'][]='l\'email saisi ne semble pas être valide';
         }
         if(!in_array($data['sujet'], $this->sujets)){
