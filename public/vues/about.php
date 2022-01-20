@@ -12,9 +12,9 @@
                 <img src="img/portrait.png" alt="Logo, retour à l'accueil">
             </div>
             <div id='aboutMe'>
-                <p>Diplômé RNCP webmaster / webdesigner mention très bien en 2017, je n'ai malheureusement que peu eu l'occasion de pratiquer le développement web.</p>
-                <p>J'ai décidé de me former de nouveau en 2021 pour consolider et complèter mes précédents acquis.</p>
-                <p>Je suis donc en formation certifiante pour le titre RNCP de développeur web et web mobile, formation qui prendra fin à l'issue d'un <b>stage en entreprise du 2/11/2021 au 10/01/2022</b>.</p>
+                <p><strong>Diplômé RNCP webmaster / webdesigner</strong> mention très bien en 2017 .</p>
+                <p><strong>Diplômé RNCP développeur web /web mobile</strong> en 2022.</p>
+                <p>Curieux, dynamique et motivé, je suis à la recherche de mon premier poste pour mettre à profit mes compétences et en acquérir de nouvelles.</p>
                 <div id="loadCV">
                     <div>
                         <img src="docs/CV Web 2021.jpg" alt="CV Sébastien Fouvet">
@@ -36,19 +36,35 @@
                 </div>
             </div>
         </div>
-
+        <div class='sf_cv-arrow'></div>
+        <div class='sf_professional-exp'>
+            <h2>Développeur full-Stack</h2>
+            <p>11/21 - 01/22</p>
+            <div class='sf_precisions'>
+                <div>
+                    <h3><a href="https://autolity.io/" target="blank">Autolity</a></h3>
+                    <p>Saint-Étienne</p>
+                </div>
+                <p>Site vitrine WordPress</p>
+                <p>Développement d'une application BtoB sous laravel 8</p>
+                <p>Environnement de développement <a href="https://www.docker.com/">docker</a></p>
+                <p>Mise en place d'une solution de paiement via <a href="https://stripe.com/fr">Stripe</a></p>
+                <p>Utilisation d'API externes</p>
+                <p>Utilisation du CRM <a href="https://www.pipedrive.com/fr" target="blank">Pipedrive</a></p>
+            </div>
+        </div>
         <div class='sf_cv-arrow'></div>
         <div class='sf_formation-exp'>
-            <h2>Developpeur Web et Web Mobile</h2>
+            <h2>Développeur Web et Web Mobile</h2>
             <p>2021-2022</p>
             <div class='sf_precisions'>
                 <div>
                     <h3><a href="https://humanbooster.com/" target="blank">HumanBooster</a></h3>
                     <p>Saint-Étienne</p>
                 </div>
-                <p>Formation Diplômante en cours</p>
+                <p>Formation diplômante</p>
                 <p>HTML/CSS, PHP, JS, Angular, symfony, POO</p>
-                <p>A la recherche d'un stage du 02/11 au 10/01/22, <a href="index.php?p=contact">contactez moi</a></p>
+                <p>Titre RNCP obtenu en janvier 2022</p>
             </div>
         </div>
         <div class='sf_cv-arrow'></div>
@@ -85,7 +101,7 @@
             <p>2017 stage 2 mois</p>
             <div class='sf_precisions'>
                 <div>
-                    <h3><a href="https://www.webqam.fr/" target="blank"></a></h3>
+                    <h3><a href="https://www.webqam.fr/" target="blank">Webqam</a></h3>
                     <p>Saint-Étienne</p>
                 </div>
                 <p>Utilisation de Zend framework</p>
@@ -163,6 +179,18 @@
             </div>
         </div>
         <div class='sf_cv-arrow'></div>
+        <div class='sf_formation-exp'>
+            <h2>BAC S</h2>
+            <p>2015</p>
+            <div class='sf_precisions'>
+                <div>
+                    <h3>BAC Scientifique</h3>
+                    <p>Saint-Étienne</p>
+                </div>
+                <p>Option Math</p>
+                <p>Option Informatique (développement en turbo pascal)</p>
+            </div>
+        </div>
 
     </section>
     <?php
