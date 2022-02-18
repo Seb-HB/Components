@@ -15,12 +15,21 @@
             <p>selectionnez votre ville en cliquant sur la map</p>
         </div>
         <div id="meteo-render">
-
-            <div class="meteo-j j1"></div>
-            <div class="meteo-j j2"></div>
-            <div class="meteo-j j3"></div>
-            <div class="meteo-j j4"></div>
-            <div class="meteo-j j5"></div>
+            <div class="meteo-j j1">
+                <p>Choisir une ville pour afficher la météo</p>
+            </div>
+            <div class="meteo-j j2">
+                <p>Choisir une ville pour afficher la météo</p>
+            </div>
+            <div class="meteo-j j3">
+                <p>Choisir une ville pour afficher la météo</p>
+            </div>
+            <div class="meteo-j j4">
+                <p>Choisir une ville pour afficher la météo</p>
+            </div>
+            <div class="meteo-j j5">
+                <p>Choisir une ville pour afficher la météo</p>
+            </div>
         </div>
     </div>
     <div class="sf_tag-links">
